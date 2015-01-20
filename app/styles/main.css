@@ -84,30 +84,29 @@ img {
 p {
   margin: 1em 0;
   line-height: 1.2em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 36, common/_common.scss */
+/* line 35, common/_common.scss */
 .keyword {
   font-weight: 700;
 }
 
-/* line 41, common/_common.scss */
+/* line 40, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .shortcuts:before, .tmtimeline > li:before, .skills-filters:before, .portfolio-filters:before, .contact-container:before, .clearfix:after, .content:after, header:after, footer nav:after, .shortcuts:after, .tmtimeline > li:after, .skills-filters:after, .portfolio-filters:after, .contact-container:after {
   content: "";
   display: table;
 }
-/* line 46, common/_common.scss */
+/* line 45, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .shortcuts:after, .tmtimeline > li:after, .skills-filters:after, .portfolio-filters:after, .contact-container:after {
   clear: both;
 }
 
-/* line 51, common/_common.scss */
+/* line 50, common/_common.scss */
 .wrapper {
   margin-top: 53px;
 }
 
-/* line 55, common/_common.scss */
+/* line 54, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -123,20 +122,20 @@ p {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 71, common/_common.scss */
+/* line 70, common/_common.scss */
 .stand h2 {
   font-size: 70%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 76, common/_common.scss */
+/* line 75, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 15px;
   display: inline-block;
 }
-/* line 83, common/_common.scss */
+/* line 82, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -150,33 +149,35 @@ p {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 97, common/_common.scss */
+/* line 96, common/_common.scss */
 .stand .page-name {
   display: block;
 }
 
-/* line 103, common/_common.scss */
+/* line 102, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
   padding-bottom: 70px;
+  font-size: 120%;
+  font-weight: 300;
 }
-/* line 110, common/_common.scss */
+/* line 112, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 114, common/_common.scss */
+/* line 116, common/_common.scss */
 .content > * {
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-/* line 120, common/_common.scss */
+/* line 122, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 124, common/_common.scss */
+/* line 126, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -187,7 +188,7 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 135, common/_common.scss */
+/* line 137, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -199,33 +200,33 @@ p {
   background-color: #fff;
   text-align: center;
 }
-/* line 148, common/_common.scss */
+/* line 150, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 90%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 156, common/_common.scss */
+/* line 158, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
 }
-/* line 163, common/_common.scss */
+/* line 165, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: initial;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 170, common/_common.scss */
+  /* line 172, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 176, common/_common.scss */
+  /* line 178, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -234,23 +235,23 @@ p {
     top: 0;
     left: 0;
   }
-  /* line 184, common/_common.scss */
+  /* line 186, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 193, common/_common.scss */
+  /* line 195, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 197, common/_common.scss */
+  /* line 199, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 201, common/_common.scss */
+  /* line 203, common/_common.scss */
   .stand img {
     width: 50px;
   }
@@ -713,8 +714,9 @@ footer .link {
 /* line 23, common/_footer.scss */
 footer .link:hover {
   color: #ffa631;
+  background-color: #3f3f3f;
 }
-/* line 28, common/_footer.scss */
+/* line 29, common/_footer.scss */
 footer .logo-footer {
   position: absolute;
   top: -55px;
@@ -728,7 +730,7 @@ footer .logo-footer {
   -ms-border-radius: 70px;
   border-radius: 70px;
 }
-/* line 42, common/_footer.scss */
+/* line 43, common/_footer.scss */
 footer .social {
   display: block;
   float: right;
@@ -737,26 +739,26 @@ footer .social {
 }
 
 @media screen and (max-width: 35em) {
-  /* line 51, common/_footer.scss */
+  /* line 52, common/_footer.scss */
   .footer-socials, .footer-links {
     width: 100%;
   }
 
-  /* line 55, common/_footer.scss */
+  /* line 56, common/_footer.scss */
   .footer-links {
     text-align: center;
   }
-  /* line 58, common/_footer.scss */
+  /* line 59, common/_footer.scss */
   .footer-links .link {
     float: initial;
     display: inline-block;
   }
 
-  /* line 64, common/_footer.scss */
+  /* line 65, common/_footer.scss */
   .footer-socials {
     text-align: center;
   }
-  /* line 67, common/_footer.scss */
+  /* line 68, common/_footer.scss */
   .footer-socials .social {
     float: initial;
     display: inline-block;
@@ -1131,15 +1133,20 @@ footer .social {
 }
 
 /* line 8, page/_experiences.scss */
+.content {
+  padding-bottom: 50px;
+}
+
+/* line 12, page/_experiences.scss */
 .tmtimeline {
   margin-top: 30px;
-  padding: 0;
+  padding: 0 0 20px 0;
   list-style: none;
   position: relative;
 }
 
 /* The line */
-/* line 16, page/_experiences.scss */
+/* line 20, page/_experiences.scss */
 .tmtimeline:before {
   content: '';
   position: absolute;
@@ -1151,13 +1158,13 @@ footer .social {
   margin-left: -5px;
 }
 
-/* line 27, page/_experiences.scss */
+/* line 31, page/_experiences.scss */
 .tmtimeline > li {
   position: relative;
 }
 
 /* The date/time */
-/* line 34, page/_experiences.scss */
+/* line 38, page/_experiences.scss */
 .tmtimeline > li .tmtime {
   display: block;
   width: 45%;
@@ -1167,29 +1174,29 @@ footer .social {
   text-transform: uppercase;
 }
 
-/* line 43, page/_experiences.scss */
+/* line 47, page/_experiences.scss */
 .tmtimeline > li .tmtime span {
   display: block;
   text-align: right;
 }
 
-/* line 48, page/_experiences.scss */
+/* line 52, page/_experiences.scss */
 .tmtimeline > li .tmtime span:first-child {
   font-size: 1.2em;
   color: #7bc98e;
 }
 
-/* line 53, page/_experiences.scss */
+/* line 57, page/_experiences.scss */
 .tmtimeline > li .tmtime span:last-child {
   font-size: 1em;
   color: #333333;
 }
 
 /* Right content */
-/* line 59, page/_experiences.scss */
+/* line 63, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   margin: 0 0 15px 0;
-  width: 40%;
+  width: 37.5%;
   color: #fff;
   padding: 0.5em 2em;
   font-size: 1.2em;
@@ -1200,12 +1207,12 @@ footer .social {
   float: right;
 }
 
-/* line 72, page/_experiences.scss */
+/* line 76, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   background: #7bc98e;
 }
 
-/* line 76, page/_experiences.scss */
+/* line 80, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 {
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -1215,7 +1222,7 @@ footer .social {
 }
 
 /* The triangle */
-/* line 85, page/_experiences.scss */
+/* line 89, page/_experiences.scss */
 .tmtimeline > li .tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -1229,21 +1236,21 @@ footer .social {
   top: 10px;
 }
 
-/* line 99, page/_experiences.scss */
+/* line 103, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime {
   right: 0;
   left: inherit;
 }
-/* line 103, page/_experiences.scss */
+/* line 107, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime span {
   text-align: left;
 }
-/* line 108, page/_experiences.scss */
+/* line 112, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel {
   float: left;
   background: #409e57;
 }
-/* line 112, page/_experiences.scss */
+/* line 116, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel:after {
   left: 100%;
   right: inherit;
@@ -1252,7 +1259,7 @@ footer .social {
 }
 
 /* The icons */
-/* line 123, page/_experiences.scss */
+/* line 127, page/_experiences.scss */
 .tmtimeline > li .tmicon {
   width: 80px;
   height: 40px;
@@ -1277,36 +1284,36 @@ footer .social {
 }
 
 @media screen and (max-width: 80em) {
-  /* line 147, page/_experiences.scss */
+  /* line 151, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
-    width: 37%;
+    width: 36%;
   }
 }
 @media screen and (max-width: 62em) {
-  /* line 153, page/_experiences.scss */
+  /* line 157, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
-    width: 33%;
+    width: 31%;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 159, page/_experiences.scss */
+  /* line 163, page/_experiences.scss */
   .tmtimeline:before {
     display: none;
   }
 
-  /* line 163, page/_experiences.scss */
+  /* line 167, page/_experiences.scss */
   .tmtimeline > li .tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 169, page/_experiences.scss */
+  /* line 173, page/_experiences.scss */
   .tmtimeline > li .tmtime span {
     text-align: left;
   }
 
-  /* line 173, page/_experiences.scss */
+  /* line 177, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -1319,7 +1326,7 @@ footer .social {
     float: none;
   }
 
-  /* line 183, page/_experiences.scss */
+  /* line 187, page/_experiences.scss */
   .tmtimeline > li .tmlabel:after {
     right: auto;
     left: 20px;
@@ -1328,13 +1335,13 @@ footer .social {
     top: -20px;
   }
 
-  /* line 191, page/_experiences.scss */
+  /* line 195, page/_experiences.scss */
   .tmtimeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #7bc98e;
   }
 
-  /* line 196, page/_experiences.scss */
+  /* line 200, page/_experiences.scss */
   .tmtimeline > li:nth-child(even) .tmlabel:after {
     right: auto;
     left: 20px;
@@ -1342,7 +1349,7 @@ footer .social {
     border-left-color: transparent;
   }
 
-  /* line 203, page/_experiences.scss */
+  /* line 207, page/_experiences.scss */
   .tmtimeline > li .tmicon {
     position: relative;
     float: right;
@@ -1351,7 +1358,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 212, page/_experiences.scss */
+  /* line 216, page/_experiences.scss */
   .stand .page-name {
     font-size: 62%;
     letter-spacing: 2px;
@@ -1359,7 +1366,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 220, page/_experiences.scss */
+  /* line 224, page/_experiences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
@@ -1673,28 +1680,54 @@ footer .social {
   padding-bottom: 20px;
 }
 /* line 14, page/_contact.scss */
+.contact-container .contact-form,
+.contact-container .contact-info {
+  margin-left: 0;
+}
+/* line 19, page/_contact.scss */
+.contact-container .contact-form {
+  float: left;
+}
+/* line 22, page/_contact.scss */
+.contact-container .contact-info {
+  float: right;
+  text-align: right;
+}
+/* line 28, page/_contact.scss */
+.contact-container .contact-info .avatar img {
+  width: 150px;
+  border: 6px solid #3594cb;
+  -webkit-border-radius: 110px;
+  -moz-border-radius: 110px;
+  -ms-border-radius: 110px;
+  border-radius: 110px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* line 39, page/_contact.scss */
 .contact-container .column, .contact-container .mcolumn, .contact-container .skills-container .skill-block, .skills-container .contact-container .skill-block, .contact-container .portfolio-container .portfolio-block, .portfolio-container .contact-container .portfolio-block {
   padding: 0 10px;
 }
-/* line 18, page/_contact.scss */
+/* line 43, page/_contact.scss */
 .contact-container label, .contact-container input, .contact-container textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 24, page/_contact.scss */
+/* line 49, page/_contact.scss */
 .contact-container input, .contact-container textarea {
   margin-bottom: 20px;
   padding: 10px;
   border: 3px solid #ccc;
 }
-/* line 30, page/_contact.scss */
+/* line 55, page/_contact.scss */
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none;
   border-color: #3594cb;
 }
-/* line 36, page/_contact.scss */
+/* line 61, page/_contact.scss */
 .contact-container button[type='submit'] {
   position: relative;
   display: block;
@@ -1709,32 +1742,32 @@ footer .social {
   font-size: 120%;
   cursor: pointer;
 }
-/* line 54, page/_contact.scss */
+/* line 79, page/_contact.scss */
 .contact-container button[type='submit']:hover {
   background-color: #ffa631;
 }
-/* line 58, page/_contact.scss */
+/* line 83, page/_contact.scss */
 .contact-container button[type='submit'].disabled {
   background-color: #c3e7cc;
   cursor: no-drop;
 }
-/* line 65, page/_contact.scss */
+/* line 90, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 73, page/_contact.scss */
+/* line 98, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 81, page/_contact.scss */
+/* line 106, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 85, page/_contact.scss */
+/* line 110, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
@@ -1742,13 +1775,13 @@ footer .social {
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 93, page/_contact.scss */
+  /* line 118, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn, .skills-container .contact-container > .skill-block, .portfolio-container .contact-container > .portfolio-block {
     width: 100%;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 99, page/_contact.scss */
+  /* line 124, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -1756,7 +1789,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 107, page/_contact.scss */
+  /* line 132, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }

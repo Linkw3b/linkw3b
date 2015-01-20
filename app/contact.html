@@ -12,7 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/contact.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -40,9 +40,6 @@
             </nav>
             <a href="tel:+33688910169" class="phone-icon show-mobile"></a>
         </header>
-        <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
         <div id="wrapper" class="wrapper">
             <div class="stand">
@@ -53,11 +50,14 @@
             </div>
             <div class="content">
                 <div class="contact-container">
-                    <div class="col-5 column">
+                    <div class="col-5 column contact-info">
+                        <figure class="avatar">
+                            <img src="images/avatar.jpg" alt="">
+                        </figure>
                         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex obcaecati quisquam voluptatibus culpa velit iure similique magnam, hic, possimus nisi nesciunt veniam perspiciatis necessitatibus natus odio earum numquam corrupti.</span>
                         <span>Quos officiis deserunt qui numquam, placeat vitae magnam itaque sunt iste! Doloribus esse similique ullam nobis, aspernatur quae velit quos recusandae inventore minus temporibus consequuntur ex necessitatibus dolor molestiae rerum!</span></p>
                     </div>
-                    <form class="col-7 column" method="post" id="contact-form">
+                    <form class="col-7 column contact-form" method="post" id="contact-form">
                         <label for="name" class="required">Nom</label>
                         <input type="text" name="name" placeholder="John Doe">
                         <label for="email" class="required">Email</label>

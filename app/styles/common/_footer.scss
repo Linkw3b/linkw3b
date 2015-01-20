@@ -22,6 +22,7 @@ footer {
 
         &:hover {
             color: $main-orange;
+            background-color: darken($main-black, 5);
         }
     }
 

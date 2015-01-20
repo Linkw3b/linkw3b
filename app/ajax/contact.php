@@ -9,7 +9,7 @@ if(isset($_POST) && isset($_POST['name']) && isset($_POST['email']) && isset($_P
 
     if(!empty($name) && $name!="" && !empty($email) && $email!="" && !empty ($message) && $message!=""){
         $message=str_replace("/'","'",$message);
-        $destinataire="youremail@example.com";
+        $destinataire="manuel.taraud@gmail.com";
         $sujet="Portfolio - Un nouveau message !";
         $message="Nom : $name \n
         Email : $email \n

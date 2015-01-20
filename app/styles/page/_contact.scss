@@ -11,6 +11,31 @@
 
     @extend .clearfix;
 
+    .contact-form,
+    .contact-info {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        float: left;
+    }
+    .contact-info {
+        float: right;
+
+        text-align: right;
+
+        .avatar {
+            img {
+                width: 150px;
+
+                border: 6px solid $main-blue;
+
+                @include border-radius(110px);
+                @include box-shadow(0,0,5px,rgba(0,0,0,0.2));
+            }
+        }
+    }
+
     .column {
         padding: 0 10px;
     }

@@ -5,9 +5,13 @@
     margin-left: 9px;
 }
 
+.content {
+    padding-bottom: 50px;
+}
+
 .tmtimeline {
     margin-top: 30px;
-    padding: 0;
+    padding: 0 0 20px 0;
     list-style: none;
     position: relative;
 }
@@ -58,7 +62,7 @@
 /* Right content */
 .tmtimeline > li .tmlabel {
     margin: 0 0 15px 0;
-    width: 40%;
+    width: 37.5%;
     color: #fff;
     padding: 0.5em 2em;
     font-size: 1.2em;
@@ -145,13 +149,13 @@
 
 @media screen and (max-width: 80em) {
     .tmtimeline > li .tmlabel {
-        width: 37%;
+        width: 36%;
     }
 }
 
 @media screen and (max-width: 62em) {
     .tmtimeline > li .tmlabel {
-        width: 33%;
+        width: 31%;
     }
 }
 

@@ -31,7 +31,6 @@ img {
 p {
     margin: 1em 0;
     line-height: 1.2em;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .keyword {
     font-weight: 700;
@@ -105,6 +104,9 @@ p {
     margin: 20px auto 0;
     padding-bottom: 70px;
 
+    font-size: 120%;
+    font-weight: 300;
+
     @extend .clearfix;
 
     img {
@@ -112,8 +114,8 @@ p {
     }
 
     > * {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
