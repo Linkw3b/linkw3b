@@ -16,27 +16,48 @@ jQuery(function() {
         updateSubmitButton(submitButton, requiredFields);
         var form = jQuery(event.currentTarget);
         if(!submitButton.hasClass('disabled')) {
+            var title = 'Oups... :(',
+                message = 'Il y a eu une erreur... Réessayez plus tard !',
+                statusName = 'error';
             jQuery.ajax({
                 url: '/ajax/contact.php',
                 type: form.attr('method'),
                 data: form.serialize(),
                 datatype: 'json',
                 success: function(data, textStatus) {
+                    if(data.hasOwnProperty('title')) {
+                        title = data.title;
+                    }
+                    if(data.hasOwnProperty('message')) {
+                        message = data.message;
+                    }
+                    if(data.hasOwnProperty('statusName')) {
+                        statusName = data.statusName;
+                    }
                     swal({
-                        title: data.title,
-                        text: data.message,
+                        title: title,
+                        text: message,
                         confirmButtonText: 'Okay',
-                        type: data.status,
+                        type: statusName,
                         confirmButtonColor: '#7bc98e',
                         timer: 3500
                     });
                 },
                 error: function(data, textStatus) {
+                    if(data.hasOwnProperty('title')) {
+                        title = data.title;
+                    }
+                    if(data.hasOwnProperty('message')) {
+                        message = data.message;
+                    }
+                    if(data.hasOwnProperty('statusName')) {
+                        statusName = data.statusName;
+                    }
                     swal({
-                        title: data.title,
-                        text: data.message,
+                        title: title,
+                        text: message,
                         confirmButtonText: 'Okay',
-                        type: data.status,
+                        type: statusName,
                         confirmButtonColor: '#7bc98e',
                         timer: 3500
                     });

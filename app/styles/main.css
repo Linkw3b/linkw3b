@@ -159,23 +159,24 @@ p {
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
+  padding-bottom: 70px;
 }
-/* line 109, common/_common.scss */
+/* line 110, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 113, common/_common.scss */
+/* line 114, common/_common.scss */
 .content > * {
   margin-left: 2%;
   margin-right: 2%;
 }
 
-/* line 119, common/_common.scss */
+/* line 120, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 123, common/_common.scss */
+/* line 124, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -186,7 +187,7 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 134, common/_common.scss */
+/* line 135, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -198,33 +199,33 @@ p {
   background-color: #fff;
   text-align: center;
 }
-/* line 147, common/_common.scss */
+/* line 148, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 90%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 155, common/_common.scss */
+/* line 156, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
 }
-/* line 162, common/_common.scss */
+/* line 163, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: initial;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 169, common/_common.scss */
+  /* line 170, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 175, common/_common.scss */
+  /* line 176, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -233,23 +234,23 @@ p {
     top: 0;
     left: 0;
   }
-  /* line 183, common/_common.scss */
+  /* line 184, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 192, common/_common.scss */
+  /* line 193, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 196, common/_common.scss */
+  /* line 197, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 200, common/_common.scss */
+  /* line 201, common/_common.scss */
   .stand img {
     width: 50px;
   }
@@ -692,15 +693,16 @@ header.fixed .link {
 /* line 1, common/_footer.scss */
 footer {
   width: 100%;
+  position: relative;
   background-color: #4c4c4c;
 }
-/* line 6, common/_footer.scss */
+/* line 7, common/_footer.scss */
 footer nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 7px 20px 20px;
+  padding: 60px 20px;
 }
-/* line 14, common/_footer.scss */
+/* line 15, common/_footer.scss */
 footer .link {
   padding: 20px 10px;
   float: left;
@@ -708,15 +710,25 @@ footer .link {
   color: #fff;
   font-weight: 700;
 }
-/* line 22, common/_footer.scss */
+/* line 23, common/_footer.scss */
 footer .link:hover {
   color: #ffa631;
 }
-/* line 27, common/_footer.scss */
+/* line 28, common/_footer.scss */
 footer .logo-footer {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  margin-left: -55px;
+  padding: 15px;
+  background-color: #4c4c4c;
   text-align: center;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  border-radius: 70px;
 }
-/* line 31, common/_footer.scss */
+/* line 42, common/_footer.scss */
 footer .social {
   display: block;
   float: right;
@@ -725,26 +737,26 @@ footer .social {
 }
 
 @media screen and (max-width: 35em) {
-  /* line 40, common/_footer.scss */
+  /* line 51, common/_footer.scss */
   .footer-socials, .footer-links {
     width: 100%;
   }
 
-  /* line 44, common/_footer.scss */
+  /* line 55, common/_footer.scss */
   .footer-links {
     text-align: center;
   }
-  /* line 47, common/_footer.scss */
+  /* line 58, common/_footer.scss */
   .footer-links .link {
     float: initial;
     display: inline-block;
   }
 
-  /* line 53, common/_footer.scss */
+  /* line 64, common/_footer.scss */
   .footer-socials {
     text-align: center;
   }
-  /* line 56, common/_footer.scss */
+  /* line 67, common/_footer.scss */
   .footer-socials .social {
     float: initial;
     display: inline-block;

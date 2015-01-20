@@ -103,6 +103,7 @@ p {
 .content {
     max-width: $max-width;
     margin: 20px auto 0;
+    padding-bottom: 70px;
 
     @extend .clearfix;
 

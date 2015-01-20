@@ -1,12 +1,13 @@
 footer {
     width: 100%;
+    position: relative;
 
     background-color: $main-black;
 
     nav {
         max-width: $max-width;
         margin: 0 auto;
-        padding: 7px 20px 20px;
+        padding: 60px 20px;
 
         @extend .clearfix;
     }
@@ -25,7 +26,17 @@ footer {
     }
 
     .logo-footer {
+        position: absolute;
+        top: -55px;
+        left: 50%;
+        margin-left: -55px;
+        padding: 15px;
+
+        background-color: $main-black;
+
         text-align: center;
+
+        @include border-radius(70px);
     }
 
     .social {

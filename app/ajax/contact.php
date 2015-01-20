@@ -9,20 +9,20 @@ if(isset($_POST) && isset($_POST['name']) && isset($_POST['email']) && isset($_P
 
     if(!empty($name) && $name!="" && !empty($email) && $email!="" && !empty ($message) && $message!=""){
         $message=str_replace("/'","'",$message);
-        $destinataire="manuel.taraud@gmail.com";
+        $destinataire="youremail@example.com";
         $sujet="Portfolio - Un nouveau message !";
         $message="Nom : $name \n
         Email : $email \n
         Message : $message";
         $entete="FROM : $name \n REPLY-TO : $email";
         if(mail($destinataire, $sujet, $message, $entete)) {
-            echo json_encode(array('status' => 'success', 'title' => 'Merci :)', 'message' => $successMessage));
+            echo json_encode(array('statusName' => 'success', 'title' => 'Merci :)', 'message' => $successMessage));
         }else{
-            echo json_encode(array('status' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
+            echo json_encode(array('statusName' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
         }
     } else {
-        echo json_encode(array('status' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
+        echo json_encode(array('statusName' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
     }
 } else {
-    echo json_encode(array('status' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
+    echo json_encode(array('statusName' => 'error', 'title' => 'Oups... :(', 'message' => $errorMessage));
 }

@@ -25,23 +25,22 @@ jQuery(function() {
                 kIsActive = true;
                 swal({
                     title: 'Yeah !',
-                    text: 'You found the master sword !',
-                    imageUrl: 'http://33.media.tumblr.com/ce4ab7dc0c67ea939bf31474e1194049/tumblr_molwleAEbi1s70w2zo1_400.gif',
+                    text: 'You found the master sword !\nDo you wanna try to get it out ?\n(It\'s dangerous to go alone)',
+                    imageUrl: '../images/mastersword.gif',
                     showCancelButton: true,
                     confirmButtonColor: '#7bc98e',
-                    confirmButtonText: 'I\'ll take it !',
+                    confirmButtonText: 'I\'ll take my chance !',
                     cancelButtonText: 'Naaaaah !',
                     closeOnConfirm: false,
                     closeOnCancel: false
                 }, function(isConfirm) {
                     if(isConfirm) {
                         swal({
-                            title: 'You are a hero',
+                            title: 'You are the chosen one',
                             text: 'Go save Hyrule and the Princess !',
-                            //imageUrl: 'http://31.media.tumblr.com/00a520e00747a6d60c8aaee03ec4ef58/tumblr_mqik7oCCiv1qzqwamo1_1280.gif',
-                            imageUrl: 'http://cdn.wikimg.net/strategywiki/images/d/d6/Zelda_ALttP_Link.gif',
+                            imageUrl: '../images/hero.gif',
                             confirmButtonColor: '#7bc98e',
-                            confirmButtonText: 'Okay'
+                            confirmButtonText: 'Here we go !'
                         }, function() {
                             kIsActive = false;
                             kKeys = [];
@@ -50,7 +49,7 @@ jQuery(function() {
                         swal({
                             title: 'Hyrule is on fire :(',
                             text: 'You have failed !',
-                            imageUrl: 'http://archer.gamebanana.com/img/ico/sprays/zelda_fire_render.gif',
+                            imageUrl: '../images/fire.gif',
                             confirmButtonColor: '#7bc98e',
                             confirmButtonText: 'I\'m ashamed'
                         }, function() {
