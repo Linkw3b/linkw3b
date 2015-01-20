@@ -1,0 +1,155 @@
+/**
+* Manuel Taraud
+* 30/07/2014
+* Define the common sprite properties
+**/
+
+@import "sprites/*.png";
+
+.nav-icon {
+    @include sprites-sprite('nav-icon');
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    cursor: pointer;
+}
+
+.skills-icon {
+    @include sprites-sprite('skills-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.experiences-icon {
+    @include sprites-sprite('experiences-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.portfolio-icon {
+    @include sprites-sprite('portfolio-icon');
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.contact-icon {
+    @include sprites-sprite('contact-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.close-icon {
+    @include sprites-sprite('close-icon');
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.phone-icon {
+    @include sprites-sprite('phone-icon');
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.magnify-icon {
+    @include sprites-sprite('magnify-icon');
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 40%;
+    cursor: pointer;
+}
+.link-icon {
+    @include sprites-sprite('link-icon');
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    right: 40%;
+}
+.magnify-icon:last-child {
+    left: 50%;
+    margin-left: -7px;
+}
+
+.tmtimeline > li .tmicon.icon-te {
+    @include sprites-sprite('te-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-neoptia {
+    @include sprites-sprite('neoptia-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-1dclic {
+    @include sprites-sprite('1dclic-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-st-cyr {
+    @include sprites-sprite('st-cyr-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-src {
+    @include sprites-sprite('src-logo-mobile');
+}
+
+.coffee-0 {
+    @include sprites-sprite('coffee-0');
+}
+.coffee-1 {
+    @include sprites-sprite('coffee-1');
+}
+.coffee-2 {
+    @include sprites-sprite('coffee-2');
+}
+.coffee-3 {
+    @include sprites-sprite('coffee-3');
+}
+.coffee-4 {
+    @include sprites-sprite('coffee-4');
+}
+.coffee-5 {
+    @include sprites-sprite('coffee-5');
+}
+
+.submit-button:before {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    top: 14px;
+    margin-right: 15px;
+    @include sprites-sprite('send-icon');
+}
+
+.filter-button {
+    @include sprites-sprite('filter-inactive');
+    float: left;
+    cursor: pointer;
+
+    &.active {
+        @include sprites-sprite('filter-active');
+    }
+}
+
+.linkedin-icon {
+    display: block;
+    @include sprites-sprite('linkedin-icon');
+
+    &:hover {
+        @include sprites-sprite('linkedin-hover-icon');
+    }
+}
+
+.viadeo-icon {
+    display: block;
+    @include sprites-sprite('viadeo-icon');
+
+    &:hover {
+        @include sprites-sprite('viadeo-hover-icon');
+    }
+}

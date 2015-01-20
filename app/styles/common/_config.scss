@@ -1,0 +1,64 @@
+$main-green:  #7bc98e;
+$main-blue: #3594cb;
+$main-red: #f27474;
+$main-orange: #ffa631;
+$main-black: #4c4c4c;
+$header-bg: #222;
+
+$nb-col: 12;
+$gutter: 2%;
+
+$max-width: 1200px;
+
+$sprites-layout: smart;
+$sprites-sprite-dimensions: true;
+
+@mixin commonButtonsProp () {
+    display: inline-block;
+    *display: inline; /* Hack IE7 */
+    background-color: transparent;
+
+    cursor: pointer;
+    zoom: 1;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing($box) {
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+}
+
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $color) {
+    -webkit-box-shadow: $h-shadow $v-shadow $blur $color;
+    -moz-box-shadow: $h-shadow $v-shadow $blur $color;
+    box-shadow: $h-shadow $v-shadow $blur $color;
+}
+
+@mixin text-shadow($h-shadow, $v-shadow, $blur, $color) {
+    -webkit-text-shadow: $h-shadow $v-shadow $blur $color;
+    -moz-text-shadow: $h-shadow $v-shadow $blur $color;
+    text-shadow: $h-shadow $v-shadow $blur $color;
+}
+
+@mixin transition($properties, $duration, $animation) {
+    -webkit-transition: $properties $duration $animation;
+    -moz-transition: $properties $duration $animation;
+    -o-transition: $properties $duration $animation;
+    -ms-transition: $properties $duration $animation;
+    transition: $properties $duration $animation;
+}
+
+@mixin filter($properties) {
+    -webkit-filter: $properties;
+    -moz-filter: $properties;
+    -o-filter: $properties;
+    -ms-filter: $properties;
+    filter: $properties;
+}

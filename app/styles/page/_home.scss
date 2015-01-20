@@ -1,0 +1,104 @@
+.page-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 67%;
+    letter-spacing: 6px;
+    margin-left: 9px;
+}
+
+.shortcuts {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    @extend .clearfix;
+
+    .practice {
+        margin-bottom: 0;
+
+        background-color: #fff;
+
+        @include box-shadow(0, 0, 5px, rgba(0,0,0,0.2));
+
+        img {
+            max-width: 250px;
+        }
+
+        legend {
+
+            background-color: darken($main-green, 20%);
+
+            color: #fff;
+
+            @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.5));
+
+        }
+    }
+
+    .svg {
+        img {
+            max-width: 120px;
+            @include filter(grayscale(100%));
+        }
+
+        &:hover {
+            img {
+                @include filter(grayscale(40%));
+            }
+
+            .title { color: $main-blue; }
+        }
+    }
+
+    legend {
+        width: 100%;
+
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+
+        @include box-sizing(border-box);
+
+        &.blue {
+            background-color: $main-blue;
+        }
+    }
+
+    .title {
+        display: block;
+        padding: 20px;
+
+        color: $main-black;
+        text-decoration: none;
+        @include text-shadow(1px, 1px, 0, rgba(255,255,255,0.5));
+    }
+
+    & + p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .stand .page-name {
+        font-size: 69%;
+        letter-spacing: 2px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 43.2em) {
+    .stand .page-name {
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .shortcuts .mcolumn {
+        margin-bottom: 20px;
+    }
+    .shortcuts .practice img {
+        float: initial;
+        max-height: 150px;
+        width: auto;
+    }
+}

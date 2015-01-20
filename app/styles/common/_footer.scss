@@ -1,0 +1,61 @@
+footer {
+    width: 100%;
+
+    background-color: $main-black;
+
+    nav {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 7px 20px 20px;
+
+        @extend .clearfix;
+    }
+
+    .link {
+        padding: 20px 10px;
+        float: left;
+        display: block;
+
+        color: #fff;
+        font-weight: 700;
+
+        &:hover {
+            color: $main-orange;
+        }
+    }
+
+    .logo-footer {
+        text-align: center;
+    }
+
+    .social {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .footer-socials, .footer-links {
+        width: 100%;
+    }
+
+    .footer-links {
+        text-align: center;
+
+        .link {
+            float: initial;
+            display: inline-block;
+        }
+    }
+
+    .footer-socials {
+        text-align: center;
+
+        .social {
+            float: initial;
+            display: inline-block;
+        }
+    }
+}

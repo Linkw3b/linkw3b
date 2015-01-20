@@ -1,0 +1,157 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 1.2em;
+
+    background-color: $header-bg;
+
+    @include box-shadow(0, 0, 5px, rgba(0,0,0,0.85));
+
+    @extend .clearfix;
+
+    nav {
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+
+    .logo-container {
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -60px;
+        z-index: 5;
+
+        @include transition(all, 0.3s, ease);
+
+        @include box-shadow(0, 0, 10px, rgba(0,0,0,0.5));
+        @include box-sizing(border-box);
+
+        @include border-radius(70px);
+    }
+
+    .logo {
+        margin: 0 auto;
+        display: block;
+        padding: 15px;
+
+        border: 5px solid $main-black;
+
+        background-color: #fff;
+
+        @include transition(all, 0.3s, ease);
+
+        @include border-radius(70px);
+
+        &:hover {
+            border-color: $main-green;
+        }
+    }
+
+    .link {
+        width: 50%;
+        display: block;
+        float: left;
+        padding: 24px 10px 30px;
+
+        border-bottom: 3px solid transparent;
+
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+
+        @include box-sizing(border-box);
+        @include text-shadow(1px, 1px, 0, rgba(0, 0, 0, 0.4));
+
+        &:hover {
+            border-color: $main-orange;
+            background-color: lighten($header-bg, 10%);
+        }
+    }
+
+    &.fixed {
+        opacity: 0.95;
+
+        .logo-container {
+            margin-left: -35px;
+            top: -10px;
+
+            @include box-shadow(0, 0, 10px, rgba(0,0,0,0.55));
+        }
+
+        .logo {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+
+            border-width: 3px;
+        }
+        .link {
+            padding: 10px 10px 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 48.5em) {
+    header {
+        font-size: 100%;
+
+        .logo-container {
+            margin-left: -35px;
+            top: 0px;
+        }
+
+        .logo {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+
+            border-width: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 43.2em) {
+    header {
+        height: 56px;
+
+        .logo-container {
+            margin-left: -35px;
+            top: -10px;
+
+            @include box-shadow(0, 0, 10px, rgba(0,0,0,0.55));
+        }
+
+        nav {
+            position: fixed;
+            left: -80%;
+            top: 0;
+            width: 80%;
+            height: 100%;
+            background-color: $header-bg;
+
+            .column {
+                width: 100%;
+            }
+        }
+
+        .logo {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+
+            border-width: 3px;
+        }
+
+        .link {
+            width: 100%;
+        }
+
+        &.fixed {
+            opacity: 1;
+        }
+    }
+}

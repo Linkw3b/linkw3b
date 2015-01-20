@@ -1,0 +1,58 @@
+.column {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+
+    @include box-sizing(border-box);
+}
+
+.mcolumn {
+    @extend .column;
+
+    margin-bottom: $gutter;
+
+    + .mcolumn {
+        margin-left: $gutter;
+    }
+}
+
+@for $i from 1 through $nb-col {
+
+    .col-#{$i} {
+        width: 100% / $nb-col * $i;
+    }
+
+}
+
+@for $i from 1 through $nb-col {
+
+    .mcol-#{$i} {
+        width: (((100 - (($nb-col - 1) * $gutter)) / $nb-col) * $i) + ($i - 1) * $gutter;
+    }
+
+}
+
+@media screen and (max-width: 35em) {
+
+
+    .mcolumn + .mcolumn {
+        margin-left: 0;
+    }
+
+    @for $i from 1 through $nb-col {
+
+        .col-#{$i} {
+            width: 100%;
+        }
+
+    }
+
+    @for $i from 1 through $nb-col {
+
+        .mcol-#{$i} {
+            width: 100%;
+        }
+
+    }
+}

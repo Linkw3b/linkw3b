@@ -1,0 +1,223 @@
+.page-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 64%;
+    letter-spacing: 3px;
+    margin-left: 9px;
+}
+
+.tmtimeline {
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* The line */
+.tmtimeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: $main-black;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.tmtimeline > li {
+    position: relative;
+
+    @extend .clearfix;
+}
+
+/* The date/time */
+.tmtimeline > li .tmtime {
+    display: block;
+    width: 45%;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tmtimeline > li .tmtime span {
+    display: block;
+    text-align: right;
+}
+
+.tmtimeline > li .tmtime span:first-child {
+    font-size: 1.2em;
+    color: $main-green;
+}
+
+.tmtimeline > li .tmtime span:last-child {
+    font-size: 1em;
+    color: darken($main-black, 10%);
+}
+
+/* Right content */
+.tmtimeline > li .tmlabel {
+    margin: 0 0 15px 0;
+    width: 40%;
+    color: #fff;
+    padding: 0.5em 2em;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+    float: right;
+}
+
+.tmtimeline > li .tmlabel {
+    background: $main-green;
+}
+
+.tmtimeline > li .tmlabel h2 {
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* The triangle */
+.tmtimeline > li .tmlabel:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: $main-green;
+    border-width: 10px;
+    top: 10px;
+}
+
+.tmtimeline > li:nth-child(even) {
+    .tmtime {
+        right: 0;
+        left: inherit;
+
+        & span {
+            text-align: left;
+        }
+    }
+
+    .tmlabel {
+        float: left;
+        background: darken($main-green, 20%);
+
+        &:after {
+            left: 100%;
+            right: inherit;
+
+            border-right-color: transparent;
+            border-left-color: darken($main-green, 20%);
+        }
+    }
+}
+
+/* The icons */
+.tmtimeline > li .tmicon {
+    width: 80px;
+    height: 40px;
+    font-family: 'ecoico';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    color: #fff;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px $header-bg;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -20px;
+}
+
+@media screen and (max-width: 80em) {
+    .tmtimeline > li .tmlabel {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width: 62em) {
+    .tmtimeline > li .tmlabel {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 47.2em) {
+    .tmtimeline:before {
+        display: none;
+    }
+
+    .tmtimeline > li .tmtime {
+        width: 100%;
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+
+    .tmtimeline > li .tmtime span {
+        text-align: left;
+    }
+
+    .tmtimeline > li .tmlabel {
+        margin: 0 0 30px 0;
+        padding: 1em;
+        width: 100%;
+        font-weight: 400;
+        font-size: 95%;
+        @include box-sizing(border-box);
+        float: none;
+    }
+
+    .tmtimeline > li .tmlabel:after {
+        right: auto;
+        left: 20px;
+        border-right-color: transparent;
+        border-bottom-color: darken($main-green, 20%);
+        top: -20px;
+    }
+
+    .tmtimeline > li:nth-child(odd) .tmlabel:after {
+        border-right-color: transparent;
+        border-bottom-color: $main-green
+    }
+
+    .tmtimeline > li:nth-child(even) .tmlabel:after {
+        right: auto;
+        left: 20px;
+        border-left-color: transparent;
+        border-left-color: transparent;
+    }
+
+    .tmtimeline > li .tmicon {
+        position: relative;
+        float: right;
+        left: auto;
+        margin: -55px 5px 0 0px;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .stand .page-name {
+        font-size: 62%;
+        letter-spacing: 2px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 43.2em) {
+    .stand .page-name {
+        letter-spacing: 1px;
+    }
+}

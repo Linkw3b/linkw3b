@@ -1,0 +1,161 @@
+.page-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 58%;
+    letter-spacing: 3px;
+    margin-left: 9px;
+}
+
+.skills-filters {
+    margin: 2%;
+    @extend .clearfix;
+
+    .skill-filter {
+        width: 25%;
+        margin: 0;
+        float: left;
+
+        .filter-title {
+            float: left;
+            line-height: 1.5em;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.skills-container {
+
+    .skill-block {
+        width: 20%;
+        margin: 0;
+        padding: 2%;
+        height: 150px;
+
+        border: 4px solid #f3f3f3;
+
+        background-color: #fff;
+
+        line-height: 9em;
+        text-align: center;
+
+        overflow: hidden;
+
+        @extend .column;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .skill-overlay {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.75);
+            @include transition(top, 0.3s, ease);
+        }
+
+        .coffee {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -72px;
+            margin-top: -8px;
+        }
+
+        &:hover {
+            .skill-overlay {
+                top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 70em) and (min-width: 60.1em) {
+    .skills-container {
+        .skill-block {
+            width: 25%;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 60em) and (min-width: 48.1em) {
+    .skills-container {
+        .skill-block {
+            width: 33.3333333%;
+        }
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .skills-filters {
+        .skill-filter {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    .skills-container {
+        .skill-block {
+            .skill-overlay {
+                position: absolute;
+                top: inherit;
+                bottom: 0;
+                height: 35px;
+            }
+
+            &:hover .skill-overlay {
+                top: inherit;
+            }
+
+            .coffee {
+                top: inherit;
+                margin-top: 9px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 48em) and (min-width: 32.3em) {
+    .skills-filters {
+        .skill-filter {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    .skills-container {
+        .skill-block {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 32.25em) {
+    .skills-container {
+        .skill-block {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .stand .page-name {
+        font-size: 56%;
+        letter-spacing: 2px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 43.2em) {
+    .stand .page-name {
+        letter-spacing: 1px;
+    }
+}

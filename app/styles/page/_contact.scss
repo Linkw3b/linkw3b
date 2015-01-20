@@ -1,0 +1,110 @@
+.page-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 77%;
+    letter-spacing: 15px;
+    margin-left: 21px;
+}
+
+.contact-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @extend .clearfix;
+
+    .column {
+        padding: 0 10px;
+    }
+
+    label, input, textarea {
+        width: 100%;
+
+        @include box-sizing(border-box);
+    }
+
+    input, textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+
+        border: 3px solid #ccc;
+
+        &:focus {
+            outline: none;
+            border-color: $main-blue;
+        }
+    }
+
+    button[type='submit'] {
+        position: relative;
+        display: block;
+        width: 70%;
+        max-width: 220px;
+        margin: 0 auto;
+        padding: 10px 15px;
+
+        border: none;
+
+        background-color: $main-green;
+
+        color: #fff;
+        font-weight: 700;
+        font-size: 120%;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: $main-orange;
+        }
+
+        &.disabled {
+            background-color: lighten($main-green, 20%);
+
+            cursor: no-drop;
+        }
+    }
+
+    label {
+        color: $main-green;
+        font-weight: 700;
+        font-size: 120%;
+        line-height: 30px;
+
+
+        &.invalid {
+            & + input,
+            & + textarea {
+                color: $main-red;
+                border-color: $main-red;
+            }
+        }
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .required:after {
+        content: '*';
+        color: $main-red;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 47.2em) {
+    .contact-container > .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .stand .page-name {
+        font-size: 79%;
+        letter-spacing: 8px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 43.2em) {
+    .stand .page-name {
+        letter-spacing: 6px;
+    }
+}
