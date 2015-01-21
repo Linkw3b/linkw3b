@@ -125,11 +125,11 @@ function updateHash(filterContainerClass, filterClass) {
             break;
         case 0:
             window.location.hash = "";
-            jQuery('.filters').next().after('<p id="no-results">Plop</p>');
+            jQuery('.filters').next().after('<p id="no-results" class="no-results">Merci d\'activer au moins un filtre pour avoir des résultats :)</p>');
             break;
         default:
             window.location.hash = "";
-            jQuery('.filters').next().after('<p id="no-results">Oups</p>');
+            jQuery('.filters').next().after('<p id="no-results" class="no-results">Oups ! Serait-ce un bug ? Pouvez-vous m\'en avertir via le <a href="contact.html">formulaire de contact</a> ?</p>');
             break;
     }
 }

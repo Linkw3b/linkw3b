@@ -62,57 +62,58 @@ a,
 a:link {
   color: #3594cb;
   text-decoration: none;
+  font-weight: 400;
 }
 
-/* line 18, common/_common.scss */
+/* line 19, common/_common.scss */
 a:hover {
   color: #ffa631;
 }
 
-/* line 22, common/_common.scss */
+/* line 23, common/_common.scss */
 a:visited {
   color: #409e57;
 }
 
-/* line 26, common/_common.scss */
+/* line 27, common/_common.scss */
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 31, common/_common.scss */
+/* line 32, common/_common.scss */
 p {
   margin: 1em 0;
   line-height: 1.2em;
 }
 
-/* line 36, common/_common.scss */
+/* line 37, common/_common.scss */
 ::selection {
   background-color: #7bc98e;
   color: #fff;
 }
 
-/* line 41, common/_common.scss */
+/* line 42, common/_common.scss */
 .keyword {
   font-weight: 700;
 }
 
-/* line 46, common/_common.scss */
+/* line 47, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .contact-container:before, .clearfix:after, .content:after, header:after, footer nav:after, .contact-container:after {
   content: "";
   display: table;
 }
-/* line 51, common/_common.scss */
+/* line 52, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .contact-container:after {
   clear: both;
 }
 
-/* line 56, common/_common.scss */
+/* line 57, common/_common.scss */
 .wrapper {
   margin-top: 53px;
 }
 
-/* line 60, common/_common.scss */
+/* line 61, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -127,13 +128,13 @@ p {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 75, common/_common.scss */
+/* line 76, common/_common.scss */
 .stand h2 {
   font-size: 70%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 80, common/_common.scss */
+/* line 81, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -141,7 +142,7 @@ p {
   display: inline-block;
   font-weight: 400;
 }
-/* line 88, common/_common.scss */
+/* line 89, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -155,12 +156,12 @@ p {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 102, common/_common.scss */
+/* line 103, common/_common.scss */
 .stand .page-name {
   display: block;
 }
 
-/* line 108, common/_common.scss */
+/* line 109, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -168,22 +169,22 @@ p {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 118, common/_common.scss */
+/* line 119, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 122, common/_common.scss */
+/* line 123, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 128, common/_common.scss */
+/* line 129, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 132, common/_common.scss */
+/* line 133, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -194,7 +195,7 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 143, common/_common.scss */
+/* line 144, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -206,39 +207,39 @@ p {
   background-color: #fff;
   text-align: center;
 }
-/* line 156, common/_common.scss */
+/* line 157, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 161, common/_common.scss */
+/* line 162, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 169, common/_common.scss */
+/* line 170, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 177, common/_common.scss */
+/* line 178, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 184, common/_common.scss */
+  /* line 185, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 190, common/_common.scss */
+  /* line 191, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -247,23 +248,23 @@ p {
     top: 0;
     left: 0;
   }
-  /* line 198, common/_common.scss */
+  /* line 199, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 207, common/_common.scss */
+  /* line 208, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 211, common/_common.scss */
+  /* line 212, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 215, common/_common.scss */
+  /* line 216, common/_common.scss */
   .stand img {
     width: 50px;
   }
@@ -1464,15 +1465,15 @@ footer .social {
 * 30/07/2014
 * Define the common sprite properties
 **/
-/* line 272, sprites/*.png */
-.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
-  background-image: url('/images/generated/sprites-s365ae8a4fc.png');
+/* line 312, sprites/*.png */
+.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
+  background-image: url('/images/generated/sprites-s92c14c9d4e.png');
   background-repeat: no-repeat;
 }
 
 /* line 9, sprites/_sprites.scss */
 .nav-icon {
-  background-position: -106px -132px;
+  background-position: -50px -189px;
   height: 28px;
   width: 34px;
   position: absolute;
@@ -1483,7 +1484,7 @@ footer .social {
 
 /* line 17, sprites/_sprites.scss */
 .skills-icon {
-  background-position: -48px 0;
+  background-position: -40px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1494,7 +1495,7 @@ footer .social {
 
 /* line 25, sprites/_sprites.scss */
 .experiences-icon {
-  background-position: 0 0;
+  background-position: -88px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1505,7 +1506,7 @@ footer .social {
 
 /* line 33, sprites/_sprites.scss */
 .portfolio-icon {
-  background-position: -24px 0;
+  background-position: -16px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1516,7 +1517,7 @@ footer .social {
 
 /* line 41, sprites/_sprites.scss */
 .contact-icon {
-  background-position: -72px 0;
+  background-position: -64px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1527,7 +1528,7 @@ footer .social {
 
 /* line 49, sprites/_sprites.scss */
 .close-icon {
-  background-position: -20px -232px;
+  background-position: 0 -221px;
   height: 35px;
   width: 35px;
   position: absolute;
@@ -1538,7 +1539,7 @@ footer .social {
 
 /* line 57, sprites/_sprites.scss */
 .left-arrow-icon {
-  background-position: -120px -160px;
+  background-position: -116px -189px;
   height: 32px;
   width: 20px;
   position: absolute;
@@ -1550,7 +1551,7 @@ footer .social {
 
 /* line 66, sprites/_sprites.scss */
 .right-arrow-icon {
-  background-position: 0 -232px;
+  background-position: -90px -157px;
   height: 32px;
   width: 20px;
   position: absolute;
@@ -1562,7 +1563,7 @@ footer .social {
 
 /* line 75, sprites/_sprites.scss */
 .phone-icon {
-  background-position: -60px -160px;
+  background-position: -60px -157px;
   height: 30px;
   width: 30px;
   position: absolute;
@@ -1599,84 +1600,115 @@ footer .social {
   margin-left: -7px;
 }
 
-/* line 102, sprites/_sprites.scss */
+/* line 101, sprites/_sprites.scss */
+.phone-puce {
+  background-position: 0 0;
+  height: 21px;
+  width: 16px;
+}
+
+/* line 104, sprites/_sprites.scss */
+.linkedin-puce {
+  background-position: -56px -132px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 107, sprites/_sprites.scss */
+.viadeo-puce {
+  background-position: -72px -132px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 110, sprites/_sprites.scss */
+.phone-puce,
+.linkedin-puce,
+.viadeo-puce {
+  margin-right: 5px;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 120, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-te {
-  background-position: -40px -192px;
+  background-position: -75px -221px;
   height: 40px;
   width: 40px;
 }
 
-/* line 105, sprites/_sprites.scss */
+/* line 123, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-neoptia {
-  background-position: -80px -192px;
+  background-position: -35px -221px;
   height: 40px;
   width: 40px;
 }
 
-/* line 108, sprites/_sprites.scss */
+/* line 126, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-1dclic {
-  background-position: -95px -232px;
+  background-position: 0 -301px;
   height: 40px;
   width: 40px;
 }
 
-/* line 111, sprites/_sprites.scss */
+/* line 129, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-st-cyr {
-  background-position: -55px -232px;
+  background-position: -72px -261px;
   height: 40px;
   width: 40px;
 }
 
-/* line 114, sprites/_sprites.scss */
+/* line 132, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-src {
-  background-position: 0 -192px;
+  background-position: -32px -261px;
   height: 40px;
   width: 40px;
 }
 
-/* line 118, sprites/_sprites.scss */
+/* line 136, sprites/_sprites.scss */
 .coffee-0 {
-  background-position: 0 -81px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 121, sprites/_sprites.scss */
-.coffee-1 {
-  background-position: 0 -30px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 124, sprites/_sprites.scss */
-.coffee-2 {
-  background-position: 0 -47px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 127, sprites/_sprites.scss */
-.coffee-3 {
-  background-position: 0 -64px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 130, sprites/_sprites.scss */
-.coffee-4 {
-  background-position: 0 -98px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 133, sprites/_sprites.scss */
-.coffee-5 {
   background-position: 0 -115px;
   height: 17px;
   width: 145px;
 }
 
-/* line 137, sprites/_sprites.scss */
+/* line 139, sprites/_sprites.scss */
+.coffee-1 {
+  background-position: 0 -98px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 142, sprites/_sprites.scss */
+.coffee-2 {
+  background-position: 0 -81px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 145, sprites/_sprites.scss */
+.coffee-3 {
+  background-position: 0 -30px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 148, sprites/_sprites.scss */
+.coffee-4 {
+  background-position: 0 -47px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 151, sprites/_sprites.scss */
+.coffee-5 {
+  background-position: 0 -64px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 155, sprites/_sprites.scss */
 .submit-button:before {
   content: "";
   display: block;
@@ -1689,45 +1721,60 @@ footer .social {
   width: 25px;
 }
 
-/* line 147, sprites/_sprites.scss */
+/* line 165, sprites/_sprites.scss */
 .filter-button {
-  background-position: -56px -132px;
+  background-position: -88px -132px;
   height: 25px;
   width: 50px;
   float: left;
   cursor: pointer;
 }
-/* line 152, sprites/_sprites.scss */
+/* line 170, sprites/_sprites.scss */
 .filter-button.active {
-  background-position: 0 -272px;
+  background-position: 0 -189px;
   height: 25px;
   width: 50px;
 }
 
-/* line 157, sprites/_sprites.scss */
+/* line 176, sprites/_sprites.scss */
+.cv-link .pdf-icon {
+  display: block;
+  float: left;
+  background-position: -84px -189px;
+  height: 32px;
+  width: 32px;
+}
+/* line 181, sprites/_sprites.scss */
+.cv-link:hover .pdf-icon {
+  background-position: 0 -261px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 186, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
-  background-position: 0 -160px;
+  background-position: -30px -157px;
   height: 30px;
   width: 30px;
 }
-/* line 161, sprites/_sprites.scss */
+/* line 190, sprites/_sprites.scss */
 .linkedin-icon:hover {
-  background-position: -90px -160px;
+  background-position: -112px 0;
   height: 30px;
   width: 30px;
 }
 
-/* line 166, sprites/_sprites.scss */
+/* line 195, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
-  background-position: -96px 0;
+  background-position: 0 -157px;
   height: 30px;
   width: 30px;
 }
-/* line 170, sprites/_sprites.scss */
+/* line 199, sprites/_sprites.scss */
 .viadeo-icon:hover {
-  background-position: -30px -160px;
+  background-position: -110px -157px;
   height: 30px;
   width: 30px;
 }
@@ -1742,25 +1789,15 @@ footer .social {
 
 /* line 8, page/_contact.scss */
 .contact-container {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 14, page/_contact.scss */
-.contact-container .contact-form,
-.contact-container .contact-info {
-  margin-left: 0;
+/* line 13, page/_contact.scss */
+.contact-container .avatar {
+  text-align: center;
+  margin-bottom: 20px;
 }
-/* line 19, page/_contact.scss */
-.contact-container .contact-form {
-  float: left;
-}
-/* line 22, page/_contact.scss */
-.contact-container .contact-info {
-  float: right;
-  text-align: right;
-}
-/* line 28, page/_contact.scss */
-.contact-container .contact-info .avatar img {
+/* line 17, page/_contact.scss */
+.contact-container .avatar img {
   width: 150px;
   border: 6px solid #3594cb;
   -webkit-border-radius: 110px;
@@ -1771,29 +1808,64 @@ footer .social {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-/* line 39, page/_contact.scss */
-.contact-container .column, .contact-container .mcolumn {
-  padding: 0 10px;
+/* line 27, page/_contact.scss */
+.contact-container .contact-form,
+.contact-container .contact-info {
+  margin-left: 0;
 }
-/* line 43, page/_contact.scss */
+/* line 32, page/_contact.scss */
+.contact-container .contact-form {
+  float: left;
+  padding-right: 40px;
+}
+/* line 36, page/_contact.scss */
+.contact-container .contact-info {
+  float: right;
+  padding: 20px;
+  margin-top: 31px;
+  margin-bottom: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #e5e5e5;
+}
+/* line 48, page/_contact.scss */
+.contact-container .contact-info p {
+  margin: 0 0 5px;
+}
+/* line 52, page/_contact.scss */
+.contact-container .contact-info li {
+  margin-bottom: 10px;
+}
+/* line 56, page/_contact.scss */
+.contact-container .contact-info img {
+  width: auto;
+}
+/* line 60, page/_contact.scss */
+.contact-container .contact-info .cv-link {
+  line-height: 1.7em;
+}
+/* line 65, page/_contact.scss */
 .contact-container label, .contact-container input, .contact-container textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 49, page/_contact.scss */
+/* line 71, page/_contact.scss */
 .contact-container input, .contact-container textarea {
   margin-bottom: 20px;
   padding: 10px;
   border: 3px solid #ccc;
 }
-/* line 55, page/_contact.scss */
+/* line 77, page/_contact.scss */
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none;
   border-color: #3594cb;
 }
-/* line 61, page/_contact.scss */
+/* line 83, page/_contact.scss */
 .contact-container button[type='submit'] {
   position: relative;
   display: block;
@@ -1808,32 +1880,32 @@ footer .social {
   font-size: 120%;
   cursor: pointer;
 }
-/* line 79, page/_contact.scss */
+/* line 101, page/_contact.scss */
 .contact-container button[type='submit']:hover {
   background-color: #ffa631;
 }
-/* line 83, page/_contact.scss */
+/* line 105, page/_contact.scss */
 .contact-container button[type='submit'].disabled {
   background-color: #c3e7cc;
   cursor: no-drop;
 }
-/* line 90, page/_contact.scss */
+/* line 112, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 98, page/_contact.scss */
+/* line 120, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 106, page/_contact.scss */
+/* line 128, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 110, page/_contact.scss */
+/* line 132, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
@@ -1841,22 +1913,23 @@ footer .social {
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 118, page/_contact.scss */
+  /* line 140, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn {
     width: 100%;
   }
 
-  /* line 121, page/_contact.scss */
+  /* line 143, page/_contact.scss */
   .contact-container .contact-info {
-    text-align: left;
+    margin-top: 0;
   }
-  /* line 124, page/_contact.scss */
-  .contact-container .contact-info .avatar {
-    text-align: center;
+
+  /* line 146, page/_contact.scss */
+  .contact-container .contact-form {
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 131, page/_contact.scss */
+  /* line 152, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -1864,7 +1937,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 139, page/_contact.scss */
+  /* line 160, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }

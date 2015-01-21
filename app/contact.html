@@ -6,18 +6,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/contact.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/modernizr.js"></script>
 
     </head>
     <body>
@@ -50,18 +41,26 @@
             </div>
             <div class="content">
                 <div class="contact-container">
+                    <figure class="avatar">
+                        <img src="images/avatar.jpg" alt="">
+                    </figure>
                     <div class="col-5 column contact-info">
-                        <figure class="avatar">
-                            <img src="images/avatar.jpg" alt="">
-                        </figure>
-                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex obcaecati quisquam voluptatibus culpa velit iure similique magnam, hic, possimus nisi nesciunt veniam perspiciatis necessitatibus natus odio earum numquam corrupti.</span>
-                        <span>Quos officiis deserunt qui numquam, placeat vitae magnam itaque sunt iste! Doloribus esse similique ullam nobis, aspernatur quae velit quos recusandae inventore minus temporibus consequuntur ex necessitatibus dolor molestiae rerum!</span></p>
+                        <p>Pour me contacter, merci de remplir le formulaire où me joindre via les moyens suivants :</p>
+                        <ul>
+                            <li><span class="phone-puce"></span>Téléphone : <a href="tel:+33688910169">06 88 91 01 69</a></li>
+                            <li><span class="linkedin-puce"></span>LinkedIn : <a href="http://fr.linkedin.com/in/manueltaraud">linkedin.com/manueltaraud</a></li>
+                            <li><span class="viadeo-puce"></span>Viadéo : <a href="http://fr.viadeo.com/fr/profile/manuel.taraud" title="Profil Viadéo" target="_blank">viadeo.com/manuel.taraud</a></li>
+                        </ul>
+                        <p>Ci-dessous, mon CV, pour les personnes que ça intéresse.</p>
+                        <p><a class="cv-link" href="images/cv.pdf" target="_blank" title="CV Manuel Taraud"><span class="pdf-icon"></span> Télécharger le CV</a></p>
                     </div>
                     <form class="col-7 column contact-form" method="post" id="contact-form">
                         <label for="name" class="required">Nom</label>
-                        <input type="text" name="name" placeholder="John Doe">
+                        <input type="text" name="name" placeholder="Nom Prénom">
                         <label for="email" class="required">Email</label>
-                        <input type="email" name="email" placeholder="john@doe.com">
+                        <input type="email" name="email" placeholder="email@exemple.fr">
+                        <label for="subject" class="required">Sujet</label>
+                        <input type="text" name="subject" placeholder="Sujet">
                         <label for="message" class="required">Message</label>
                         <textarea name="message" placeholder="Ecrivez votre message ici..."></textarea>
                         <button type="submit" id="submit-button" class="submit-button">Envoyer</button>

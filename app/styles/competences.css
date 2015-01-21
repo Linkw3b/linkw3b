@@ -62,57 +62,58 @@ a,
 a:link {
   color: #3594cb;
   text-decoration: none;
+  font-weight: 400;
 }
 
-/* line 18, common/_common.scss */
+/* line 19, common/_common.scss */
 a:hover {
   color: #ffa631;
 }
 
-/* line 22, common/_common.scss */
+/* line 23, common/_common.scss */
 a:visited {
   color: #409e57;
 }
 
-/* line 26, common/_common.scss */
+/* line 27, common/_common.scss */
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 31, common/_common.scss */
+/* line 32, common/_common.scss */
 p {
   margin: 1em 0;
   line-height: 1.2em;
 }
 
-/* line 36, common/_common.scss */
+/* line 37, common/_common.scss */
 ::selection {
   background-color: #7bc98e;
   color: #fff;
 }
 
-/* line 41, common/_common.scss */
+/* line 42, common/_common.scss */
 .keyword {
   font-weight: 700;
 }
 
-/* line 46, common/_common.scss */
+/* line 47, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .skills-filters:before, .clearfix:after, .content:after, header:after, footer nav:after, .skills-filters:after {
   content: "";
   display: table;
 }
-/* line 51, common/_common.scss */
+/* line 52, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .skills-filters:after {
   clear: both;
 }
 
-/* line 56, common/_common.scss */
+/* line 57, common/_common.scss */
 .wrapper {
   margin-top: 53px;
 }
 
-/* line 60, common/_common.scss */
+/* line 61, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -127,13 +128,13 @@ p {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 75, common/_common.scss */
+/* line 76, common/_common.scss */
 .stand h2 {
   font-size: 70%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 80, common/_common.scss */
+/* line 81, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -141,7 +142,7 @@ p {
   display: inline-block;
   font-weight: 400;
 }
-/* line 88, common/_common.scss */
+/* line 89, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -155,12 +156,12 @@ p {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 102, common/_common.scss */
+/* line 103, common/_common.scss */
 .stand .page-name {
   display: block;
 }
 
-/* line 108, common/_common.scss */
+/* line 109, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -168,22 +169,22 @@ p {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 118, common/_common.scss */
+/* line 119, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 122, common/_common.scss */
+/* line 123, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 128, common/_common.scss */
+/* line 129, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 132, common/_common.scss */
+/* line 133, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -194,7 +195,7 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 143, common/_common.scss */
+/* line 144, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -206,39 +207,39 @@ p {
   background-color: #fff;
   text-align: center;
 }
-/* line 156, common/_common.scss */
+/* line 157, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 161, common/_common.scss */
+/* line 162, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 169, common/_common.scss */
+/* line 170, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 177, common/_common.scss */
+/* line 178, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 184, common/_common.scss */
+  /* line 185, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 190, common/_common.scss */
+  /* line 191, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -247,23 +248,23 @@ p {
     top: 0;
     left: 0;
   }
-  /* line 198, common/_common.scss */
+  /* line 199, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 207, common/_common.scss */
+  /* line 208, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 211, common/_common.scss */
+  /* line 212, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 215, common/_common.scss */
+  /* line 216, common/_common.scss */
   .stand img {
     width: 50px;
   }
@@ -1464,15 +1465,15 @@ footer .social {
 * 30/07/2014
 * Define the common sprite properties
 **/
-/* line 272, sprites/*.png */
-.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
-  background-image: url('/images/generated/sprites-s365ae8a4fc.png');
+/* line 312, sprites/*.png */
+.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
+  background-image: url('/images/generated/sprites-s92c14c9d4e.png');
   background-repeat: no-repeat;
 }
 
 /* line 9, sprites/_sprites.scss */
 .nav-icon {
-  background-position: -106px -132px;
+  background-position: -50px -189px;
   height: 28px;
   width: 34px;
   position: absolute;
@@ -1483,7 +1484,7 @@ footer .social {
 
 /* line 17, sprites/_sprites.scss */
 .skills-icon {
-  background-position: -48px 0;
+  background-position: -40px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1494,7 +1495,7 @@ footer .social {
 
 /* line 25, sprites/_sprites.scss */
 .experiences-icon {
-  background-position: 0 0;
+  background-position: -88px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1505,7 +1506,7 @@ footer .social {
 
 /* line 33, sprites/_sprites.scss */
 .portfolio-icon {
-  background-position: -24px 0;
+  background-position: -16px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1516,7 +1517,7 @@ footer .social {
 
 /* line 41, sprites/_sprites.scss */
 .contact-icon {
-  background-position: -72px 0;
+  background-position: -64px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1527,7 +1528,7 @@ footer .social {
 
 /* line 49, sprites/_sprites.scss */
 .close-icon {
-  background-position: -20px -232px;
+  background-position: 0 -221px;
   height: 35px;
   width: 35px;
   position: absolute;
@@ -1538,7 +1539,7 @@ footer .social {
 
 /* line 57, sprites/_sprites.scss */
 .left-arrow-icon {
-  background-position: -120px -160px;
+  background-position: -116px -189px;
   height: 32px;
   width: 20px;
   position: absolute;
@@ -1550,7 +1551,7 @@ footer .social {
 
 /* line 66, sprites/_sprites.scss */
 .right-arrow-icon {
-  background-position: 0 -232px;
+  background-position: -90px -157px;
   height: 32px;
   width: 20px;
   position: absolute;
@@ -1562,7 +1563,7 @@ footer .social {
 
 /* line 75, sprites/_sprites.scss */
 .phone-icon {
-  background-position: -60px -160px;
+  background-position: -60px -157px;
   height: 30px;
   width: 30px;
   position: absolute;
@@ -1599,84 +1600,115 @@ footer .social {
   margin-left: -7px;
 }
 
-/* line 102, sprites/_sprites.scss */
+/* line 101, sprites/_sprites.scss */
+.phone-puce {
+  background-position: 0 0;
+  height: 21px;
+  width: 16px;
+}
+
+/* line 104, sprites/_sprites.scss */
+.linkedin-puce {
+  background-position: -56px -132px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 107, sprites/_sprites.scss */
+.viadeo-puce {
+  background-position: -72px -132px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 110, sprites/_sprites.scss */
+.phone-puce,
+.linkedin-puce,
+.viadeo-puce {
+  margin-right: 5px;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 120, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-te {
-  background-position: -40px -192px;
+  background-position: -75px -221px;
   height: 40px;
   width: 40px;
 }
 
-/* line 105, sprites/_sprites.scss */
+/* line 123, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-neoptia {
-  background-position: -80px -192px;
+  background-position: -35px -221px;
   height: 40px;
   width: 40px;
 }
 
-/* line 108, sprites/_sprites.scss */
+/* line 126, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-1dclic {
-  background-position: -95px -232px;
+  background-position: 0 -301px;
   height: 40px;
   width: 40px;
 }
 
-/* line 111, sprites/_sprites.scss */
+/* line 129, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-st-cyr {
-  background-position: -55px -232px;
+  background-position: -72px -261px;
   height: 40px;
   width: 40px;
 }
 
-/* line 114, sprites/_sprites.scss */
+/* line 132, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-src {
-  background-position: 0 -192px;
+  background-position: -32px -261px;
   height: 40px;
   width: 40px;
 }
 
-/* line 118, sprites/_sprites.scss */
+/* line 136, sprites/_sprites.scss */
 .coffee-0 {
-  background-position: 0 -81px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 121, sprites/_sprites.scss */
-.coffee-1 {
-  background-position: 0 -30px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 124, sprites/_sprites.scss */
-.coffee-2 {
-  background-position: 0 -47px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 127, sprites/_sprites.scss */
-.coffee-3 {
-  background-position: 0 -64px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 130, sprites/_sprites.scss */
-.coffee-4 {
-  background-position: 0 -98px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 133, sprites/_sprites.scss */
-.coffee-5 {
   background-position: 0 -115px;
   height: 17px;
   width: 145px;
 }
 
-/* line 137, sprites/_sprites.scss */
+/* line 139, sprites/_sprites.scss */
+.coffee-1 {
+  background-position: 0 -98px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 142, sprites/_sprites.scss */
+.coffee-2 {
+  background-position: 0 -81px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 145, sprites/_sprites.scss */
+.coffee-3 {
+  background-position: 0 -30px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 148, sprites/_sprites.scss */
+.coffee-4 {
+  background-position: 0 -47px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 151, sprites/_sprites.scss */
+.coffee-5 {
+  background-position: 0 -64px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 155, sprites/_sprites.scss */
 .submit-button:before {
   content: "";
   display: block;
@@ -1689,68 +1721,88 @@ footer .social {
   width: 25px;
 }
 
-/* line 147, sprites/_sprites.scss */
+/* line 165, sprites/_sprites.scss */
 .filter-button {
-  background-position: -56px -132px;
+  background-position: -88px -132px;
   height: 25px;
   width: 50px;
   float: left;
   cursor: pointer;
 }
-/* line 152, sprites/_sprites.scss */
+/* line 170, sprites/_sprites.scss */
 .filter-button.active {
-  background-position: 0 -272px;
+  background-position: 0 -189px;
   height: 25px;
   width: 50px;
 }
 
-/* line 157, sprites/_sprites.scss */
+/* line 176, sprites/_sprites.scss */
+.cv-link .pdf-icon {
+  display: block;
+  float: left;
+  background-position: -84px -189px;
+  height: 32px;
+  width: 32px;
+}
+/* line 181, sprites/_sprites.scss */
+.cv-link:hover .pdf-icon {
+  background-position: 0 -261px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 186, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
-  background-position: 0 -160px;
+  background-position: -30px -157px;
   height: 30px;
   width: 30px;
 }
-/* line 161, sprites/_sprites.scss */
+/* line 190, sprites/_sprites.scss */
 .linkedin-icon:hover {
-  background-position: -90px -160px;
+  background-position: -112px 0;
   height: 30px;
   width: 30px;
 }
 
-/* line 166, sprites/_sprites.scss */
+/* line 195, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
-  background-position: -96px 0;
+  background-position: 0 -157px;
   height: 30px;
   width: 30px;
 }
-/* line 170, sprites/_sprites.scss */
+/* line 199, sprites/_sprites.scss */
 .viadeo-icon:hover {
-  background-position: -30px -160px;
+  background-position: -110px -157px;
   height: 30px;
   width: 30px;
 }
 
 /* line 1, page/_competences.scss */
 .page-name {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P';
   font-size: 58%;
   letter-spacing: 3px;
   margin-left: 9px;
 }
 
 /* line 8, page/_competences.scss */
+.no-results {
+  text-align: center;
+}
+
+/* line 12, page/_competences.scss */
 .skills-filters {
   margin: 2%;
 }
-/* line 12, page/_competences.scss */
+/* line 16, page/_competences.scss */
 .skills-filters .skill-filter {
   width: 25%;
   margin: 0;
   float: left;
 }
-/* line 17, page/_competences.scss */
+/* line 21, page/_competences.scss */
 .skills-filters .skill-filter .filter-title {
   float: left;
   line-height: 1.5em;
@@ -1758,7 +1810,7 @@ footer .social {
   cursor: pointer;
 }
 
-/* line 28, page/_competences.scss */
+/* line 32, page/_competences.scss */
 .skills-container .skill-block {
   width: 20%;
   margin: 0;
@@ -1770,14 +1822,14 @@ footer .social {
   text-align: center;
   overflow: hidden;
 }
-/* line 45, page/_competences.scss */
+/* line 49, page/_competences.scss */
 .skills-container .skill-block img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
-/* line 52, page/_competences.scss */
+/* line 56, page/_competences.scss */
 .skills-container .skill-block .skill-overlay {
   position: absolute;
   top: 100%;
@@ -1791,7 +1843,7 @@ footer .social {
   -ms-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
-/* line 62, page/_competences.scss */
+/* line 66, page/_competences.scss */
 .skills-container .skill-block .coffee {
   display: block;
   position: absolute;
@@ -1800,72 +1852,72 @@ footer .social {
   margin-left: -72px;
   margin-top: -8px;
 }
-/* line 72, page/_competences.scss */
+/* line 76, page/_competences.scss */
 .skills-container .skill-block:hover .skill-overlay {
   top: 0;
 }
 
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
-  /* line 81, page/_competences.scss */
+  /* line 85, page/_competences.scss */
   .skills-container .skill-block {
     width: 25%;
   }
-  /* line 84, page/_competences.scss */
+  /* line 88, page/_competences.scss */
   .skills-container .skill-block:nth-child(4n) {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 60em) and (min-width: 48.1em) {
-  /* line 93, page/_competences.scss */
+  /* line 97, page/_competences.scss */
   .skills-container .skill-block {
     width: 33.3333333%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 102, page/_competences.scss */
+  /* line 106, page/_competences.scss */
   .skills-container .skill-block .skill-overlay {
     position: absolute;
     top: inherit;
     bottom: 0;
     height: 35px;
   }
-  /* line 109, page/_competences.scss */
+  /* line 113, page/_competences.scss */
   .skills-container .skill-block:hover .skill-overlay {
     top: inherit;
   }
-  /* line 113, page/_competences.scss */
+  /* line 117, page/_competences.scss */
   .skills-container .skill-block .coffee {
     top: inherit;
     margin-top: 9px;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 123, page/_competences.scss */
+  /* line 127, page/_competences.scss */
   .skills-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32.3em) {
-  /* line 132, page/_competences.scss */
+  /* line 136, page/_competences.scss */
   .skills-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 
-  /* line 138, page/_competences.scss */
+  /* line 142, page/_competences.scss */
   .skills-container .skill-block {
     width: 50%;
   }
 }
 @media screen and (max-width: 32.25em) {
-  /* line 146, page/_competences.scss */
+  /* line 150, page/_competences.scss */
   .skills-container .skill-block {
     width: 100%;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 153, page/_competences.scss */
+  /* line 157, page/_competences.scss */
   .stand .page-name {
     font-size: 56%;
     letter-spacing: 2px;
@@ -1873,7 +1925,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 161, page/_competences.scss */
+  /* line 165, page/_competences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }

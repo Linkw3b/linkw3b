@@ -98,6 +98,24 @@
     left: 50%;
     margin-left: -7px;
 }
+.phone-puce {
+    @include sprites-sprite('phone-puce');
+}
+.linkedin-puce {
+    @include sprites-sprite('linkedin-puce');
+}
+.viadeo-puce {
+    @include sprites-sprite('viadeo-puce');
+}
+.phone-puce,
+.linkedin-puce,
+.viadeo-puce {
+    margin-right: 5px;
+    display: block;
+    float: left;
+
+    clear: both;
+}
 
 .tmtimeline > li .tmicon.icon-te {
     @include sprites-sprite('te-logo-mobile');
@@ -151,6 +169,17 @@
 
     &.active {
         @include sprites-sprite('filter-active');
+    }
+}
+
+.cv-link {
+    .pdf-icon {
+        display: block;
+        float: left;
+        @include sprites-sprite('pdf-icon');
+    }
+    &:hover .pdf-icon {
+        @include sprites-sprite('pdf-hover-icon');
     }
 }
 
