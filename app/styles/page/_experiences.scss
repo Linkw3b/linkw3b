@@ -51,17 +51,17 @@
 
 .tmtimeline > li .tmtime span:first-child {
     font-size: 1.2em;
-    color: $main-green;
+    color: $main-black;
 }
 
 .tmtimeline > li .tmtime span:last-child {
     font-size: 1em;
-    color: darken($main-black, 10%);
+    color: $main-blue;
 }
 
 /* Right content */
 .tmtimeline > li .tmlabel {
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
     width: 37.5%;
     color: #fff;
     padding: 0.5em 2em;
@@ -71,10 +71,44 @@
     position: relative;
     border-radius: 5px;
     float: right;
+
+    @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
+}
+.tmtimeline > li .tmlabel p {
+    margin: 10px 0;
+
+    font-size: 80%;
+    font-weight: 400;
+}
+.tmtimeline > li .tmlabel .tag {
+    padding: 2px 5px;
+
+    background-color: #fff;
+
+    color: darken($main-green, 30%);
+    line-height: 2em;
+    font-size: 90%;
+
+    @include text-shadow(0, 0, 0, rgba(0,0,0,0));
+    @include box-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
+    @include border-radius(3px);
+}
+.tmtimeline > li .tmlabel ul {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+    font-size: 70%;
+    font-weight: 400;
+
+    list-style: initial;
+}
+.tmtimeline > li .tmlabel .tmsection {
+    font-weight: 700;
 }
 
 .tmtimeline > li .tmlabel {
-    background: $main-green;
+    background: darken($main-green, 10%);
 }
 
 .tmtimeline > li .tmlabel h2 {
@@ -83,6 +117,14 @@
     border-bottom: 1px solid rgba(255,255,255,0.4);
     font-weight: 700;
     font-size: 1.2em;
+}
+
+.tmtimeline > li .tmlabel a {
+    color: #fff;
+
+    &:hover {
+        color: lighten($main-orange, 5%);
+    }
 }
 
 /* The triangle */
@@ -94,7 +136,7 @@
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-right-color: $main-green;
+    border-right-color: darken($main-green, 10%);
     border-width: 10px;
     top: 10px;
 }
@@ -170,6 +212,14 @@
         padding: 0 0 20px 0;
     }
 
+    .tmtimeline > li .tmlabel p {
+        font-size: 100%;
+    }
+
+    .tmtimeline > li .tmlabel ul {
+        font-size: 90%;
+    }
+
     .tmtimeline > li .tmtime span {
         text-align: left;
     }
@@ -194,13 +244,12 @@
 
     .tmtimeline > li:nth-child(odd) .tmlabel:after {
         border-right-color: transparent;
-        border-bottom-color: $main-green
+        border-bottom-color: darken($main-green, 10%);
     }
 
     .tmtimeline > li:nth-child(even) .tmlabel:after {
         right: auto;
         left: 20px;
-        border-left-color: transparent;
         border-left-color: transparent;
     }
 

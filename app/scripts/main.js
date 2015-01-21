@@ -18,9 +18,9 @@ jQuery(function() {
         }
     }
 
-    jQuery(document).keydown(function(e) {
+    jQuery(document).keydown(function(event) {
         if(!kIsActive) {
-            kKeys.push(e.keyCode);
+            kKeys.push(event.keyCode);
             if (kKeys.toString().indexOf("38,38,40,40,37,39,37,39,66,65") >= 0) {
                 kIsActive = true;
                 swal({
@@ -63,7 +63,7 @@ jQuery(function() {
     });
 
     /* Listeners */
-    jQuery(document).on('scroll', { elem: jQuery(header) }, headerFixed);
+    jQuery(document).on('scroll', { elem: header }, headerFixed);
 
     jQuery('#nav-icon').on('click', function(event) {
         var nav = jQuery(event.currentTarget).parent().next();
@@ -89,7 +89,7 @@ jQuery(function() {
 });
 
 function headerFixed(event) {
-    if(jQuery('body').scrollTop() > 100) {
+    if(jQuery(document).scrollTop() > 100) {
         event.data.elem.addClass('fixed');
     } else {
         event.data.elem.removeClass('fixed');

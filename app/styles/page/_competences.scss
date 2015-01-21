@@ -96,13 +96,7 @@
     }
 }
 
-@media screen and (max-width: 48em) {
-    .skills-filters {
-        .skill-filter {
-            width: 50%;
-            margin-bottom: 10px;
-        }
-    }
+@media screen and (max-width: 60em) {
     .skills-container {
         .skill-block {
             .skill-overlay {
@@ -120,6 +114,15 @@
                 top: inherit;
                 margin-top: 9px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .skills-filters {
+        .skill-filter {
+            width: 50%;
+            margin-bottom: 10px;
         }
     }
 }

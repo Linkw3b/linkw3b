@@ -118,6 +118,13 @@
     .contact-container > .column {
         width: 100%;
     }
+    .contact-container .contact-info {
+        text-align: left;
+
+        .avatar {
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (max-width: 65em) {

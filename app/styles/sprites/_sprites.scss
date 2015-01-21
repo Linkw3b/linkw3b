@@ -54,6 +54,24 @@
     cursor: pointer;
 }
 
+.left-arrow-icon {
+    @include sprites-sprite('left-arrow');
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -16px;
+    cursor: pointer;
+}
+
+.right-arrow-icon {
+    @include sprites-sprite('right-arrow');
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -16px;
+    cursor: pointer;
+}
+
 .phone-icon {
     @include sprites-sprite('phone-icon');
     position: absolute;

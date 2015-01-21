@@ -86,33 +86,38 @@ p {
   line-height: 1.2em;
 }
 
-/* line 35, common/_common.scss */
+/* line 36, common/_common.scss */
+::selection {
+  background-color: #7bc98e;
+  color: #fff;
+}
+
+/* line 41, common/_common.scss */
 .keyword {
   font-weight: 700;
 }
 
-/* line 40, common/_common.scss */
+/* line 46, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .shortcuts:before, .clearfix:after, .content:after, header:after, footer nav:after, .shortcuts:after {
   content: "";
   display: table;
 }
-/* line 45, common/_common.scss */
+/* line 51, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .shortcuts:after {
   clear: both;
 }
 
-/* line 50, common/_common.scss */
+/* line 56, common/_common.scss */
 .wrapper {
   margin-top: 53px;
 }
 
-/* line 54, common/_common.scss */
+/* line 60, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
   background: url("../images/bkg.png") #3594cb;
   font-size: 400%;
-  font-weight: bold;
   text-align: center;
   letter-spacing: -2px;
   font-weight: 700;
@@ -122,20 +127,21 @@ p {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 70, common/_common.scss */
+/* line 75, common/_common.scss */
 .stand h2 {
   font-size: 70%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 75, common/_common.scss */
+/* line 80, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 15px;
   display: inline-block;
+  font-weight: 400;
 }
-/* line 82, common/_common.scss */
+/* line 88, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -149,12 +155,12 @@ p {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 96, common/_common.scss */
+/* line 102, common/_common.scss */
 .stand .page-name {
   display: block;
 }
 
-/* line 102, common/_common.scss */
+/* line 108, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -162,22 +168,22 @@ p {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 112, common/_common.scss */
+/* line 118, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 116, common/_common.scss */
+/* line 122, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 122, common/_common.scss */
+/* line 128, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 126, common/_common.scss */
+/* line 132, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -188,7 +194,7 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 137, common/_common.scss */
+/* line 143, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -200,33 +206,39 @@ p {
   background-color: #fff;
   text-align: center;
 }
-/* line 150, common/_common.scss */
+/* line 156, common/_common.scss */
+.galery-popin .popin-container {
+  height: 100%;
+  width: 100%;
+}
+/* line 161, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
-  height: 90%;
+  height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 158, common/_common.scss */
+/* line 169, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
+  color: #3594cb;
 }
-/* line 165, common/_common.scss */
+/* line 177, common/_common.scss */
 .galery-popin img {
   width: 100%;
-  max-height: initial;
+  max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 172, common/_common.scss */
+  /* line 184, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 178, common/_common.scss */
+  /* line 190, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -235,23 +247,23 @@ p {
     top: 0;
     left: 0;
   }
-  /* line 186, common/_common.scss */
+  /* line 198, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 195, common/_common.scss */
+  /* line 207, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 199, common/_common.scss */
+  /* line 211, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 203, common/_common.scss */
+  /* line 215, common/_common.scss */
   .stand img {
     width: 50px;
   }
@@ -1452,9 +1464,9 @@ footer .social {
 * 30/07/2014
 * Define the common sprite properties
 **/
-/* line 256, sprites/*.png */
-.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .phone-icon, .magnify-icon, .link-icon, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
-  background-image: url('/images/generated/sprites-s58891a3edb.png');
+/* line 272, sprites/*.png */
+.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
+  background-image: url('/images/generated/sprites-s365ae8a4fc.png');
   background-repeat: no-repeat;
 }
 
@@ -1493,7 +1505,7 @@ footer .social {
 
 /* line 33, sprites/_sprites.scss */
 .portfolio-icon {
-  background-position: -72px 0;
+  background-position: -24px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1504,7 +1516,7 @@ footer .social {
 
 /* line 41, sprites/_sprites.scss */
 .contact-icon {
-  background-position: -24px 0;
+  background-position: -72px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1515,7 +1527,7 @@ footer .social {
 
 /* line 49, sprites/_sprites.scss */
 .close-icon {
-  background-position: -30px -190px;
+  background-position: -20px -232px;
   height: 35px;
   width: 35px;
   position: absolute;
@@ -1525,8 +1537,32 @@ footer .social {
 }
 
 /* line 57, sprites/_sprites.scss */
+.left-arrow-icon {
+  background-position: -120px -160px;
+  height: 32px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+/* line 66, sprites/_sprites.scss */
+.right-arrow-icon {
+  background-position: 0 -232px;
+  height: 32px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+/* line 75, sprites/_sprites.scss */
 .phone-icon {
-  background-position: -80px -160px;
+  background-position: -60px -160px;
   height: 30px;
   width: 30px;
   position: absolute;
@@ -1534,7 +1570,7 @@ footer .social {
   right: 14px;
 }
 
-/* line 64, sprites/_sprites.scss */
+/* line 82, sprites/_sprites.scss */
 .magnify-icon {
   background-position: -25px -132px;
   height: 15px;
@@ -1546,7 +1582,7 @@ footer .social {
   cursor: pointer;
 }
 
-/* line 72, sprites/_sprites.scss */
+/* line 90, sprites/_sprites.scss */
 .link-icon {
   background-position: -40px -132px;
   height: 16px;
@@ -1557,90 +1593,90 @@ footer .social {
   right: 40%;
 }
 
-/* line 79, sprites/_sprites.scss */
+/* line 97, sprites/_sprites.scss */
 .magnify-icon:last-child {
   left: 50%;
   margin-left: -7px;
 }
 
-/* line 84, sprites/_sprites.scss */
+/* line 102, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-te {
-  background-position: -65px -190px;
+  background-position: -40px -192px;
   height: 40px;
   width: 40px;
 }
 
-/* line 87, sprites/_sprites.scss */
+/* line 105, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-neoptia {
-  background-position: -40px -230px;
+  background-position: -80px -192px;
   height: 40px;
   width: 40px;
 }
 
-/* line 90, sprites/_sprites.scss */
+/* line 108, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-1dclic {
-  background-position: -80px -230px;
+  background-position: -95px -232px;
   height: 40px;
   width: 40px;
 }
 
-/* line 93, sprites/_sprites.scss */
+/* line 111, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-st-cyr {
-  background-position: -105px -190px;
+  background-position: -55px -232px;
   height: 40px;
   width: 40px;
 }
 
-/* line 96, sprites/_sprites.scss */
+/* line 114, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-src {
-  background-position: 0 -230px;
+  background-position: 0 -192px;
   height: 40px;
   width: 40px;
 }
 
-/* line 100, sprites/_sprites.scss */
+/* line 118, sprites/_sprites.scss */
 .coffee-0 {
-  background-position: 0 -47px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 103, sprites/_sprites.scss */
-.coffee-1 {
-  background-position: 0 -64px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 106, sprites/_sprites.scss */
-.coffee-2 {
-  background-position: 0 -98px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 109, sprites/_sprites.scss */
-.coffee-3 {
-  background-position: 0 -30px;
-  height: 17px;
-  width: 145px;
-}
-
-/* line 112, sprites/_sprites.scss */
-.coffee-4 {
   background-position: 0 -81px;
   height: 17px;
   width: 145px;
 }
 
-/* line 115, sprites/_sprites.scss */
+/* line 121, sprites/_sprites.scss */
+.coffee-1 {
+  background-position: 0 -30px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 124, sprites/_sprites.scss */
+.coffee-2 {
+  background-position: 0 -47px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 127, sprites/_sprites.scss */
+.coffee-3 {
+  background-position: 0 -64px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 130, sprites/_sprites.scss */
+.coffee-4 {
+  background-position: 0 -98px;
+  height: 17px;
+  width: 145px;
+}
+
+/* line 133, sprites/_sprites.scss */
 .coffee-5 {
   background-position: 0 -115px;
   height: 17px;
   width: 145px;
 }
 
-/* line 119, sprites/_sprites.scss */
+/* line 137, sprites/_sprites.scss */
 .submit-button:before {
   content: "";
   display: block;
@@ -1653,7 +1689,7 @@ footer .social {
   width: 25px;
 }
 
-/* line 129, sprites/_sprites.scss */
+/* line 147, sprites/_sprites.scss */
 .filter-button {
   background-position: -56px -132px;
   height: 25px;
@@ -1661,37 +1697,37 @@ footer .social {
   float: left;
   cursor: pointer;
 }
-/* line 134, sprites/_sprites.scss */
+/* line 152, sprites/_sprites.scss */
 .filter-button.active {
-  background-position: 0 -160px;
+  background-position: 0 -272px;
   height: 25px;
   width: 50px;
 }
 
-/* line 139, sprites/_sprites.scss */
+/* line 157, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
-  background-position: -50px -160px;
+  background-position: 0 -160px;
   height: 30px;
   width: 30px;
 }
-/* line 143, sprites/_sprites.scss */
+/* line 161, sprites/_sprites.scss */
 .linkedin-icon:hover {
-  background-position: 0 -190px;
+  background-position: -90px -160px;
   height: 30px;
   width: 30px;
 }
 
-/* line 148, sprites/_sprites.scss */
+/* line 166, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
-  background-position: -110px -160px;
+  background-position: -96px 0;
   height: 30px;
   width: 30px;
 }
-/* line 152, sprites/_sprites.scss */
+/* line 170, sprites/_sprites.scss */
 .viadeo-icon:hover {
-  background-position: -96px 0;
+  background-position: -30px -160px;
   height: 30px;
   width: 30px;
 }
