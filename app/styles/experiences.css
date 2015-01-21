@@ -1919,18 +1919,22 @@ footer .social {
   font-weight: 700;
   font-size: 1.2em;
 }
+/* line 121, page/_experiences.scss */
+.tmtimeline > li .tmlabel h2 a {
+  font-weight: 700;
+}
 
-/* line 122, page/_experiences.scss */
+/* line 126, page/_experiences.scss */
 .tmtimeline > li .tmlabel a {
   color: #fff;
 }
-/* line 125, page/_experiences.scss */
+/* line 129, page/_experiences.scss */
 .tmtimeline > li .tmlabel a:hover {
   color: #ffb14b;
 }
 
 /* The triangle */
-/* line 131, page/_experiences.scss */
+/* line 135, page/_experiences.scss */
 .tmtimeline > li .tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -1944,21 +1948,21 @@ footer .social {
   top: 10px;
 }
 
-/* line 145, page/_experiences.scss */
+/* line 149, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime {
   right: 0;
   left: inherit;
 }
-/* line 149, page/_experiences.scss */
+/* line 153, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime span {
   text-align: left;
 }
-/* line 154, page/_experiences.scss */
+/* line 158, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel {
   float: left;
   background: #409e57;
 }
-/* line 158, page/_experiences.scss */
+/* line 162, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel:after {
   left: 100%;
   right: inherit;
@@ -1967,7 +1971,7 @@ footer .social {
 }
 
 /* The icons */
-/* line 169, page/_experiences.scss */
+/* line 173, page/_experiences.scss */
 .tmtimeline > li .tmicon {
   width: 80px;
   height: 40px;
@@ -1992,46 +1996,46 @@ footer .social {
 }
 
 @media screen and (max-width: 80em) {
-  /* line 193, page/_experiences.scss */
+  /* line 197, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 36%;
   }
 }
 @media screen and (max-width: 62em) {
-  /* line 199, page/_experiences.scss */
+  /* line 203, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 31%;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 205, page/_experiences.scss */
+  /* line 209, page/_experiences.scss */
   .tmtimeline:before {
     display: none;
   }
 
-  /* line 209, page/_experiences.scss */
+  /* line 213, page/_experiences.scss */
   .tmtimeline > li .tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 215, page/_experiences.scss */
+  /* line 219, page/_experiences.scss */
   .tmtimeline > li .tmlabel p {
     font-size: 100%;
   }
 
-  /* line 219, page/_experiences.scss */
+  /* line 223, page/_experiences.scss */
   .tmtimeline > li .tmlabel ul {
     font-size: 90%;
   }
 
-  /* line 223, page/_experiences.scss */
+  /* line 227, page/_experiences.scss */
   .tmtimeline > li .tmtime span {
     text-align: left;
   }
 
-  /* line 227, page/_experiences.scss */
+  /* line 231, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -2044,7 +2048,7 @@ footer .social {
     float: none;
   }
 
-  /* line 237, page/_experiences.scss */
+  /* line 241, page/_experiences.scss */
   .tmtimeline > li .tmlabel:after {
     right: auto;
     left: 20px;
@@ -2053,20 +2057,20 @@ footer .social {
     top: -20px;
   }
 
-  /* line 245, page/_experiences.scss */
+  /* line 249, page/_experiences.scss */
   .tmtimeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #57ba6f;
   }
 
-  /* line 250, page/_experiences.scss */
+  /* line 254, page/_experiences.scss */
   .tmtimeline > li:nth-child(even) .tmlabel:after {
     right: auto;
     left: 20px;
     border-left-color: transparent;
   }
 
-  /* line 256, page/_experiences.scss */
+  /* line 260, page/_experiences.scss */
   .tmtimeline > li .tmicon {
     position: relative;
     float: right;
@@ -2075,7 +2079,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 265, page/_experiences.scss */
+  /* line 269, page/_experiences.scss */
   .stand .page-name {
     font-size: 62%;
     letter-spacing: 2px;
@@ -2083,7 +2087,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 273, page/_experiences.scss */
+  /* line 277, page/_experiences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
