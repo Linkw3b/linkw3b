@@ -1,8 +1,8 @@
 jQuery(function() {
-    var form = jQuery('#contact-form');
-    var submitButton = jQuery('#submit-button');
-    var requiredFields = jQuery('.contact-container .required + input, .contact-container .required + textarea');
-    var enbaleSubmit = false;
+    var form = jQuery('#contact-form'),
+        submitButton = jQuery('#submit-button'),
+        requiredFields = jQuery('.contact-container .required + input, .contact-container .required + textarea'),
+        enbaleSubmit = false;
 
     enbaleSubmit = updateSubmitButton(submitButton, requiredFields);
 
@@ -99,8 +99,11 @@ function updateSubmitButton(submitButton, requiredFields) {
         }
     });
 
-    if(jQuery('#recaptcha-anchor').attr('aria-checked') != true) {
+    if(jQuery('#g-recaptcha-response').val() == "") {
         enableButton = false;
+        jQuery('#g-recaptcha-response').parent().parent().addClass('invalid-captcha');
+    } else if(jQuery('#g-recaptcha-response').parent().parent().hasClass('invalid-captcha')) {
+        jQuery('#g-recaptcha-response').parent().parent().removeClass('invalid-captcha');
     }
 
     return enableButton;

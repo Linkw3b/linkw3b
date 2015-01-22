@@ -12,7 +12,7 @@ if(isset($_POST) && isset($_POST['name']) && isset($_POST['email']) && isset($_P
         $email=str_replace("\\'","'",$email);
         $subject=str_replace("\\'","'",$subject);
         $message=str_replace("\\'","'",$message);
-        $destinataire="manuel.taraud@gmail.com";
+        $destinataire="youremail@example.com";
         $sujet="Portfolio - ".$subject;
         $message="Nom : ".$name." \n
         Email : ".$email." \n

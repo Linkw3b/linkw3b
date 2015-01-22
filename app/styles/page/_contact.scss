@@ -126,6 +126,10 @@
         }
     }
 
+    .invalid-captcha {
+        border: 1px solid $main-red !important;
+    }
+
     textarea {
         height: 150px;
     }
@@ -134,6 +138,15 @@
         content: '*';
         color: $main-red;
         font-size: 80%;
+    }
+}
+
+.no-js {
+    .contact-form {
+        display: none;
+    }
+    .contact-info {
+        width: 100%;
     }
 }
 

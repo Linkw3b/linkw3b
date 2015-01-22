@@ -24,7 +24,7 @@
             max-width: 250px;
         }
 
-        legend {
+        figcaption {
 
             background-color: darken($main-green, 20%);
 
@@ -50,7 +50,7 @@
         }
     }
 
-    legend {
+    figcaption {
         width: 100%;
 
         font-weight: 700;

@@ -16,12 +16,12 @@ a:link {
     font-weight: 400;
 }
 
-a:hover {
-    color: $main-orange;
+a:visited {
+    color: darken($main-blue, 10%);
 }
 
-a:visited {
-    color: darken($main-green, 20%);
+a:hover {
+    color: $main-orange;
 }
 
 img {
@@ -36,6 +36,20 @@ p {
 
 ::selection {
     background-color: $main-green;
+    color: #fff;
+}
+
+noscript {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 20;
+    padding: 20px;
+
+    background-color: darken($main-red, 10%);
+
+    text-align: center;
     color: #fff;
 }
 
