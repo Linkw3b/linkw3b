@@ -60,6 +60,15 @@
 }
 
 /* Right content */
+.tmtimeline > li .tmtitle {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    float: left;
+
+    text-align: center;
+    font-size: 150%;
+}
 .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     width: 37.5%;
@@ -153,6 +162,10 @@
         & span {
             text-align: left;
         }
+    }
+
+    .tmtitle {
+        right: 0;
     }
 
     .tmlabel {
