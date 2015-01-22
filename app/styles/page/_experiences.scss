@@ -63,11 +63,21 @@
 .tmtimeline > li .tmtitle {
     position: absolute;
     top: 25%;
-    width: 50%;
+    width: 45%;
     float: left;
 
     text-align: center;
     font-size: 150%;
+}
+.tmtimeline > li .tmtitle p {
+    margin: 15px 0 0;
+}
+.tmtimeline > li .tmtitle .position {
+    font-weight: 700;
+    color: $main-blue;
+}
+.tmtimeline > li .tmtitle .contract {
+    font-size: 80%;
 }
 .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
@@ -219,6 +229,7 @@
 }
 
 @media screen and (max-width: 47.2em) {
+
     .tmtimeline:before {
         display: none;
     }
@@ -227,6 +238,14 @@
         width: 100%;
         position: relative;
         padding: 0 0 20px 0;
+    }
+
+    .tmtimeline > li .tmtitle {
+        display: none;
+    }
+
+    .tmtimeline > li .show-mobile {
+        display: block;
     }
 
     .tmtimeline > li .tmlabel p {
