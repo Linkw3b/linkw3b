@@ -28,7 +28,10 @@ module.exports = function (grunt) {
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             js: {
-                files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+                files: [
+                    '<%= yeoman.app %>/scripts/{,*/}*.js',
+                    '!<%= yeoman.app %>/scripts/{,*/}*.min.js'
+                ],
                 tasks: ['jshint'],
                 options: {
                     livereload: true
@@ -49,8 +52,38 @@ module.exports = function (grunt) {
                 tasks: ['compass:server'/*, 'autoprefixer'*/]
             },
             styles: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+                files: [
+                    '<%= yeoman.app %>/styles/{,*/}*.css',
+                    '!<%= yeoman.app %>/styles/{,*/}*.min.css'
+                ],
                 //tasks: ['newer:copy:styles', 'autoprefixer']
+            },
+            html: {
+                files: [
+                    '<%= yeoman.app %>/html/{,*/}*.html'
+                ],
+                tasks: ['htmlmin']
+            },
+            css: {
+                files: [
+                    '<%= yeoman.app %>/styles/{,*/}*.css',
+                    '!<%= yeoman.app %>/styles/{,*/}*.min.css'
+                ],
+                tasks: ['cssmin']
+            },
+            script: {
+                files: [
+                    '<%= yeoman.app %>/scripts/{,*/}*.js',
+                    '!<%= yeoman.app %>/scripts/{,*/}*.min.js'
+                ],
+                tasks: ['uglify']
+            },
+            images: {
+                files: [
+                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,gif}',
+                    '<%= yeoman.app %>/images/{,*/}*.{svg}'
+                ],
+                tasks: ['imagemin', 'svgmin']
             },
             livereload: {
                 options: {
@@ -227,14 +260,13 @@ module.exports = function (grunt) {
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
 
-        // The following *-min tasks produce minified files in the dist folder
         imagemin: {
             dist: {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= yeoman.dist %>/images'
+                    src: '{,*/}*/{,*/}*.{gif,jpeg,jpg,png}',
+                    dest: '<%= yeoman.app %>/img'
                 }]
             }
         },
@@ -244,7 +276,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
                     src: '{,*/}*.svg',
-                    dest: '<%= yeoman.dist %>/images'
+                    dest: '<%= yeoman.app %>/img'
                 }]
             }
         },
@@ -262,38 +294,37 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.dist %>',
+                    cwd: '<%= yeoman.app %>/html',
                     src: '{,*/}*.html',
-                    dest: '<%= yeoman.dist %>'
+                    dest: '<%= yeoman.app %>'
                 }]
             }
         },
-
-        // By default, your `index.html`'s <!-- Usemin block --> will take care of
-        // minification. These next options are pre-configured if you do not wish
-        // to use the Usemin blocks.
-        // cssmin: {
-        //     dist: {
-        //         files: {
-        //             '<%= yeoman.dist %>/styles/main.css': [
-        //                 '.tmp/styles/{,*/}*.css',
-        //                 '<%= yeoman.app %>/styles/{,*/}*.css'
-        //             ]
-        //         }
-        //     }
-        // },
-        // uglify: {
-        //     dist: {
-        //         files: {
-        //             '<%= yeoman.dist %>/scripts/scripts.js': [
-        //                 '<%= yeoman.dist %>/scripts/scripts.js'
-        //             ]
-        //         }
-        //     }
-        // },
-        // concat: {
-        //     dist: {}
-        // },
+        cssmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/styles',
+                    src: ['*.css', '!*.min.css'],
+                    dest: '<%= yeoman.app %>/styles',
+                    ext: '.min.css'
+                }]
+            }
+        },
+        uglify: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/scripts',
+                    src: ['*.js', '!*.min.js'],
+                    dest: '<%= yeoman.app %>/scripts',
+                    ext: '.min.js'
+                }]
+            }
+        },
+        concat: {
+            dist: {}
+        },
 
         // Copies remaining files to places other tasks can use
         copy: {
