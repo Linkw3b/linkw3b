@@ -32,6 +32,12 @@
     .contact-form {
         float: left;
         padding-right: 40px;
+
+        .g-recaptcha {
+            width: 304px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
     }
     .contact-info {
         float: right;
@@ -87,6 +93,7 @@
         max-width: 220px;
         margin: 0 auto;
         padding: 10px 15px;
+        clear: both;
 
         border: none;
 
@@ -100,12 +107,6 @@
 
         &:hover {
             background-color: $main-orange;
-        }
-
-        &.disabled {
-            background-color: lighten($main-green, 20%);
-
-            cursor: no-drop;
         }
     }
 

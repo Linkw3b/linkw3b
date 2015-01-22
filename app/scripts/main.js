@@ -3,9 +3,8 @@ jQuery(function() {
     var header = jQuery('header'),
         filterContainerClass = "filters",
         filterClass = "filter-button",
-        hash = window.location.hash,
-        kKeys = [];
-        kIsActive = false;
+        hash = window.location.hash;
+
 
     /* Init function */
     if(hash.length > 0) {
@@ -17,50 +16,6 @@ jQuery(function() {
             updateFilters(jQuery('.'+filterContainerClass+' .'+filterClass+'[data-src="'+hashtag[1]+'"]'), filterContainerClass, filterClass);
         }
     }
-
-    jQuery(document).keydown(function(event) {
-        if(!kIsActive) {
-            kKeys.push(event.keyCode);
-            if (kKeys.toString().indexOf("38,38,40,40,37,39,37,39,66,65") >= 0) {
-                kIsActive = true;
-                swal({
-                    title: 'Yeah !',
-                    text: 'You found the master sword !\nDo you wanna try to get it out ?\n(It\'s dangerous to go alone)',
-                    imageUrl: '../images/mastersword.gif',
-                    showCancelButton: true,
-                    confirmButtonColor: '#7bc98e',
-                    confirmButtonText: 'I\'ll take my chance !',
-                    cancelButtonText: 'Naaaaah !',
-                    closeOnConfirm: false,
-                    closeOnCancel: false
-                }, function(isConfirm) {
-                    if(isConfirm) {
-                        swal({
-                            title: 'You are the chosen one',
-                            text: 'Go save Hyrule and the Princess !',
-                            imageUrl: '../images/hero.gif',
-                            confirmButtonColor: '#7bc98e',
-                            confirmButtonText: 'Here we go !'
-                        }, function() {
-                            kIsActive = false;
-                            kKeys = [];
-                        });
-                    } else {
-                        swal({
-                            title: 'Hyrule is on fire :(',
-                            text: 'You have failed !',
-                            imageUrl: '../images/fire.gif',
-                            confirmButtonColor: '#7bc98e',
-                            confirmButtonText: 'I\'m ashamed'
-                        }, function() {
-                            kIsActive = false;
-                            kKeys = [];
-                        });
-                    }
-                });
-            }
-        }
-    });
 
     /* Listeners */
     jQuery(document).on('scroll', { elem: header }, headerFixed);

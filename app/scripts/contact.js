@@ -2,20 +2,21 @@ jQuery(function() {
     var form = jQuery('#contact-form');
     var submitButton = jQuery('#submit-button');
     var requiredFields = jQuery('.contact-container .required + input, .contact-container .required + textarea');
+    var enbaleSubmit = false;
 
-    updateSubmitButton(submitButton, requiredFields);
+    enbaleSubmit = updateSubmitButton(submitButton, requiredFields);
 
-    jQuery(requiredFields).on('focusout', function(event) {
+    requiredFields.on('focusout', function(event) {
         var elem = jQuery(event.currentTarget);
         checkField(elem);
-        updateSubmitButton(submitButton, requiredFields);
+        enableSubmit = updateSubmitButton(submitButton, requiredFields);
     });
 
     form.on('submit', function(event) {
         event.preventDefault();
-        updateSubmitButton(submitButton, requiredFields);
+        enbaleSubmit = updateSubmitButton(submitButton, requiredFields);
         var form = jQuery(event.currentTarget);
-        if(!submitButton.hasClass('disabled')) {
+        if(enbaleSubmit) {
             var title = 'Oups... :(',
                 message = 'Il y a eu une erreur... Réessayez plus tard !',
                 statusName = 'error';
@@ -63,6 +64,10 @@ jQuery(function() {
                     });
                 }
             });
+        } else {
+            requiredFields.each(function(index, element) {
+                checkField(jQuery(element));
+            });
         }
     });
 });
@@ -94,9 +99,9 @@ function updateSubmitButton(submitButton, requiredFields) {
         }
     });
 
-    if(submitButton.hasClass('disabled') && enableButton) {
-        submitButton.removeClass('disabled');
-    } else if(!submitButton.hasClass('disabled') && !enableButton) {
-        submitButton.addClass('disabled');
+    if(jQuery('#recaptcha-anchor').attr('aria-checked') != true) {
+        enableButton = false;
     }
+
+    return enableButton;
 }

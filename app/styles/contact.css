@@ -1819,6 +1819,12 @@ footer .social {
   padding-right: 40px;
 }
 /* line 36, page/_contact.scss */
+.contact-container .contact-form .g-recaptcha {
+  width: 304px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+/* line 42, page/_contact.scss */
 .contact-container .contact-info {
   float: right;
   padding: 20px;
@@ -1831,41 +1837,41 @@ footer .social {
   border: 1px solid #ccc;
   background-color: #e5e5e5;
 }
-/* line 48, page/_contact.scss */
+/* line 54, page/_contact.scss */
 .contact-container .contact-info p {
   margin: 0 0 5px;
 }
-/* line 52, page/_contact.scss */
+/* line 58, page/_contact.scss */
 .contact-container .contact-info li {
   margin-bottom: 10px;
 }
-/* line 56, page/_contact.scss */
+/* line 62, page/_contact.scss */
 .contact-container .contact-info img {
   width: auto;
 }
-/* line 60, page/_contact.scss */
+/* line 66, page/_contact.scss */
 .contact-container .contact-info .cv-link {
   line-height: 1.7em;
 }
-/* line 65, page/_contact.scss */
+/* line 71, page/_contact.scss */
 .contact-container label, .contact-container input, .contact-container textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 71, page/_contact.scss */
+/* line 77, page/_contact.scss */
 .contact-container input, .contact-container textarea {
   margin-bottom: 20px;
   padding: 10px;
   border: 3px solid #ccc;
 }
-/* line 77, page/_contact.scss */
+/* line 83, page/_contact.scss */
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none;
   border-color: #3594cb;
 }
-/* line 83, page/_contact.scss */
+/* line 89, page/_contact.scss */
 .contact-container button[type='submit'] {
   position: relative;
   display: block;
@@ -1873,6 +1879,7 @@ footer .social {
   max-width: 220px;
   margin: 0 auto;
   padding: 10px 15px;
+  clear: both;
   border: none;
   background-color: #7bc98e;
   color: #fff;
@@ -1880,32 +1887,27 @@ footer .social {
   font-size: 120%;
   cursor: pointer;
 }
-/* line 101, page/_contact.scss */
+/* line 108, page/_contact.scss */
 .contact-container button[type='submit']:hover {
   background-color: #ffa631;
 }
-/* line 105, page/_contact.scss */
-.contact-container button[type='submit'].disabled {
-  background-color: #c3e7cc;
-  cursor: no-drop;
-}
-/* line 112, page/_contact.scss */
+/* line 113, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 120, page/_contact.scss */
+/* line 121, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 128, page/_contact.scss */
+/* line 129, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 132, page/_contact.scss */
+/* line 133, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
@@ -1913,23 +1915,23 @@ footer .social {
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 140, page/_contact.scss */
+  /* line 141, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn {
     width: 100%;
   }
 
-  /* line 143, page/_contact.scss */
+  /* line 144, page/_contact.scss */
   .contact-container .contact-info {
     margin-top: 0;
   }
 
-  /* line 146, page/_contact.scss */
+  /* line 147, page/_contact.scss */
   .contact-container .contact-form {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 152, page/_contact.scss */
+  /* line 153, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -1937,7 +1939,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 160, page/_contact.scss */
+  /* line 161, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }
