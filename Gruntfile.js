@@ -80,10 +80,15 @@ module.exports = function (grunt) {
             },
             images: {
                 files: [
-                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,gif}',
+                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,gif}'
+                ],
+                tasks: ['imagemin']
+            },
+            svg: {
+                files: [
                     '<%= yeoman.app %>/images/{,*/}*.{svg}'
                 ],
-                tasks: ['imagemin', 'svgmin']
+                tasks: ['svgmin']
             },
             livereload: {
                 options: {
@@ -265,7 +270,10 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*/{,*/}*.{gif,jpeg,jpg,png}',
+                    src: [
+                        '{,*/}*.{gif,jpeg,jpg,png}',
+                        '{,*/}*/{,*/}*.{gif,jpeg,jpg,png}',
+                    ],
                     dest: '<%= yeoman.app %>/img'
                 }]
             }

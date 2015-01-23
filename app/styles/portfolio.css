@@ -108,25 +108,27 @@ noscript {
 
 /* line 56, common/_common.scss */
 .keyword {
-  font-weight: 700;
+  font-weight: 400;
+  background-color: transparent;
+  color: inherit;
 }
 
-/* line 61, common/_common.scss */
+/* line 63, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .portfolio-filters:before, .clearfix:after, .content:after, header:after, footer nav:after, .portfolio-filters:after {
   content: "";
   display: table;
 }
-/* line 66, common/_common.scss */
+/* line 68, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .portfolio-filters:after {
   clear: both;
 }
 
-/* line 71, common/_common.scss */
+/* line 73, common/_common.scss */
 .wrapper {
   margin-top: 53px;
 }
 
-/* line 75, common/_common.scss */
+/* line 77, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -141,13 +143,13 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 90, common/_common.scss */
+/* line 92, common/_common.scss */
 .stand h2 {
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 95, common/_common.scss */
+/* line 97, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -155,7 +157,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 103, common/_common.scss */
+/* line 105, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -169,12 +171,12 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 117, common/_common.scss */
+/* line 119, common/_common.scss */
 .stand .page-name {
   display: block;
 }
 
-/* line 123, common/_common.scss */
+/* line 125, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -182,22 +184,22 @@ noscript {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 133, common/_common.scss */
+/* line 135, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 137, common/_common.scss */
+/* line 139, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 143, common/_common.scss */
+/* line 145, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 147, common/_common.scss */
+/* line 149, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -208,7 +210,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 158, common/_common.scss */
+/* line 160, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -220,39 +222,39 @@ noscript {
   background-color: #fff;
   text-align: center;
 }
-/* line 171, common/_common.scss */
+/* line 173, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 176, common/_common.scss */
+/* line 178, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 184, common/_common.scss */
+/* line 186, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 192, common/_common.scss */
+/* line 194, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 199, common/_common.scss */
+  /* line 201, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 205, common/_common.scss */
+  /* line 207, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -261,25 +263,26 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 213, common/_common.scss */
+  /* line 215, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 222, common/_common.scss */
+  /* line 224, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 226, common/_common.scss */
+  /* line 228, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 230, common/_common.scss */
+  /* line 232, common/_common.scss */
   .stand img {
     width: 50px;
+    height: 50px;
   }
 }
 /* line 1, common/_grid.scss */

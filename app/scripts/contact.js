@@ -9,7 +9,7 @@ jQuery(function() {
 
     requiredFields.on('focusout', function(event) {
         var elem = jQuery(event.currentTarget);
-        checkField(elem);
+        checkField(elem, reCaptchaTextarea);
         enableSubmit = updateSubmitButton(submitButton, requiredFields, reCaptchaTextarea);
     });
 
@@ -19,74 +19,70 @@ jQuery(function() {
         var form = jQuery(event.currentTarget);
         if(enbaleSubmit) {
             var title = 'Oups... :(',
-                message = 'Il y a eu une erreur... Réessayez plus tard !',
-                statusName = 'error';
+            message = 'Il y a eu une erreur... Réessayez plus tard !',
+            statusName = 'error';
+
             jQuery.ajax({
-                url: '/ajax/contact.php',
-                type: form.attr('method'),
-                data: form.serialize(),
-                datatype: 'json',
+                url: '/ajax/reCaptcha.php',
+                type: 'post',
+                data:  {
+                    response: jQuery('#'+reCaptchaTextarea).val()
+                },
                 success: function(data, textStatus) {
-                    if(data.hasOwnProperty('title')) {
-                        title = data.title;
+                    if(data.hasOwnProperty('success')) {
+                        if(data.success === true) {
+                            submitForm(form, title, message, statusName);
+                        } else {
+                            if(data.hasOwnProperty('title')) {
+                                title = data.title;
+                            }
+                            if(data.hasOwnProperty('message')) {
+                                message = data.message;
+                            }
+                            if(data.hasOwnProperty('statusName')) {
+                                statusName = data.statusName;
+                            }
+                            showAlert(title, message, statusName);
+                        }
+                    } else {
+                        showAlert(title, message, statusName);
                     }
-                    if(data.hasOwnProperty('message')) {
-                        message = data.message;
-                    }
-                    if(data.hasOwnProperty('statusName')) {
-                        statusName = data.statusName;
-                    }
-                    swal({
-                        title: title,
-                        text: message,
-                        confirmButtonText: 'Okay',
-                        type: statusName,
-                        confirmButtonColor: '#7bc98e',
-                        timer: 3500
-                    });
                 },
                 error: function(data, textStatus) {
-                    if(data.hasOwnProperty('title')) {
-                        title = data.title;
-                    }
-                    if(data.hasOwnProperty('message')) {
-                        message = data.message;
-                    }
-                    if(data.hasOwnProperty('statusName')) {
-                        statusName = data.statusName;
-                    }
-                    swal({
-                        title: title,
-                        text: message,
-                        confirmButtonText: 'Okay',
-                        type: statusName,
-                        confirmButtonColor: '#7bc98e',
-                        timer: 3500
-                    });
+                    showAlert(title, message, statusName);
                 }
             });
         } else {
             requiredFields.each(function(index, element) {
-                checkField(jQuery(element));
+                checkField(jQuery(element), reCaptchaTextarea);
             });
+            checkField(jQuery('#'+reCaptchaTextarea), reCaptchaTextarea);
         }
     });
 });
 
-function checkField(elem) {
+function checkField(elem, reCaptchaTextarea) {
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
-    if(elem.val() == "") {
-        if(!elem.prev().hasClass('invalid')) {
-            elem.prev().addClass('invalid');
-        }
-    } else if (elem.attr('type') == "email" && !emailReg.test(elem.val())) {
-        if(!elem.prev().hasClass('invalid')) {
-            elem.prev().addClass('invalid');
+    if(elem.is('#'+reCaptchaTextarea)) {
+        if(elem.val() == "") {
+            elem.parent().parent().addClass('invalid-captcha');
+        } else if(elem.parent().parent().hasClass('invalid-captcha')) {
+            elem.parent().parent().removeClass('invalid-captcha');
         }
     } else {
-        if(elem.prev().hasClass('invalid')) {
-            elem.prev().removeClass('invalid');
+        if(elem.val() == "") {
+            if(!elem.prev().hasClass('invalid')) {
+                elem.prev().addClass('invalid');
+            }
+        } else if (elem.attr('type') == "email" && !emailReg.test(elem.val())) {
+            if(!elem.prev().hasClass('invalid')) {
+                elem.prev().addClass('invalid');
+            }
+        } else {
+            if(elem.prev().hasClass('invalid')) {
+                elem.prev().removeClass('invalid');
+            }
         }
     }
 }
@@ -95,17 +91,49 @@ function updateSubmitButton(submitButton, requiredFields, reCaptchaTextarea) {
     var enableButton = true;
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     requiredFields.each(function(index, elem) {
-        if(jQuery(elem).val() == "" || (jQuery(elem).attr('type') == "email" && !emailReg.test(jQuery(elem).val()))) {
+        if(jQuery(elem).val() == ""
+            || (jQuery(elem).attr('type') == "email"
+            && !emailReg.test(jQuery(elem).val()))
+            || jQuery('#'+reCaptchaTextarea).val() == ""
+        ) {
             enableButton = false;
         }
     });
 
-    if(jQuery('#'+reCaptchaTextarea).val() == "") {
-        enableButton = false;
-        jQuery('#'+reCaptchaTextarea).parent().parent().addClass('invalid-captcha');
-    } else if(jQuery('#'+reCaptchaTextarea).parent().parent().hasClass('invalid-captcha')) {
-        jQuery('#'+reCaptchaTextarea).parent().parent().removeClass('invalid-captcha');
-    }
-
     return enableButton;
+}
+
+function submitForm(form, title, message, statusName) {
+    jQuery.ajax({
+        url: '/ajax/contact.php',
+        type: form.attr('method'),
+        data: form.serialize(),
+        datatype: 'json',
+        success: function(data, textStatus) {
+            if(data.hasOwnProperty('title')) {
+                title = data.title;
+            }
+            if(data.hasOwnProperty('message')) {
+                message = data.message;
+            }
+            if(data.hasOwnProperty('statusName')) {
+                statusName = data.statusName;
+            }
+            showAlert(title, message, statusName);
+        },
+        error: function(data, textStatus) {
+            showAlert(title, message, statusName);
+        }
+    });
+}
+
+function showAlert(title, message, statusName) {
+    swal({
+        title: title,
+        text: message,
+        confirmButtonText: 'Okay',
+        type: statusName,
+        confirmButtonColor: '#7bc98e',
+        timer: 3500
+    });
 }
