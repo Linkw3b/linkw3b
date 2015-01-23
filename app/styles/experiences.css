@@ -130,7 +130,7 @@ noscript {
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
-  background: url("../images/bkg.png") #3594cb;
+  background: url("../img/bkg.png") #3594cb;
   font-size: 400%;
   text-align: center;
   letter-spacing: -2px;
@@ -1480,7 +1480,7 @@ footer .social {
 **/
 /* line 312, sprites/*.png */
 .sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
-  background-image: url('/images/generated/sprites-s92c14c9d4e.png');
+  background-image: url('/img/generated/sprites-s92c14c9d4e.png');
   background-repeat: no-repeat;
 }
 
