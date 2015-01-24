@@ -200,3 +200,22 @@
         @include sprites-sprite('viadeo-hover-icon');
     }
 }
+
+.error-page .continue {
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        @include sprites-sprite('continue-arrow-icon');
+    }
+
+    &:hover {
+        &:before {
+            @include sprites-sprite('continue-arrow-hover-icon');
+        }
+    }
+
+    &.key:before {
+        @include sprites-sprite('key-icon');
+    }
+}

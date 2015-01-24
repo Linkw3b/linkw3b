@@ -1,7 +1,7 @@
 body {
     width: 100%;
 
-    background: #f3f3f3;
+    background: $main-black;
 
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -72,6 +72,8 @@ noscript {
 
 .wrapper {
     margin-top: 53px;
+
+    background: #f3f3f3;
 }
 
 .stand {
@@ -118,6 +120,8 @@ noscript {
 
     .page-name {
         display: block;
+
+        font-family: 'Press Start 2P';
     }
 }
 

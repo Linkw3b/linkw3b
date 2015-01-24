@@ -50,7 +50,7 @@ table {
 /* line 1, common/_common.scss */
 body {
   width: 100%;
-  background: #f3f3f3;
+  background: #4c4c4c;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -126,9 +126,10 @@ noscript {
 /* line 73, common/_common.scss */
 .wrapper {
   margin-top: 53px;
+  background: #f3f3f3;
 }
 
-/* line 77, common/_common.scss */
+/* line 79, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -143,13 +144,13 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 92, common/_common.scss */
+/* line 94, common/_common.scss */
 .stand h2 {
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 97, common/_common.scss */
+/* line 99, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -157,7 +158,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 105, common/_common.scss */
+/* line 107, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -171,12 +172,13 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 119, common/_common.scss */
+/* line 121, common/_common.scss */
 .stand .page-name {
   display: block;
+  font-family: 'Press Start 2P';
 }
 
-/* line 125, common/_common.scss */
+/* line 129, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -184,22 +186,22 @@ noscript {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 135, common/_common.scss */
+/* line 139, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 139, common/_common.scss */
+/* line 143, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 145, common/_common.scss */
+/* line 149, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 149, common/_common.scss */
+/* line 153, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -210,7 +212,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 160, common/_common.scss */
+/* line 164, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -222,39 +224,39 @@ noscript {
   background-color: #fff;
   text-align: center;
 }
-/* line 173, common/_common.scss */
+/* line 177, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 178, common/_common.scss */
+/* line 182, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 186, common/_common.scss */
+/* line 190, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 194, common/_common.scss */
+/* line 198, common/_common.scss */
 .galery-popin img {
   width: 100%;
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 201, common/_common.scss */
+  /* line 205, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 207, common/_common.scss */
+  /* line 211, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -263,23 +265,23 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 215, common/_common.scss */
+  /* line 219, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 224, common/_common.scss */
+  /* line 228, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 228, common/_common.scss */
+  /* line 232, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 232, common/_common.scss */
+  /* line 236, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -1481,9 +1483,9 @@ footer .social {
 * 30/07/2014
 * Define the common sprite properties
 **/
-/* line 312, sprites/*.png */
-.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover {
-  background-image: url('/img/generated/sprites-s92c14c9d4e.png');
+/* line 336, sprites/*.png */
+.sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover, .error-page .continue:before, .error-page .continue:hover:before, .error-page .continue.key:before {
+  background-image: url('/img/generated/sprites-s44e1be3f11.png');
   background-repeat: no-repeat;
 }
 
@@ -1500,7 +1502,7 @@ footer .social {
 
 /* line 17, sprites/_sprites.scss */
 .skills-icon {
-  background-position: -40px 0;
+  background-position: -88px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1511,7 +1513,7 @@ footer .social {
 
 /* line 25, sprites/_sprites.scss */
 .experiences-icon {
-  background-position: -88px 0;
+  background-position: -16px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1522,7 +1524,7 @@ footer .social {
 
 /* line 33, sprites/_sprites.scss */
 .portfolio-icon {
-  background-position: -16px 0;
+  background-position: -64px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1533,7 +1535,7 @@ footer .social {
 
 /* line 41, sprites/_sprites.scss */
 .contact-icon {
-  background-position: -64px 0;
+  background-position: -40px 0;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -1544,7 +1546,7 @@ footer .social {
 
 /* line 49, sprites/_sprites.scss */
 .close-icon {
-  background-position: 0 -221px;
+  background-position: -60px -221px;
   height: 35px;
   width: 35px;
   position: absolute;
@@ -1579,7 +1581,7 @@ footer .social {
 
 /* line 75, sprites/_sprites.scss */
 .phone-icon {
-  background-position: -60px -157px;
+  background-position: -30px -157px;
   height: 30px;
   width: 30px;
   position: absolute;
@@ -1649,63 +1651,63 @@ footer .social {
 
 /* line 120, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-te {
-  background-position: -75px -221px;
+  background-position: -64px -261px;
   height: 40px;
   width: 40px;
 }
 
 /* line 123, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-neoptia {
-  background-position: -35px -221px;
+  background-position: -104px -261px;
   height: 40px;
   width: 40px;
 }
 
 /* line 126, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-1dclic {
-  background-position: 0 -301px;
+  background-position: -40px -301px;
   height: 40px;
   width: 40px;
 }
 
 /* line 129, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-st-cyr {
-  background-position: -72px -261px;
+  background-position: -95px -221px;
   height: 40px;
   width: 40px;
 }
 
 /* line 132, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-src {
-  background-position: -32px -261px;
+  background-position: 0 -301px;
   height: 40px;
   width: 40px;
 }
 
 /* line 136, sprites/_sprites.scss */
 .coffee-0 {
-  background-position: 0 -115px;
+  background-position: 0 -98px;
   height: 17px;
   width: 145px;
 }
 
 /* line 139, sprites/_sprites.scss */
 .coffee-1 {
-  background-position: 0 -98px;
+  background-position: 0 -81px;
   height: 17px;
   width: 145px;
 }
 
 /* line 142, sprites/_sprites.scss */
 .coffee-2 {
-  background-position: 0 -81px;
+  background-position: 0 -30px;
   height: 17px;
   width: 145px;
 }
 
 /* line 145, sprites/_sprites.scss */
 .coffee-3 {
-  background-position: 0 -30px;
+  background-position: 0 -115px;
   height: 17px;
   width: 145px;
 }
@@ -1770,13 +1772,13 @@ footer .social {
 /* line 186, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
-  background-position: -30px -157px;
+  background-position: -110px -157px;
   height: 30px;
   width: 30px;
 }
 /* line 190, sprites/_sprites.scss */
 .linkedin-icon:hover {
-  background-position: -112px 0;
+  background-position: -60px -157px;
   height: 30px;
   width: 30px;
 }
@@ -1784,41 +1786,62 @@ footer .social {
 /* line 195, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
-  background-position: 0 -157px;
+  background-position: -112px 0;
   height: 30px;
   width: 30px;
 }
 /* line 199, sprites/_sprites.scss */
 .viadeo-icon:hover {
-  background-position: -110px -157px;
+  background-position: 0 -157px;
   height: 30px;
   width: 30px;
 }
 
+/* line 205, sprites/_sprites.scss */
+.error-page .continue:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-position: 0 -221px;
+  height: 32px;
+  width: 32px;
+}
+/* line 213, sprites/_sprites.scss */
+.error-page .continue:hover:before {
+  background-position: -32px -261px;
+  height: 32px;
+  width: 32px;
+}
+/* line 218, sprites/_sprites.scss */
+.error-page .continue.key:before {
+  background-position: -32px -221px;
+  height: 34px;
+  width: 28px;
+}
+
 /* line 1, page/_portfolio.scss */
 .page-name {
-  font-family: 'Press Start 2P', cursive;
   font-size: 67%;
   letter-spacing: 6px;
   margin-left: 9px;
 }
 
-/* line 8, page/_portfolio.scss */
+/* line 7, page/_portfolio.scss */
 .no-results {
   text-align: center;
 }
 
-/* line 12, page/_portfolio.scss */
+/* line 11, page/_portfolio.scss */
 .portfolio-filters {
   margin: 2%;
 }
-/* line 16, page/_portfolio.scss */
+/* line 15, page/_portfolio.scss */
 .portfolio-filters .portfolio-filter {
   width: 25%;
   margin: 0;
   float: left;
 }
-/* line 21, page/_portfolio.scss */
+/* line 20, page/_portfolio.scss */
 .portfolio-filters .portfolio-filter .filter-title {
   float: left;
   line-height: 1.5em;
@@ -1826,7 +1849,7 @@ footer .social {
   cursor: pointer;
 }
 
-/* line 30, page/_portfolio.scss */
+/* line 29, page/_portfolio.scss */
 .portfolio-container .portfolio-block {
   width: 20%;
   margin: 0;
@@ -1839,18 +1862,18 @@ footer .social {
   text-align: center;
   overflow: hidden;
 }
-/* line 48, page/_portfolio.scss */
+/* line 47, page/_portfolio.scss */
 .portfolio-container .portfolio-block img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
-/* line 55, page/_portfolio.scss */
+/* line 54, page/_portfolio.scss */
 .portfolio-container .portfolio-block .portfolio-descr {
   display: none;
 }
-/* line 59, page/_portfolio.scss */
+/* line 58, page/_portfolio.scss */
 .portfolio-container .portfolio-block .portfolio-overlay {
   position: absolute;
   top: 100%;
@@ -1864,84 +1887,84 @@ footer .social {
   -ms-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
-/* line 70, page/_portfolio.scss */
+/* line 69, page/_portfolio.scss */
 .portfolio-container .portfolio-block:hover .portfolio-overlay {
   top: 0;
 }
 
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
-  /* line 79, page/_portfolio.scss */
+  /* line 78, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 25%;
   }
-  /* line 82, page/_portfolio.scss */
+  /* line 81, page/_portfolio.scss */
   .portfolio-container .portfolio-block:nth-child(4n) {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 92, page/_portfolio.scss */
+  /* line 91, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 50%;
   }
-  /* line 94, page/_portfolio.scss */
+  /* line 93, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay {
     position: absolute;
     top: inherit;
     bottom: 0;
     height: 40px;
   }
-  /* line 100, page/_portfolio.scss */
+  /* line 99, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay .magnify-icon {
     left: 25%;
   }
-  /* line 104, page/_portfolio.scss */
+  /* line 103, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay .link-icon {
     right: 25%;
   }
-  /* line 108, page/_portfolio.scss */
+  /* line 107, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay .magnify-icon:last-child {
     left: 50%;
     margin-left: -7px;
   }
-  /* line 114, page/_portfolio.scss */
+  /* line 113, page/_portfolio.scss */
   .portfolio-container .portfolio-block:hover .portfolio-overlay {
     top: inherit;
   }
 }
 @media screen and (max-width: 65em) and (min-width: 48.1em) {
-  /* line 123, page/_portfolio.scss */
+  /* line 122, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 33.3333333%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 131, page/_portfolio.scss */
+  /* line 130, page/_portfolio.scss */
   .portfolio-filters .portfolio-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32.3em) {
-  /* line 140, page/_portfolio.scss */
+  /* line 139, page/_portfolio.scss */
   .portfolio-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 
-  /* line 146, page/_portfolio.scss */
+  /* line 145, page/_portfolio.scss */
   .portfolio-container .skill-block {
     width: 50%;
   }
 }
 @media screen and (max-width: 32.25em) {
-  /* line 154, page/_portfolio.scss */
+  /* line 153, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 100%;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 161, page/_portfolio.scss */
+  /* line 160, page/_portfolio.scss */
   .stand .page-name {
     font-size: 69%;
     letter-spacing: 2px;
@@ -1949,7 +1972,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 169, page/_portfolio.scss */
+  /* line 168, page/_portfolio.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }

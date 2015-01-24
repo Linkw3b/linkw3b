@@ -1,0 +1,48 @@
+.page-name {
+    font-size: 58%;
+    letter-spacing: 3px;
+    margin-left: 9px;
+}
+
+.content {
+
+    .column {
+        padding: 20px;
+    }
+
+    .dead-link {
+        text-align: center;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .error-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        color: $main-green;
+        font-size: 180%;
+    }
+
+    .error-message {
+        margin-bottom: 20px;
+        font-size: 120%;
+    }
+
+    .continue {
+        position: relative;
+        padding-left: 50px;
+
+        font-family: 'Press Start 2P';
+        line-height: 1.85em;
+        color: $main-black;
+
+        &:hover {
+            color: $main-orange;
+        }
+    }
+}
