@@ -100,36 +100,40 @@ noscript {
   left: 0;
   position: fixed;
   z-index: 20;
-  padding: 20px;
+  padding: 20px 2%;
   background-color: #ee4545;
   text-align: center;
   color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 56, common/_common.scss */
+/* line 58, common/_common.scss */
 .keyword {
   font-weight: 400;
   background-color: transparent;
   color: inherit;
 }
 
-/* line 63, common/_common.scss */
+/* line 65, common/_common.scss */
 .clearfix:before, .content:before, header:before, footer nav:before, .portfolio-filters:before, .clearfix:after, .content:after, header:after, footer nav:after, .portfolio-filters:after {
   content: "";
   display: table;
 }
-/* line 68, common/_common.scss */
+/* line 70, common/_common.scss */
 .clearfix:after, .content:after, header:after, footer nav:after, .portfolio-filters:after {
   clear: both;
 }
 
-/* line 73, common/_common.scss */
+/* line 75, common/_common.scss */
 .wrapper {
+  display: block;
   margin-top: 53px;
   background: #f3f3f3;
 }
 
-/* line 79, common/_common.scss */
+/* line 82, common/_common.scss */
 .stand {
   padding: 60px 0 40px;
   /*background: url('../images/stand-bg.jpg');*/
@@ -144,13 +148,13 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 94, common/_common.scss */
+/* line 97, common/_common.scss */
 .stand h2 {
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 99, common/_common.scss */
+/* line 102, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -158,7 +162,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 107, common/_common.scss */
+/* line 110, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -172,13 +176,13 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 121, common/_common.scss */
+/* line 124, common/_common.scss */
 .stand .page-name {
   display: block;
   font-family: 'Press Start 2P';
 }
 
-/* line 129, common/_common.scss */
+/* line 132, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -186,22 +190,22 @@ noscript {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 139, common/_common.scss */
+/* line 142, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 143, common/_common.scss */
+/* line 146, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 149, common/_common.scss */
+/* line 152, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 153, common/_common.scss */
+/* line 156, common/_common.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -212,7 +216,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 164, common/_common.scss */
+/* line 167, common/_common.scss */
 .galery-popin {
   width: 80%;
   height: 80%;
@@ -224,39 +228,44 @@ noscript {
   background-color: #fff;
   text-align: center;
 }
-/* line 177, common/_common.scss */
+/* line 180, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 182, common/_common.scss */
+/* line 185, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 190, common/_common.scss */
+/* line 193, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
+  padding: 0 50px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 198, common/_common.scss */
+/* line 202, common/_common.scss */
+.galery-popin p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/* line 207, common/_common.scss */
 .galery-popin img {
-  width: 100%;
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 205, common/_common.scss */
+  /* line 213, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 211, common/_common.scss */
+  /* line 219, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -265,23 +274,23 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 219, common/_common.scss */
+  /* line 227, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 228, common/_common.scss */
+  /* line 236, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 232, common/_common.scss */
+  /* line 240, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 236, common/_common.scss */
+  /* line 244, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -1485,7 +1494,7 @@ footer .social {
 **/
 /* line 336, sprites/*.png */
 .sprites-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover, .error-page .continue:before, .error-page .continue:hover:before, .error-page .continue.key:before {
-  background-image: url('/img/generated/sprites-s44e1be3f11.png');
+  background-image: url('/img/generated/sprites-s1715cdefdc.png');
   background-repeat: no-repeat;
 }
 

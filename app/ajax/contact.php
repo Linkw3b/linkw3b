@@ -13,17 +13,17 @@
         extract($_POST);
 
         if(!empty($name) && $name!="" && !empty($email) && !empty($subject) && $email!="" && !empty ($message) && $message!=""){
-            $name=str_replace("\\'","'",$name);
-            $email=str_replace("\\'","'",$email);
-            $subject=str_replace("\\'","'",$subject);
-            $message=str_replace("\\'","'",$message);
+            $name=stripslashes($name);
+            $email=stripslashes($email);
+            $subject=stripslashes($subject);
+            $message=stripslashes($message);
             $destinataire="youremail@example.com";
             $sujet="Portfolio - ".$subject;
             $message="Nom : ".$name." \n
             Email : ".$email." \n
             Sujet : ".$subject." \n
             Message : ".$message;
-            $entete="FROM : ".$name." \n REPLY-TO : .".$email;
+            $entete="FROM : ".$email." \nREPLY-TO : .".$email;
             if(mail($destinataire, $sujet, $message, $entete)) {
                 echo json_encode(array('statusName' => $successStatus, 'title' => $successTitle, 'message' => $successMessage));
             }else{

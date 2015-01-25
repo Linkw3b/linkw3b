@@ -21,7 +21,7 @@ jQuery(function() {
                 swal({
                     title: 'Yeah !',
                     text: 'You found the master sword !\nDo you wanna try to get it out ?\n(It\'s dangerous to go alone)',
-                    imageUrl: '../images/mastersword.gif',
+                    imageUrl: '../img/mastersword.gif',
                     showCancelButton: true,
                     confirmButtonColor: '#7bc98e',
                     confirmButtonText: 'I\'ll take my chance !',
@@ -34,7 +34,7 @@ jQuery(function() {
                         swal({
                             title: 'You are the chosen one',
                             text: 'Go save Hyrule and the Princess !',
-                            imageUrl: '../images/hero.gif',
+                            imageUrl: '../img/hero.gif',
                             confirmButtonColor: '#7bc98e',
                             confirmButtonText: 'Here we go !'
                         }, function() {
@@ -46,7 +46,7 @@ jQuery(function() {
                         swal({
                             title: 'Hyrule is on fire :(',
                             text: 'You have failed !',
-                            imageUrl: '../images/fire.gif',
+                            imageUrl: '../img/fire.gif',
                             confirmButtonColor: '#7bc98e',
                             confirmButtonText: 'I\'m ashamed'
                         }, function() {

@@ -5,7 +5,7 @@
     $url = "https://www.google.com/recaptcha/api/siteverify";
 
     $title = 'Robot détecté';
-    $message = 'Google m\'informe que vous êtes sceptible d\'ête un robot';
+    $message = 'Google m\'informe que vous êtes sceptible d\'être un robot';
     $statusName = 'error';
 
     if(isset($_POST) && isset($_POST['response'])) {

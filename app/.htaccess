@@ -1,3 +1,20 @@
 Options -Indexes
 Options -Multiviews
 Options +FollowSymLinks
+SetEnv REGISTER_GLOBALS 0
+SetEnv PHP_VER 5
+ErrorDocument  400  /400.html
+ErrorDocument  401  /401.html
+ErrorDocument  403  /403.html
+ErrorDocument  404  /404.html
+ErrorDocument  500  /500.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^taraud-m.fr$
+RewriteRule ^(.*) http://www.taraud-m.fr/$1 [QSA,L,R=301]
+RewriteCond %{REQUEST_URI} ^/index.html$
+RewriteRule $ http://www.taraud-m.fr/ [R=301,L]
+
+RewriteRule ^contact.php$ http://www.taraud-m.fr/contact.html [R=301,L]
+RewriteRule ^portfolio.php$ http://www.taraud-m.fr/portfolio.html [R=301,L]
+RewriteRule ^about.php$ http://www.taraud-m.fr/experiences.html [R=301,L]
+RewriteRule ^images/CV.pdf$ http://www.taraud-m.fr/img/cv.pdf [R=301,L]
