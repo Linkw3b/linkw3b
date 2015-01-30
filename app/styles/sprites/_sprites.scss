@@ -219,3 +219,47 @@
         @include sprites-sprite('key-icon');
     }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    .close-icon,
+    .coffee-0,
+    .coffee-1,
+    .coffee-2,
+    .coffee-3,
+    .coffee-4,
+    .coffee-5,
+    .contact-icon,
+    .cv-link .pdf-icon,
+    .cv-link:hover .pdf-icon,
+    .error-page .continue.key:before,
+    .error-page .continue:before,
+    .error-page .continue:hover:before,
+    .experiences-icon, .filter-button,
+    .filter-button.active,
+    .left-arrow-icon,
+    .link-icon,
+    .linkedin-icon,
+    .linkedin-icon:hover,
+    .linkedin-puce,
+    .magnify-icon,
+    .nav-icon,
+    .phone-icon,
+    .phone-puce,
+    .portfolio-icon,
+    .right-arrow-icon,
+    .skills-icon,
+    .sprites-sprite,
+    .submit-button:before,
+    .tmtimeline>li .tmicon.icon-1dclic,
+    .tmtimeline>li .tmicon.icon-neoptia,
+    .tmtimeline>li .tmicon.icon-src,
+    .tmtimeline>li .tmicon.icon-st-cyr,
+    .tmtimeline>li .tmicon.icon-te,
+    .viadeo-icon,
+    .viadeo-icon:hover,
+    .viadeo-puce {
+        background-image: url(/img/generated/sprites2x-s43f2d7e024.png);
+        background-size: 145px 401px;
+    }
+}

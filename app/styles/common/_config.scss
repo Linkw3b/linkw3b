@@ -12,6 +12,8 @@ $max-width: 1200px;
 
 $sprites-layout: smart;
 $sprites-sprite-dimensions: true;
+$sprites2x-layout: smart;
+$sprites2x-sprite-dimensions: true;
 
 @mixin commonButtonsProp () {
     display: inline-block;

@@ -33,23 +33,23 @@
         </header>
 
         <main id="wrapper" class="wrapper">
-            <div class="stand">
+            <div class="stand" itemscope>
                 <img src="/img/triforce.png" width="80" height="80" alt="">
-                <h1>Manuel Taraud</h1>
-                <h2><span>Développeur Front-End</span></h2>
+                <h1 itemprop="name">Manuel Taraud</h1>
+                <h2><span itemprop="title">Développeur Front-End</span></h2>
                 <span class="page-name">Contact</span>
             </div>
             <div class="content">
-                <div class="contact-container">
+                <div class="contact-container" itemtype="http://microformats.org/profile/hcard" itemscope>
                     <figure class="avatar">
-                        <img src="/img/avatar.jpg" width="150" height="150" alt="">
+                        <img itemprop="photo" src="/img/avatar.jpg" width="150" height="150" alt="">
                     </figure>
                     <div class="col-5 column contact-info">
                         <p>Pour me contacter, merci de remplir le formulaire où me joindre via les moyens suivants :</p>
                         <ul>
-                            <li><span class="phone-puce"></span>Téléphone : <a href="tel:+33688910169">06 88 91 01 69</a></li>
-                            <li><span class="linkedin-puce"></span>LinkedIn : <a href="http://fr.linkedin.com/in/manueltaraud">linkedin.com/manueltaraud</a></li>
-                            <li><span class="viadeo-puce"></span>Viadéo : <a href="http://fr.viadeo.com/fr/profile/manuel.taraud" title="Profil Viadéo" target="_blank">viadeo.com/manuel.taraud</a></li>
+                            <li itemprop="tel"><span class="phone-puce"></span>Téléphone : <a href="tel:+33688910169">06 88 91 01 69</a></li>
+                            <li itemprop="url"><span class="linkedin-puce"></span>LinkedIn : <a href="http://fr.linkedin.com/in/manueltaraud">linkedin.com/manueltaraud</a></li>
+                            <li itemprop="url"><span class="viadeo-puce"></span>Viadéo : <a href="http://fr.viadeo.com/fr/profile/manuel.taraud" title="Profil Viadéo" target="_blank">viadeo.com/manuel.taraud</a></li>
                         </ul>
                         <p>Ci-dessous, mon CV, pour les personnes que ça intéresse.</p>
                         <p><a class="cv-link" href="img/cv.pdf" download="Manuel_Taraud_CV.pdf" title="CV Manuel Taraud"><span class="pdf-icon"></span> Télécharger le CV</a></p>

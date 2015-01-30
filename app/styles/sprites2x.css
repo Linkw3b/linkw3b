@@ -1,0 +1,340 @@
+/**
+* Manuel Taraud
+* 30/07/2014
+* Define the common sprite properties
+**/
+/* line 336, sprites2x/*.png */
+.sprites2x-sprite, .nav-icon, .skills-icon, .experiences-icon, .portfolio-icon, .contact-icon, .close-icon, .left-arrow-icon, .right-arrow-icon, .phone-icon, .magnify-icon, .link-icon, .phone-puce, .linkedin-puce, .viadeo-puce, .tmtimeline > li .tmicon.icon-te, .tmtimeline > li .tmicon.icon-neoptia, .tmtimeline > li .tmicon.icon-1dclic, .tmtimeline > li .tmicon.icon-st-cyr, .tmtimeline > li .tmicon.icon-src, .coffee-0, .coffee-1, .coffee-2, .coffee-3, .coffee-4, .coffee-5, .submit-button:before, .filter-button, .filter-button.active, .cv-link .pdf-icon, .cv-link:hover .pdf-icon, .linkedin-icon, .linkedin-icon:hover, .viadeo-icon, .viadeo-icon:hover, .error-page .continue:before, .error-page .continue:hover:before, .error-page .continue.key:before {
+  background-image: url('/img/generated/sprites2x-s43f2d7e024.png');
+  background-repeat: no-repeat;
+}
+
+/* line 9, sprites/_sprites@2x.scss */
+.nav-icon {
+  background-position: -204px 0;
+  height: 56px;
+  width: 68px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  cursor: pointer;
+}
+
+/* line 17, sprites/_sprites@2x.scss */
+.skills-icon {
+  background-position: -96px 0;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+/* line 25, sprites/_sprites@2x.scss */
+.experiences-icon {
+  background-position: -32px -110px;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+/* line 33, sprites/_sprites@2x.scss */
+.portfolio-icon {
+  background-position: 0 0;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+
+/* line 41, sprites/_sprites@2x.scss */
+.contact-icon {
+  background-position: -48px 0;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+/* line 49, sprites/_sprites@2x.scss */
+.close-icon {
+  background-position: 0 -636px;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* line 57, sprites/_sprites@2x.scss */
+.left-arrow-icon {
+  background-position: -184px -504px;
+  height: 64px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+/* line 66, sprites/_sprites@2x.scss */
+.right-arrow-icon {
+  background-position: -240px -110px;
+  height: 64px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+/* line 75, sprites/_sprites@2x.scss */
+.phone-icon {
+  background-position: -144px 0;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+/* line 82, sprites/_sprites@2x.scss */
+.magnify-icon {
+  background-position: 0 -60px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  left: 40%;
+  cursor: pointer;
+}
+
+/* line 90, sprites/_sprites@2x.scss */
+.link-icon {
+  background-position: -112px -60px;
+  height: 32px;
+  width: 32px;
+  top: 50%;
+  margin-top: -7px;
+  position: absolute;
+  right: 40%;
+}
+
+/* line 97, sprites/_sprites@2x.scss */
+.magnify-icon:last-child {
+  left: 50%;
+  margin-left: -7px;
+}
+
+/* line 101, sprites/_sprites@2x.scss */
+.phone-puce {
+  background-position: 0 -110px;
+  height: 42px;
+  width: 32px;
+}
+
+/* line 104, sprites/_sprites@2x.scss */
+.linkedin-puce {
+  background-position: -80px -60px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 107, sprites/_sprites@2x.scss */
+.viadeo-puce {
+  background-position: -144px -60px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 110, sprites/_sprites@2x.scss */
+.phone-puce,
+.linkedin-puce,
+.viadeo-puce {
+  margin-right: 5px;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 120, sprites/_sprites@2x.scss */
+.tmtimeline > li .tmicon.icon-te {
+  background-position: -150px -636px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 123, sprites/_sprites@2x.scss */
+.tmtimeline > li .tmicon.icon-neoptia {
+  background-position: 0 -716px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 126, sprites/_sprites@2x.scss */
+.tmtimeline > li .tmicon.icon-1dclic {
+  background-position: -160px -716px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 129, sprites/_sprites@2x.scss */
+.tmtimeline > li .tmicon.icon-st-cyr {
+  background-position: -70px -636px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 132, sprites/_sprites@2x.scss */
+.tmtimeline > li .tmicon.icon-src {
+  background-position: -80px -716px;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 136, sprites/_sprites@2x.scss */
+.coffee-0 {
+  background-position: 0 -394px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 139, sprites/_sprites@2x.scss */
+.coffee-1 {
+  background-position: 0 -449px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 142, sprites/_sprites@2x.scss */
+.coffee-2 {
+  background-position: 0 -174px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 145, sprites/_sprites@2x.scss */
+.coffee-3 {
+  background-position: 0 -284px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 148, sprites/_sprites@2x.scss */
+.coffee-4 {
+  background-position: 0 -229px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 151, sprites/_sprites@2x.scss */
+.coffee-5 {
+  background-position: 0 -339px;
+  height: 55px;
+  width: 290px;
+}
+
+/* line 155, sprites/_sprites@2x.scss */
+.submit-button:before {
+  content: "";
+  display: block;
+  float: left;
+  position: absolute;
+  top: 14px;
+  margin-right: 15px;
+  background-position: -30px -60px;
+  height: 28px;
+  width: 50px;
+}
+
+/* line 165, sprites/_sprites@2x.scss */
+.filter-button {
+  background-position: -80px -110px;
+  height: 50px;
+  width: 100px;
+  float: left;
+  cursor: pointer;
+}
+/* line 170, sprites/_sprites@2x.scss */
+.filter-button.active {
+  background-position: -176px -60px;
+  height: 50px;
+  width: 100px;
+}
+
+/* line 176, sprites/_sprites@2x.scss */
+.cv-link .pdf-icon {
+  display: block;
+  float: left;
+  background-position: -120px -504px;
+  height: 64px;
+  width: 64px;
+}
+/* line 181, sprites/_sprites@2x.scss */
+.cv-link:hover .pdf-icon {
+  background-position: -224px -504px;
+  height: 64px;
+  width: 64px;
+}
+
+/* line 186, sprites/_sprites@2x.scss */
+.linkedin-icon {
+  display: block;
+  background-position: -60px -504px;
+  height: 60px;
+  width: 60px;
+}
+/* line 190, sprites/_sprites@2x.scss */
+.linkedin-icon:hover {
+  background-position: 0 -568px;
+  height: 60px;
+  width: 60px;
+}
+
+/* line 195, sprites/_sprites@2x.scss */
+.viadeo-icon {
+  display: block;
+  background-position: -180px -110px;
+  height: 60px;
+  width: 60px;
+}
+/* line 199, sprites/_sprites@2x.scss */
+.viadeo-icon:hover {
+  background-position: 0 -504px;
+  height: 60px;
+  width: 60px;
+}
+
+/* line 205, sprites/_sprites@2x.scss */
+.error-page .continue:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-position: -124px -568px;
+  height: 64px;
+  width: 64px;
+}
+/* line 213, sprites/_sprites@2x.scss */
+.error-page .continue:hover:before {
+  background-position: -60px -568px;
+  height: 64px;
+  width: 64px;
+}
+/* line 218, sprites/_sprites@2x.scss */
+.error-page .continue.key:before {
+  background-position: -188px -568px;
+  height: 68px;
+  width: 56px;
+}

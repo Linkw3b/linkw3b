@@ -1,0 +1,221 @@
+/**
+* Manuel Taraud
+* 30/07/2014
+* Define the common sprite properties
+**/
+
+@import "sprites2x/*.png";
+
+.nav-icon {
+    @include sprites2x-sprite('nav-icon');
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    cursor: pointer;
+}
+
+.skills-icon {
+    @include sprites2x-sprite('skills-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.experiences-icon {
+    @include sprites2x-sprite('experiences-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.portfolio-icon {
+    @include sprites2x-sprite('portfolio-icon');
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.contact-icon {
+    @include sprites2x-sprite('contact-icon');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.close-icon {
+    @include sprites2x-sprite('close-icon');
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.left-arrow-icon {
+    @include sprites2x-sprite('left-arrow');
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -16px;
+    cursor: pointer;
+}
+
+.right-arrow-icon {
+    @include sprites2x-sprite('right-arrow');
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -16px;
+    cursor: pointer;
+}
+
+.phone-icon {
+    @include sprites2x-sprite('phone-icon');
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.magnify-icon {
+    @include sprites2x-sprite('magnify-icon');
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 40%;
+    cursor: pointer;
+}
+.link-icon {
+    @include sprites2x-sprite('link-icon');
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    right: 40%;
+}
+.magnify-icon:last-child {
+    left: 50%;
+    margin-left: -7px;
+}
+.phone-puce {
+    @include sprites2x-sprite('phone-puce');
+}
+.linkedin-puce {
+    @include sprites2x-sprite('linkedin-puce');
+}
+.viadeo-puce {
+    @include sprites2x-sprite('viadeo-puce');
+}
+.phone-puce,
+.linkedin-puce,
+.viadeo-puce {
+    margin-right: 5px;
+    display: block;
+    float: left;
+
+    clear: both;
+}
+
+.tmtimeline > li .tmicon.icon-te {
+    @include sprites2x-sprite('te-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-neoptia {
+    @include sprites2x-sprite('neoptia-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-1dclic {
+    @include sprites2x-sprite('1dclic-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-st-cyr {
+    @include sprites2x-sprite('st-cyr-logo-mobile');
+}
+.tmtimeline > li .tmicon.icon-src {
+    @include sprites2x-sprite('src-logo-mobile');
+}
+
+.coffee-0 {
+    @include sprites2x-sprite('coffee-0');
+}
+.coffee-1 {
+    @include sprites2x-sprite('coffee-1');
+}
+.coffee-2 {
+    @include sprites2x-sprite('coffee-2');
+}
+.coffee-3 {
+    @include sprites2x-sprite('coffee-3');
+}
+.coffee-4 {
+    @include sprites2x-sprite('coffee-4');
+}
+.coffee-5 {
+    @include sprites2x-sprite('coffee-5');
+}
+
+.submit-button:before {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    top: 14px;
+    margin-right: 15px;
+    @include sprites2x-sprite('send-icon');
+}
+
+.filter-button {
+    @include sprites2x-sprite('filter-inactive');
+    float: left;
+    cursor: pointer;
+
+    &.active {
+        @include sprites2x-sprite('filter-active');
+    }
+}
+
+.cv-link {
+    .pdf-icon {
+        display: block;
+        float: left;
+        @include sprites2x-sprite('pdf-icon');
+    }
+    &:hover .pdf-icon {
+        @include sprites2x-sprite('pdf-hover-icon');
+    }
+}
+
+.linkedin-icon {
+    display: block;
+    @include sprites2x-sprite('linkedin-icon');
+
+    &:hover {
+        @include sprites2x-sprite('linkedin-hover-icon');
+    }
+}
+
+.viadeo-icon {
+    display: block;
+    @include sprites2x-sprite('viadeo-icon');
+
+    &:hover {
+        @include sprites2x-sprite('viadeo-hover-icon');
+    }
+}
+
+.error-page .continue {
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        @include sprites2x-sprite('continue-arrow-icon');
+    }
+
+    &:hover {
+        &:before {
+            @include sprites2x-sprite('continue-arrow-hover-icon');
+        }
+    }
+
+    &.key:before {
+        @include sprites2x-sprite('key-icon');
+    }
+}
