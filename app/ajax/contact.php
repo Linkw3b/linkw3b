@@ -23,7 +23,7 @@
             Email : ".$email." \n
             Sujet : ".$subject." \n
             Message : ".$message;
-            $entete="FROM : ".$email." \nREPLY-TO : .".$email;
+            $entete="FROM : ".$email." \nREPLY-TO : ".$email;
             if(mail($destinataire, $sujet, $message, $entete)) {
                 echo json_encode(array('statusName' => $successStatus, 'title' => $successTitle, 'message' => $successMessage));
             }else{
