@@ -34,6 +34,16 @@ jQuery(function() {
         }
     });
 
+    jQuery('body').on('swipe', clickableElement, function(event) {
+        var direction = "";
+        if(event.swipestart.coords[0] > event.swipestop.coords[0]) {
+            direction = "right";
+        } else if(event.swipestart.coords[0] < event.swipestop.coords[0]) {
+            direction = "left";
+        }
+        currentPicture = changePicture(currentPicture, blockClass, descrClass, direction, popinInfoContainer);
+    });
+
     jQuery(document).keydown(function(event) {
         if(popinActive && event.keyCode == 37) {
             currentPicture = changePicture(currentPicture, blockClass, descrClass, "left", popinInfoContainer);
@@ -90,7 +100,6 @@ function getPictureInfo(elem, descrClass) {
     var galeryInfoHtml = '<h2>'+title+'</h2>';
 
     if(elem.children(':first').hasClass(descrClass)) {
-        console.log(elem.children(':first'));
         galeryInfoHtml += '<p>'+elem.children(':first').html()+'</p>';
     }
 
