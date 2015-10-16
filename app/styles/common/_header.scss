@@ -66,6 +66,8 @@ header {
         @include box-sizing(border-box);
         @include text-shadow(1px, 1px, 0, rgba(0, 0, 0, 0.4));
 
+        @include transition(all, 0.3s, ease);
+
         &:hover {
             border-color: $main-orange;
             background-color: lighten($header-bg, 10%);
@@ -148,6 +150,8 @@ header {
 
         .link {
             width: 100%;
+            padding-left: 10px;
+            padding-right: 30px;
         }
 
         &.fixed {

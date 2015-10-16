@@ -154,6 +154,7 @@ noscript {
 }
 
 .overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,6 +166,7 @@ noscript {
 }
 
 .galery-popin {
+    display: none;
     width: 80%;
     height: 80%;
     padding: 20px;
@@ -176,6 +178,8 @@ noscript {
     background-color: #fff;
 
     text-align: center;
+
+    @include box-sizing(border-box);
 
     .popin-container {
         height: 100%;

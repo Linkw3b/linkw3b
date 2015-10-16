@@ -60,9 +60,30 @@
             top: 100%;
             left: 0;
             height: 100%;
-            width: 100%;
+            width: 50%;
+
             background-color: rgba(0,0,0,0.75);
-            @include transition(top, 0.3s, ease);
+
+            cursor: pointer;
+
+            @include transition(all, 0.3s, ease);
+        }
+
+        .portfolio-overlay:hover {
+            background-color: rgba(0,0,0,0.85);
+        }
+
+        .site-link {
+            display: block;
+            height: 100%;
+        }
+
+        .portfolio-overlay + .portfolio-overlay {
+            left: 50%;
+        }
+
+        .portfolio-overlay:only-of-type {
+            width: 100%;
         }
 
         &:hover {
@@ -96,17 +117,9 @@
                 bottom: 0;
                 height: 40px;
 
-                .magnify-icon {
-                    left: 25%;
-                }
-
-                .link-icon {
-                    right: 25%;
-                }
-
                 .magnify-icon:last-child {
                     left: 50%;
-                    margin-left: -7px;
+                    margin-left: -8px;
                 }
             }
 

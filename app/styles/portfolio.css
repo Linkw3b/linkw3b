@@ -207,6 +207,7 @@ noscript {
 
 /* line 156, common/_common.scss */
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -216,8 +217,9 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 167, common/_common.scss */
+/* line 168, common/_common.scss */
 .galery-popin {
+  display: none;
   width: 80%;
   height: 80%;
   padding: 20px;
@@ -227,20 +229,23 @@ noscript {
   z-index: 10;
   background-color: #fff;
   text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 180, common/_common.scss */
+/* line 184, common/_common.scss */
 .galery-popin .popin-container {
   height: 100%;
   width: 100%;
 }
-/* line 185, common/_common.scss */
+/* line 189, common/_common.scss */
 .galery-popin .imgContainer {
   width: 90%;
   height: 80%;
   margin: 0 auto;
   overflow-x: auto;
 }
-/* line 193, common/_common.scss */
+/* line 197, common/_common.scss */
 .galery-popin h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -248,24 +253,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 202, common/_common.scss */
+/* line 206, common/_common.scss */
 .galery-popin p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 207, common/_common.scss */
+/* line 211, common/_common.scss */
 .galery-popin img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 213, common/_common.scss */
+  /* line 217, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 219, common/_common.scss */
+  /* line 223, common/_common.scss */
   .galery-popin {
     width: 100%;
     height: 100%;
@@ -274,23 +279,23 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 227, common/_common.scss */
+  /* line 231, common/_common.scss */
   .galery-popin h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 236, common/_common.scss */
+  /* line 240, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 240, common/_common.scss */
+  /* line 244, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 244, common/_common.scss */
+  /* line 248, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -641,17 +646,22 @@ header .link {
   -webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
   -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-/* line 69, common/_header.scss */
+/* line 71, common/_header.scss */
 header .link:hover {
   border-color: #ffa631;
   background-color: #3c3c3c;
 }
-/* line 75, common/_header.scss */
+/* line 77, common/_header.scss */
 header.fixed {
   opacity: 0.95;
 }
-/* line 78, common/_header.scss */
+/* line 80, common/_header.scss */
 header.fixed .logo-container {
   margin-left: -35px;
   top: -10px;
@@ -659,29 +669,29 @@ header.fixed .logo-container {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
 }
-/* line 85, common/_header.scss */
+/* line 87, common/_header.scss */
 header.fixed .logo {
   padding: 10px;
   width: 50px;
   height: 50px;
   border-width: 3px;
 }
-/* line 92, common/_header.scss */
+/* line 94, common/_header.scss */
 header.fixed .link {
   padding: 10px 10px 14px;
 }
 
 @media screen and (max-width: 48.5em) {
-  /* line 99, common/_header.scss */
+  /* line 101, common/_header.scss */
   header {
     font-size: 100%;
   }
-  /* line 102, common/_header.scss */
+  /* line 104, common/_header.scss */
   header .logo-container {
     margin-left: -35px;
     top: 0px;
   }
-  /* line 107, common/_header.scss */
+  /* line 109, common/_header.scss */
   header .logo {
     padding: 10px;
     width: 50px;
@@ -690,11 +700,11 @@ header.fixed .link {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 118, common/_header.scss */
+  /* line 120, common/_header.scss */
   header {
     height: 56px;
   }
-  /* line 121, common/_header.scss */
+  /* line 123, common/_header.scss */
   header .logo-container {
     margin-left: -35px;
     top: -10px;
@@ -702,7 +712,7 @@ header.fixed .link {
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
   }
-  /* line 128, common/_header.scss */
+  /* line 130, common/_header.scss */
   header nav {
     position: fixed;
     left: -80%;
@@ -711,22 +721,24 @@ header.fixed .link {
     height: 100%;
     background-color: #222;
   }
-  /* line 136, common/_header.scss */
+  /* line 138, common/_header.scss */
   header nav .column, header nav .mcolumn, header nav .portfolio-container .portfolio-block, .portfolio-container header nav .portfolio-block {
     width: 100%;
   }
-  /* line 141, common/_header.scss */
+  /* line 143, common/_header.scss */
   header .logo {
     padding: 10px;
     width: 50px;
     height: 50px;
     border-width: 3px;
   }
-  /* line 149, common/_header.scss */
+  /* line 151, common/_header.scss */
   header .link {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
   }
-  /* line 153, common/_header.scss */
+  /* line 157, common/_header.scss */
   header.fixed {
     opacity: 1;
   }
@@ -1599,56 +1611,50 @@ footer .social {
 }
 
 /* line 82, sprites/_sprites.scss */
+.magnify-icon,
+.link-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+/* line 89, sprites/_sprites.scss */
 .magnify-icon {
   background-position: 0 -30px;
   height: 15px;
   width: 15px;
-  position: absolute;
-  top: 50%;
-  margin-top: -7px;
-  left: 40%;
-  cursor: pointer;
 }
 
-/* line 90, sprites/_sprites.scss */
+/* line 92, sprites/_sprites.scss */
 .link-icon {
   background-position: -56px -30px;
   height: 16px;
   width: 16px;
-  top: 50%;
-  margin-top: -7px;
-  position: absolute;
-  right: 40%;
 }
 
-/* line 97, sprites/_sprites.scss */
-.magnify-icon:last-child {
-  left: 50%;
-  margin-left: -7px;
-}
-
-/* line 101, sprites/_sprites.scss */
+/* line 95, sprites/_sprites.scss */
 .phone-puce {
   background-position: 0 -55px;
   height: 21px;
   width: 16px;
 }
 
-/* line 104, sprites/_sprites.scss */
+/* line 98, sprites/_sprites.scss */
 .linkedin-puce {
   background-position: -40px -30px;
   height: 16px;
   width: 16px;
 }
 
-/* line 107, sprites/_sprites.scss */
+/* line 101, sprites/_sprites.scss */
 .viadeo-puce {
   background-position: -72px -30px;
   height: 16px;
   width: 16px;
 }
 
-/* line 110, sprites/_sprites.scss */
+/* line 104, sprites/_sprites.scss */
 .phone-puce,
 .linkedin-puce,
 .viadeo-puce {
@@ -1658,84 +1664,84 @@ footer .social {
   clear: both;
 }
 
-/* line 120, sprites/_sprites.scss */
+/* line 114, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-te {
   background-position: -75px -321px;
   height: 40px;
   width: 40px;
 }
 
-/* line 123, sprites/_sprites.scss */
+/* line 117, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-neoptia {
   background-position: 0 -361px;
   height: 40px;
   width: 40px;
 }
 
-/* line 126, sprites/_sprites.scss */
+/* line 120, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-1dclic {
   background-position: -80px -361px;
   height: 40px;
   width: 40px;
 }
 
-/* line 129, sprites/_sprites.scss */
+/* line 123, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-st-cyr {
   background-position: -35px -321px;
   height: 40px;
   width: 40px;
 }
 
-/* line 132, sprites/_sprites.scss */
+/* line 126, sprites/_sprites.scss */
 .tmtimeline > li .tmicon.icon-src {
   background-position: -40px -361px;
   height: 40px;
   width: 40px;
 }
 
-/* line 136, sprites/_sprites.scss */
+/* line 130, sprites/_sprites.scss */
 .coffee-0 {
   background-position: 0 -199px;
   height: 28px;
   width: 145px;
 }
 
-/* line 139, sprites/_sprites.scss */
+/* line 133, sprites/_sprites.scss */
 .coffee-1 {
   background-position: 0 -227px;
   height: 28px;
   width: 145px;
 }
 
-/* line 142, sprites/_sprites.scss */
+/* line 136, sprites/_sprites.scss */
 .coffee-2 {
   background-position: 0 -87px;
   height: 28px;
   width: 145px;
 }
 
-/* line 145, sprites/_sprites.scss */
+/* line 139, sprites/_sprites.scss */
 .coffee-3 {
   background-position: 0 -143px;
   height: 28px;
   width: 145px;
 }
 
-/* line 148, sprites/_sprites.scss */
+/* line 142, sprites/_sprites.scss */
 .coffee-4 {
   background-position: 0 -115px;
   height: 28px;
   width: 145px;
 }
 
-/* line 151, sprites/_sprites.scss */
+/* line 145, sprites/_sprites.scss */
 .coffee-5 {
   background-position: 0 -171px;
   height: 28px;
   width: 145px;
 }
 
-/* line 155, sprites/_sprites.scss */
+/* line 149, sprites/_sprites.scss */
 .submit-button:before {
   content: "";
   display: block;
@@ -1748,7 +1754,7 @@ footer .social {
   width: 25px;
 }
 
-/* line 165, sprites/_sprites.scss */
+/* line 159, sprites/_sprites.scss */
 .filter-button {
   background-position: -40px -55px;
   height: 25px;
@@ -1756,14 +1762,14 @@ footer .social {
   float: left;
   cursor: pointer;
 }
-/* line 170, sprites/_sprites.scss */
+/* line 164, sprites/_sprites.scss */
 .filter-button.active {
   background-position: -88px -30px;
   height: 25px;
   width: 50px;
 }
 
-/* line 176, sprites/_sprites.scss */
+/* line 170, sprites/_sprites.scss */
 .cv-link .pdf-icon {
   display: block;
   float: left;
@@ -1771,42 +1777,42 @@ footer .social {
   height: 32px;
   width: 32px;
 }
-/* line 181, sprites/_sprites.scss */
+/* line 175, sprites/_sprites.scss */
 .cv-link:hover .pdf-icon {
   background-position: -112px -255px;
   height: 32px;
   width: 32px;
 }
 
-/* line 186, sprites/_sprites.scss */
+/* line 180, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
   background-position: -30px -255px;
   height: 30px;
   width: 30px;
 }
-/* line 190, sprites/_sprites.scss */
+/* line 184, sprites/_sprites.scss */
 .linkedin-icon:hover {
   background-position: 0 -287px;
   height: 30px;
   width: 30px;
 }
 
-/* line 195, sprites/_sprites.scss */
+/* line 189, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
   background-position: -90px -55px;
   height: 30px;
   width: 30px;
 }
-/* line 199, sprites/_sprites.scss */
+/* line 193, sprites/_sprites.scss */
 .viadeo-icon:hover {
   background-position: 0 -255px;
   height: 30px;
   width: 30px;
 }
 
-/* line 205, sprites/_sprites.scss */
+/* line 199, sprites/_sprites.scss */
 .error-page .continue:before {
   content: "";
   position: absolute;
@@ -1815,13 +1821,13 @@ footer .social {
   height: 32px;
   width: 32px;
 }
-/* line 213, sprites/_sprites.scss */
+/* line 207, sprites/_sprites.scss */
 .error-page .continue:hover:before {
   background-position: -30px -287px;
   height: 32px;
   width: 32px;
 }
-/* line 218, sprites/_sprites.scss */
+/* line 212, sprites/_sprites.scss */
 .error-page .continue.key:before {
   background-position: -94px -287px;
   height: 34px;
@@ -1829,7 +1835,7 @@ footer .social {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 225, sprites/_sprites.scss */
+  /* line 219, sprites/_sprites.scss */
   .close-icon,
   .coffee-0,
   .coffee-1,
@@ -1968,92 +1974,102 @@ footer .social {
   top: 100%;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-transition: top 0.3s ease;
-  -moz-transition: top 0.3s ease;
-  -o-transition: top 0.3s ease;
-  -ms-transition: top 0.3s ease;
-  transition: top 0.3s ease;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-/* line 69, page/_portfolio.scss */
+/* line 72, page/_portfolio.scss */
+.portfolio-container .portfolio-block .portfolio-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+/* line 76, page/_portfolio.scss */
+.portfolio-container .portfolio-block .site-link {
+  display: block;
+  height: 100%;
+}
+/* line 81, page/_portfolio.scss */
+.portfolio-container .portfolio-block .portfolio-overlay + .portfolio-overlay {
+  left: 50%;
+}
+/* line 85, page/_portfolio.scss */
+.portfolio-container .portfolio-block .portfolio-overlay:only-of-type {
+  width: 100%;
+}
+/* line 90, page/_portfolio.scss */
 .portfolio-container .portfolio-block:hover .portfolio-overlay {
   top: 0;
 }
 
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
-  /* line 78, page/_portfolio.scss */
+  /* line 99, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 25%;
   }
-  /* line 81, page/_portfolio.scss */
+  /* line 102, page/_portfolio.scss */
   .portfolio-container .portfolio-block:nth-child(4n) {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 91, page/_portfolio.scss */
+  /* line 112, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 50%;
   }
-  /* line 93, page/_portfolio.scss */
+  /* line 114, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay {
     position: absolute;
     top: inherit;
     bottom: 0;
     height: 40px;
   }
-  /* line 99, page/_portfolio.scss */
-  .portfolio-container .portfolio-block .portfolio-overlay .magnify-icon {
-    left: 25%;
-  }
-  /* line 103, page/_portfolio.scss */
-  .portfolio-container .portfolio-block .portfolio-overlay .link-icon {
-    right: 25%;
-  }
-  /* line 107, page/_portfolio.scss */
+  /* line 120, page/_portfolio.scss */
   .portfolio-container .portfolio-block .portfolio-overlay .magnify-icon:last-child {
     left: 50%;
-    margin-left: -7px;
+    margin-left: -8px;
   }
-  /* line 113, page/_portfolio.scss */
+  /* line 126, page/_portfolio.scss */
   .portfolio-container .portfolio-block:hover .portfolio-overlay {
     top: inherit;
   }
 }
 @media screen and (max-width: 65em) and (min-width: 48.1em) {
-  /* line 122, page/_portfolio.scss */
+  /* line 135, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 33.3333333%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 130, page/_portfolio.scss */
+  /* line 143, page/_portfolio.scss */
   .portfolio-filters .portfolio-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32.3em) {
-  /* line 139, page/_portfolio.scss */
+  /* line 152, page/_portfolio.scss */
   .portfolio-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 
-  /* line 145, page/_portfolio.scss */
+  /* line 158, page/_portfolio.scss */
   .portfolio-container .skill-block {
     width: 50%;
   }
 }
 @media screen and (max-width: 32.25em) {
-  /* line 153, page/_portfolio.scss */
+  /* line 166, page/_portfolio.scss */
   .portfolio-container .portfolio-block {
     width: 100%;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 160, page/_portfolio.scss */
+  /* line 173, page/_portfolio.scss */
   .stand .page-name {
     font-size: 69%;
     letter-spacing: 2px;
@@ -2061,7 +2077,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 168, page/_portfolio.scss */
+  /* line 181, page/_portfolio.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }

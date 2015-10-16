@@ -12,21 +12,23 @@ jQuery(function() {
 
     jQuery('body').on('click', clickableElement, function(event) {
         if(jQuery(event.target).is('#close-galery') || jQuery(event.target).is('#overlay')) {
-            jQuery('#'+overlay).remove();
-            jQuery('#'+popin).remove();
-            jQuery('body').removeAttr('style');
-            popinActive = false;
-            currentPicture = "";
+            jQuery('#'+overlay+', #'+popin).fadeOut(250, function() {
+                jQuery('#'+overlay+', #'+popin).remove();
+                jQuery('body').removeAttr('style');
+                popinActive = false;
+                currentPicture = "";
+            });
         } else if(jQuery(event.target).is('.js-magnify-icon')) {
             galeryHtml = '<div id="'+overlay+'" class="overlay"></div><div id="'+popin+'" class="galery-popin"><span class="close-icon" id="close-galery"></span><div class="'+popinInfoContainer+'" id="'+popinInfoContainer+'">';
-            galeryHtml += getPictureInfo(jQuery(event.target).parent().parent(), descrClass);
+            galeryHtml += getPictureInfo(jQuery(event.target).parents('.js-portfolio-block'), descrClass);
             galeryHtml += '</div><div class="left-arrow-icon" data-direction="left" id="left-galery"></div><div class="right-arrow-icon" data-direction="right" id="right-galery"></div></div>';
 
             jQuery('body').css({'overflow': 'hidden'});
             jQuery('body').append(galeryHtml);
+            jQuery('#'+overlay+', #'+popin).fadeIn(250);
 
             popinActive = true;
-            currentPicture = jQuery(event.target).parent().parent();
+            currentPicture = jQuery(event.target).parents('.js-portfolio-block');
         } else if(jQuery(event.target).attr('data-direction')) {
             currentPicture = changePicture(currentPicture, blockClass, descrClass, jQuery(event.target).attr('data-direction'), popinInfoContainer);
         }
@@ -37,6 +39,9 @@ jQuery(function() {
             currentPicture = changePicture(currentPicture, blockClass, descrClass, "left", popinInfoContainer);
         } else if (popinActive && event.keyCode == 39) {
             currentPicture = changePicture(currentPicture, blockClass, descrClass, "right", popinInfoContainer);
+        } else if (popinActive && event.keyCode == 27) {
+            currentPicture = "";
+            jQuery('#close-galery').trigger('click');
         }
     });
 });

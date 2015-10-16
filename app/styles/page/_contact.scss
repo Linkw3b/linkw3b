@@ -79,6 +79,8 @@
 
         border: 3px solid #ccc;
 
+        @include transition(border-color, 0.3s, ease);
+
         &:focus {
             outline: none;
             border-color: $main-blue;
@@ -103,6 +105,8 @@
         font-size: 120%;
 
         cursor: pointer;
+
+        @include transition(background-color, 0.3s, ease);
 
         &:hover {
             background-color: $main-orange;
