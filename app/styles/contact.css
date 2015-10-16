@@ -1910,8 +1910,8 @@ footer .social {
   .viadeo-icon,
   .viadeo-icon:hover,
   .viadeo-puce {
-    background-image: url(/img/generated/sprites2x-s43f2d7e024.png);
-    background-size: 145px 401px;
+    /*background-image: url(/img/generated/sprites2x-s43f2d7e024.png);
+    background-size: 145px 401px;*/
   }
 }
 /* line 1, page/_contact.scss */
