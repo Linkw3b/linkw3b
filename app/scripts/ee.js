@@ -1,6 +1,7 @@
 jQuery(function() {
     var kKeys = [],
         kIsActive = false,
+        image = {},
         audio = {};
 
     audio["secret"] = new Audio();
@@ -11,6 +12,15 @@ jQuery(function() {
 
     audio["death"] = new Audio();
     audio["death"].src = "../sounds/LTTP_Link_Dying.wav";
+
+    image = new Image();
+    image.src = '../img/mastersword.gif';
+
+    image = new Image();
+    image.src = '../img/hero.gif';
+
+    image = new Image();
+    image.src = '../img/fire.gif';
 
     jQuery(document).keydown(function(event) {
         if(!kIsActive) {

@@ -10,6 +10,11 @@ jQuery(function() {
     var clickableElement = jQuery('.js-magnify-icon, #close-galery ,'+leftElem+', '+rightElem);
     var currentPicture = "";
 
+    jQuery.each(jQuery('.'+blockClass), function(index, elem) {
+        var image = new Image();
+            image.src = jQuery(elem).attr('data-src');
+    });
+
     jQuery('body').on('click', clickableElement, function(event) {
         if(jQuery(event.target).is('#close-galery') || jQuery(event.target).is('#overlay')) {
             jQuery('#'+overlay+', #'+popin).fadeOut(250, function() {
@@ -94,8 +99,7 @@ function getNextElem(currentPicture, direction) {
 
 function getPictureInfo(elem, descrClass) {
     var title = elem.attr('data-title');
-    var thumbSrc = elem.attr('data-src');
-    var imgSrc = thumbSrc.replace("thumb/", "");
+    var imgSrc = elem.attr('data-src');
 
     var galeryInfoHtml = '<h2>'+title+'</h2>';
 
