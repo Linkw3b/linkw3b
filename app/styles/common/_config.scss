@@ -64,3 +64,9 @@ $sprites2x-sprite-dimensions: true;
     -ms-filter: $properties;
     filter: $properties;
 }
+
+@mixin rotate($properties) {
+    -webkit-transform: rotate($properties);
+    -ms-transform: rotate($properties);
+    transform: rotate($properties);
+}

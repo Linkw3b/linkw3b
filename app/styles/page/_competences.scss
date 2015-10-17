@@ -71,6 +71,21 @@
             margin-top: -14px;
         }
 
+        .in-progress {
+            display: block;
+            position: absolute;
+            width: 120%;
+            top: 50%;
+            left: -10%;
+            margin-top: -19px;
+
+            background-color: $main-green;
+
+            line-height: 2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
         &:hover {
             .skill-overlay {
                 top: 0;
@@ -91,10 +106,13 @@
     }
 }
 
-@media screen and (max-width: 60em) and (min-width: 48.1em) {
+@media screen and (min-width: 60.1em) {
     .skills-container {
         .skill-block {
-            width: 33.3333333%;
+            .in-progress {
+                @include rotate(-20deg);
+                @include text-shadow(1px, 1px, 0, rgba(0, 0, 0, .4));
+            }
         }
     }
 }
@@ -102,6 +120,8 @@
 @media screen and (max-width: 60em) {
     .skills-container {
         .skill-block {
+            padding-bottom: 35px;
+
             .skill-overlay {
                 position: absolute;
                 top: inherit;
@@ -117,6 +137,21 @@
                 top: inherit;
                 margin-top: 2px;
             }
+
+            .in-progress {
+                top: inherit;
+                margin-top: 0;
+
+                line-height: 1.85em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 60em) and (min-width: 48.1em) {
+    .skills-container {
+        .skill-block {
+            width: 33.3333333%;
         }
     }
 }
