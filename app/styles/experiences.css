@@ -1959,80 +1959,107 @@ footer .social {
   width: 45%;
   position: absolute;
   left: 0;
+  top: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  opacity: 0;
+  -webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-/* line 46, page/_experiences.scss */
+/* line 52, page/_experiences.scss */
 .tmtimeline > li .tmtime span {
   display: block;
   text-align: right;
 }
 
-/* line 51, page/_experiences.scss */
+/* line 57, page/_experiences.scss */
 .tmtimeline > li .tmtime span:first-child {
   font-size: 1.2em;
   color: #4c4c4c;
 }
 
-/* line 56, page/_experiences.scss */
+/* line 62, page/_experiences.scss */
 .tmtimeline > li .tmtime span:last-child {
   font-size: 1em;
   color: #3594cb;
 }
 
 /* Right content */
-/* line 62, page/_experiences.scss */
+/* line 68, page/_experiences.scss */
 .tmtimeline > li .tmtitle {
   position: absolute;
-  top: 25%;
+  top: 30px;
+  margin-top: 7%;
   width: 45%;
   float: left;
   text-align: center;
   font-size: 150%;
+  opacity: 0;
+  -webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-/* line 71, page/_experiences.scss */
+/* line 83, page/_experiences.scss */
 .tmtimeline > li .tmtitle p {
   margin: 15px 0 0;
 }
 
-/* line 74, page/_experiences.scss */
+/* line 86, page/_experiences.scss */
 .tmtimeline > li .tmtitle .position {
   font-weight: 700;
   color: #3594cb;
 }
 
-/* line 78, page/_experiences.scss */
+/* line 90, page/_experiences.scss */
 .tmtimeline > li .tmtitle .contract {
   font-size: 80%;
 }
 
-/* line 81, page/_experiences.scss */
+/* line 93, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   margin: 0 0 30px 0;
-  width: 37.5%;
-  color: #fff;
   padding: 0.5em 2em;
+  width: 37.5%;
+  position: relative;
+  top: 30px;
+  float: right;
+  border-radius: 5px;
+  color: #fff;
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.4;
-  position: relative;
-  border-radius: 5px;
-  float: right;
+  opacity: 0;
   -webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-/* line 95, page/_experiences.scss */
+/* line 113, page/_experiences.scss */
 .tmtimeline > li .tmlabel p {
   margin: 10px 0;
   font-size: 80%;
   font-weight: 400;
 }
 
-/* line 101, page/_experiences.scss */
+/* line 119, page/_experiences.scss */
 .tmtimeline > li .tmlabel .tag {
   padding: 2px 5px;
   background-color: #fff;
@@ -2051,7 +2078,7 @@ footer .social {
   border-radius: 3px;
 }
 
-/* line 114, page/_experiences.scss */
+/* line 132, page/_experiences.scss */
 .tmtimeline > li .tmlabel ul {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -2061,17 +2088,17 @@ footer .social {
   list-style: initial;
 }
 
-/* line 124, page/_experiences.scss */
+/* line 142, page/_experiences.scss */
 .tmtimeline > li .tmlabel .tmsection {
   font-weight: 700;
 }
 
-/* line 128, page/_experiences.scss */
+/* line 146, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   background: #57ba6f;
 }
 
-/* line 132, page/_experiences.scss */
+/* line 150, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 {
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -2079,22 +2106,22 @@ footer .social {
   font-weight: 700;
   font-size: 1.2em;
 }
-/* line 139, page/_experiences.scss */
+/* line 157, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 a {
   font-weight: 700;
 }
 
-/* line 144, page/_experiences.scss */
+/* line 162, page/_experiences.scss */
 .tmtimeline > li .tmlabel a {
   color: #fff;
 }
-/* line 147, page/_experiences.scss */
+/* line 165, page/_experiences.scss */
 .tmtimeline > li .tmlabel a:hover {
   color: #ffb14b;
 }
 
 /* The triangle */
-/* line 153, page/_experiences.scss */
+/* line 171, page/_experiences.scss */
 .tmtimeline > li .tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -2108,25 +2135,25 @@ footer .social {
   top: 10px;
 }
 
-/* line 167, page/_experiences.scss */
+/* line 185, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime {
   right: 0;
   left: inherit;
 }
-/* line 171, page/_experiences.scss */
+/* line 189, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime span {
   text-align: left;
 }
-/* line 176, page/_experiences.scss */
+/* line 194, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtitle {
   right: 0;
 }
-/* line 180, page/_experiences.scss */
+/* line 198, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel {
   float: left;
   background: #409e57;
 }
-/* line 184, page/_experiences.scss */
+/* line 202, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel:after {
   left: 100%;
   right: inherit;
@@ -2135,7 +2162,7 @@ footer .social {
 }
 
 /* The icons */
-/* line 195, page/_experiences.scss */
+/* line 213, page/_experiences.scss */
 .tmtimeline > li .tmicon {
   width: 80px;
   height: 40px;
@@ -2160,56 +2187,56 @@ footer .social {
 }
 
 @media screen and (max-width: 80em) {
-  /* line 219, page/_experiences.scss */
+  /* line 237, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 36%;
   }
 }
 @media screen and (max-width: 62em) {
-  /* line 225, page/_experiences.scss */
+  /* line 243, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 31%;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 232, page/_experiences.scss */
+  /* line 250, page/_experiences.scss */
   .tmtimeline:before {
     display: none;
   }
 
-  /* line 236, page/_experiences.scss */
+  /* line 254, page/_experiences.scss */
   .tmtimeline > li .tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 242, page/_experiences.scss */
+  /* line 260, page/_experiences.scss */
   .tmtimeline > li .tmtitle {
     display: none;
   }
 
-  /* line 246, page/_experiences.scss */
+  /* line 264, page/_experiences.scss */
   .tmtimeline > li .show-mobile {
     display: block;
   }
 
-  /* line 250, page/_experiences.scss */
+  /* line 268, page/_experiences.scss */
   .tmtimeline > li .tmlabel p {
     font-size: 100%;
   }
 
-  /* line 254, page/_experiences.scss */
+  /* line 272, page/_experiences.scss */
   .tmtimeline > li .tmlabel ul {
     font-size: 90%;
   }
 
-  /* line 258, page/_experiences.scss */
+  /* line 276, page/_experiences.scss */
   .tmtimeline > li .tmtime span {
     text-align: left;
   }
 
-  /* line 262, page/_experiences.scss */
+  /* line 280, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -2222,7 +2249,7 @@ footer .social {
     float: none;
   }
 
-  /* line 272, page/_experiences.scss */
+  /* line 290, page/_experiences.scss */
   .tmtimeline > li .tmlabel:after {
     right: auto;
     left: 20px;
@@ -2231,20 +2258,20 @@ footer .social {
     top: -20px;
   }
 
-  /* line 280, page/_experiences.scss */
+  /* line 298, page/_experiences.scss */
   .tmtimeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #57ba6f;
   }
 
-  /* line 285, page/_experiences.scss */
+  /* line 303, page/_experiences.scss */
   .tmtimeline > li:nth-child(even) .tmlabel:after {
     right: auto;
     left: 20px;
     border-left-color: transparent;
   }
 
-  /* line 291, page/_experiences.scss */
+  /* line 309, page/_experiences.scss */
   .tmtimeline > li .tmicon {
     position: relative;
     float: right;
@@ -2253,7 +2280,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 300, page/_experiences.scss */
+  /* line 318, page/_experiences.scss */
   .stand .page-name {
     font-size: 62%;
     letter-spacing: 2px;
@@ -2261,7 +2288,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 308, page/_experiences.scss */
+  /* line 326, page/_experiences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }

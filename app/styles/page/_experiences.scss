@@ -39,8 +39,14 @@
     width: 45%;
     position: absolute;
     left: 0;
+    top: 30px;
     font-weight: 700;
     text-transform: uppercase;
+
+    opacity: 0;
+
+    @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
+    @include transition(all, 1s, ease);
 }
 
 .tmtimeline > li .tmtime span {
@@ -61,12 +67,18 @@
 /* Right content */
 .tmtimeline > li .tmtitle {
     position: absolute;
-    top: 25%;
+    top: 30px;
+    margin-top: 7%;
     width: 45%;
     float: left;
 
     text-align: center;
     font-size: 150%;
+
+    opacity: 0;
+
+    @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
+    @include transition(all, 1s, ease);
 }
 .tmtimeline > li .tmtitle p {
     margin: 15px 0 0;
@@ -80,17 +92,23 @@
 }
 .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
-    width: 37.5%;
-    color: #fff;
     padding: 0.5em 2em;
+    width: 37.5%;
+    position: relative;
+    top: 30px;
+    float: right;
+
+    border-radius: 5px;
+
+    color: #fff;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.4;
-    position: relative;
-    border-radius: 5px;
-    float: right;
+
+    opacity: 0;
 
     @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
+    @include transition(all, 1s, ease);
 }
 .tmtimeline > li .tmlabel p {
     margin: 10px 0;
