@@ -1747,7 +1747,7 @@ footer .social {
   display: block;
   float: left;
   position: absolute;
-  top: 14px;
+  top: 16px;
   margin-right: 15px;
   background-position: -15px -30px;
   height: 14px;
@@ -1953,12 +1953,32 @@ footer .social {
   padding-right: 40px;
 }
 /* line 35, page/_contact.scss */
+.contact-container .contact-form .g-recaptcha-container {
+  margin-bottom: 20px;
+}
+/* line 38, page/_contact.scss */
+.contact-container .contact-form .g-recaptcha-container .g-recaptcha-message {
+  margin: 5px 0 0;
+  color: #e91717;
+  text-align: center;
+  font-size: .8em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+/* line 51, page/_contact.scss */
+.contact-container .contact-form .g-recaptcha-container.invalid-captcha .g-recaptcha-message {
+  opacity: 1;
+}
+/* line 57, page/_contact.scss */
 .contact-container .contact-form .g-recaptcha {
   width: 304px;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
-/* line 41, page/_contact.scss */
+/* line 62, page/_contact.scss */
 .contact-container .contact-info {
   float: right;
   padding: 20px;
@@ -1971,30 +1991,30 @@ footer .social {
   border: 1px solid #ccc;
   background-color: #e5e5e5;
 }
-/* line 53, page/_contact.scss */
+/* line 74, page/_contact.scss */
 .contact-container .contact-info p {
   margin: 0 0 5px;
 }
-/* line 57, page/_contact.scss */
+/* line 78, page/_contact.scss */
 .contact-container .contact-info li {
   margin-bottom: 10px;
 }
-/* line 61, page/_contact.scss */
+/* line 82, page/_contact.scss */
 .contact-container .contact-info img {
   width: auto;
 }
-/* line 65, page/_contact.scss */
+/* line 86, page/_contact.scss */
 .contact-container .contact-info .cv-link {
   line-height: 1.7em;
 }
-/* line 70, page/_contact.scss */
+/* line 91, page/_contact.scss */
 .contact-container label, .contact-container input, .contact-container textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 76, page/_contact.scss */
+/* line 97, page/_contact.scss */
 .contact-container input, .contact-container textarea {
   margin-bottom: 20px;
   padding: 10px;
@@ -2005,12 +2025,12 @@ footer .social {
   -ms-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
-/* line 84, page/_contact.scss */
+/* line 105, page/_contact.scss */
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none;
   border-color: #3594cb;
 }
-/* line 90, page/_contact.scss */
+/* line 111, page/_contact.scss */
 .contact-container button[type='submit'] {
   position: relative;
   display: block;
@@ -2031,64 +2051,60 @@ footer .social {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 111, page/_contact.scss */
+/* line 132, page/_contact.scss */
 .contact-container button[type='submit']:hover {
   background-color: #ffa631;
 }
-/* line 116, page/_contact.scss */
+/* line 137, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 124, page/_contact.scss */
+/* line 145, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 132, page/_contact.scss */
-.contact-container .invalid-captcha {
-  border: 1px solid #f27474 !important;
-}
-/* line 136, page/_contact.scss */
+/* line 153, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 140, page/_contact.scss */
+/* line 157, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
   font-size: 80%;
 }
 
-/* line 148, page/_contact.scss */
+/* line 165, page/_contact.scss */
 .no-js .contact-form {
   display: none;
 }
-/* line 151, page/_contact.scss */
+/* line 168, page/_contact.scss */
 .no-js .contact-info {
   width: 100%;
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 157, page/_contact.scss */
+  /* line 174, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn {
     width: 100%;
   }
 
-  /* line 160, page/_contact.scss */
+  /* line 177, page/_contact.scss */
   .contact-container .contact-info {
     margin-top: 0;
   }
 
-  /* line 163, page/_contact.scss */
+  /* line 180, page/_contact.scss */
   .contact-container .contact-form {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 169, page/_contact.scss */
+  /* line 186, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -2096,7 +2112,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 177, page/_contact.scss */
+  /* line 194, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }

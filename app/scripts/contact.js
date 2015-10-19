@@ -66,9 +66,9 @@ function checkField(elem, reCaptchaTextarea) {
 
     if(elem.is('#'+reCaptchaTextarea)) {
         if(elem.val() == "") {
-            elem.parent().parent().addClass('invalid-captcha');
-        } else if(elem.parent().parent().hasClass('invalid-captcha')) {
-            elem.parent().parent().removeClass('invalid-captcha');
+            elem.parents('.g-recaptcha-container').addClass('invalid-captcha');
+        } else if(elem.parents('.g-recaptcha-container').hasClass('invalid-captcha')) {
+            elem.parents('.g-recaptcha-container').removeClass('invalid-captcha');
         }
     } else {
         if(elem.val() == "") {

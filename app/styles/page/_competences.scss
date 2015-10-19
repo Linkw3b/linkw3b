@@ -94,6 +94,10 @@
     }
 }
 
+.no-js .skills-filters {
+    display: none;
+}
+
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
     .skills-container {
         .skill-block {

@@ -319,7 +319,7 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        uglify: {
+        /*uglify: {
             dist: {
                 files: [{
                     expand: true,
@@ -328,6 +328,55 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.app %>/scripts',
                     ext: '.min.js'
                 }]
+            }
+        },*/
+        uglify: {
+            app: {
+                files: {
+                    '<%= yeoman.app %>/js/main.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/main.js',
+                        '<%= yeoman.app %>/scripts/sweet-alert.js',
+                        '<%= yeoman.app %>/scripts/ee.js'
+                    ],
+                    '<%= yeoman.app %>/js/experiences.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/main.js',
+                        '<%= yeoman.app %>/scripts/experiences.js',
+                        '<%= yeoman.app %>/scripts/sweet-alert.js',
+                        '<%= yeoman.app %>/scripts/ee.js'
+                    ],
+                    '<%= yeoman.app %>/js/competences.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/main.js',
+                        '<%= yeoman.app %>/scripts/filters.js',
+                        '<%= yeoman.app %>/scripts/sweet-alert.js',
+                        '<%= yeoman.app %>/scripts/ee.js'
+                    ],
+                    '<%= yeoman.app %>/js/portfolio.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/main.js',
+                        '<%= yeoman.app %>/scripts/filters.js',
+                        '<%= yeoman.app %>/scripts/galerie.js',
+                        '<%= yeoman.app %>/scripts/sweet-alert.js',
+                        '<%= yeoman.app %>/scripts/ee.js'
+                    ],
+                    '<%= yeoman.app %>/js/contact.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/main.js',
+                        '<%= yeoman.app %>/scripts/contact.js',
+                        '<%= yeoman.app %>/scripts/sweet-alert.js',
+                        '<%= yeoman.app %>/scripts/ee.js'
+                    ],
+                    '<%= yeoman.app %>/js/browsehappy.min.js': [
+                        '<%= yeoman.app %>/scripts/browsehappy.js'
+                    ]
+                }
             }
         },
         concat: {

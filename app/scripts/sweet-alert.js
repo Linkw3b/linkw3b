@@ -202,7 +202,7 @@
         // If getModal returns values then continue
         modalDependant.apply(this, args);
     } else {
-        // If getModal returns null i.e. no matches, then set up a interval event to check the return value until it is not null	
+        // If getModal returns null i.e. no matches, then set up a interval event to check the return value until it is not null
         var modalCheckInterval = setInterval(function() {
           if (getModal() !== null) {
             clearInterval(modalCheckInterval);
@@ -211,7 +211,7 @@
       }, 100);
     }
   };
-        
+
   function modalDependant() {
 
     if (arguments[0] === undefined) {

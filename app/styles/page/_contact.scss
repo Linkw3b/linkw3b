@@ -32,10 +32,31 @@
         float: left;
         padding-right: 40px;
 
+        .g-recaptcha-container {
+            margin-bottom: 20px;
+
+            .g-recaptcha-message {
+                margin: 5px 0 0;
+
+                color: darken($main-red, 20);
+                text-align: center;
+                font-size: .8em;
+
+                opacity: 0;
+
+                @include transition(opacity, 0.3s, ease);
+            }
+
+            &.invalid-captcha {
+                .g-recaptcha-message {
+                    opacity: 1;
+                }
+            }
+        }
+
         .g-recaptcha {
             width: 304px;
             margin: 0 auto;
-            margin-bottom: 20px;
         }
     }
     .contact-info {
@@ -127,10 +148,6 @@
                 border-color: $main-red;
             }
         }
-    }
-
-    .invalid-captcha {
-        border: 1px solid $main-red !important;
     }
 
     textarea {

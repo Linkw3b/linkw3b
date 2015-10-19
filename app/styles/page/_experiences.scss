@@ -233,6 +233,14 @@
     margin: 0 0 0 -28px;
 }
 
+.no-js  {
+    .tmtimeline > li .tmtime,
+    .tmtimeline > li .tmtitle,
+    .tmtimeline > li .tmlabel {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 80em) {
     .tmtimeline > li .tmlabel {
         width: 36%;

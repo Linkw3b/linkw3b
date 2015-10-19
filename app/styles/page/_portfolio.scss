@@ -94,6 +94,25 @@
     }
 }
 
+.no-js {
+    .portfolio-filters {
+        display: none;
+    }
+
+    .portfolio-container {
+        .portfolio-block {
+            .portfolio-overlay {
+                display: none;
+            }
+            .portfolio-overlay + .portfolio-overlay {
+                display: block;
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
     .portfolio-container {
         .portfolio-block {

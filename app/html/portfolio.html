@@ -8,24 +8,23 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/styles/portfolio.min.css">
-        <script src="/scripts/modernizr.min.js"></script>
     </head>
     <body>
         <header id="header">
             <div id="nav-icon" class="nav-icon show-mobile"></div>
             <div class="logo-container">
-                <a href="/"><img src="/img/logo.png" class="logo" alt="" height="80" width="80"></a>
+                <a href="/" title="Accueil"><img src="/img/logo.png" class="logo" alt="Logo" height="80" width="80"></a>
             </div>
             <nav id="main-nav">
                 <div class="col-5 column">
-                    <a class="link" href="/experiences.html"><span class="experiences-icon"></span>Expériences</a>
-                    <a class="link" href="/competences.html"><span class="skills-icon"></span>Compétences</a>
+                    <a class="link js-nav-link" href="/experiences.html" title="Expériences"><span class="experiences-icon"></span>Expériences</a>
+                    <a class="link js-nav-link" href="/competences.html" title="Compétences"><span class="skills-icon"></span>Compétences</a>
                 </div>
                 <div class="col-2 column">
                 </div>
                 <div class="col-5 column">
-                    <a class="link" href="/portfolio.html"><span class="portfolio-icon"></span>Portfolio</a>
-                    <a class="link" href="/contact.html"><span class="contact-icon"></span>Contact</a>
+                    <a class="link js-nav-link" href="/portfolio.html" title='Portfolio'><span class="portfolio-icon"></span>Portfolio</a>
+                    <a class="link js-nav-link" href="/contact.html" title="Contact"><span class="contact-icon"></span>Contact</a>
                 </div>
             </nav>
             <a href="tel:+33688910169" class="phone-icon show-mobile"></a>
@@ -189,15 +188,15 @@
         <footer>
             <nav>
                 <div class="logo-footer">
-                    <a href="/"><img src="/img/logo-footer.png" class="logo" alt="" height="80" width="80"></a>
+                    <a href="/" title="Accueil"><img src="/img/logo-footer.png" class="logo" alt="Logo" height="80" width="80"></a>
                 </div>
                 <div class="footer-links">
-                    <a class="link" href="/experiences.html">Expériences</a>
-                    <a class="link" href="/competences.html">Compétences</a>
+                    <a class="link" title="Expériences" href="/experiences.html">Expériences</a>
+                    <a class="link" title="Compétences" href="/competences.html">Compétences</a>
                 </div>
                 <div class="footer-links">
-                    <a class="link" href="/portfolio.html">Portfolio</a>
-                    <a class="link" href="/contact.html">Contact</a>
+                    <a class="link" title="Portfolio" href="/portfolio.html">Portfolio</a>
+                    <a class="link" title="Contact" href="/contact.html">Contact</a>
                 </div>
                 <div class="footer-socials">
                     <a href="http://fr.linkedin.com/in/manueltaraud" target="_blank" class="social" title="Manuel Taraud - Profil LinkedIn"><span class="linkedin-icon"></span></a>
@@ -207,7 +206,7 @@
         </footer>
         <noscript>Votre navigateur ne supporte pas le JavaScript :(</noscript>
 
-        <script src="/scripts/jquery.min.js"></script>
+        <script src="/js/portfolio.min.js"></script>
 
         <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -217,13 +216,8 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-15454164-1');ga('send','pageview');
         </script>
-
-        <script src="/scripts/main.min.js"></script>
-        <script src="/scripts/galerie.min.js"></script>
-        <script src="/scripts/sweet-alert.min.js" async></script>
-        <script src="/scripts/ee.min.js" async></script>
         <!--[if lte IE 8]>
-            <script src="/scripts/browsehappy.min.js" async></script>
+            <script src="/js/browsehappy.min.js" async></script>
         <![endif]-->
     </body>
 </html>
