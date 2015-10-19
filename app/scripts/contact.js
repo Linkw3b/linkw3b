@@ -22,6 +22,10 @@ jQuery(function() {
             message = 'Il y a eu une erreur... Réessayez plus tard !',
             statusName = 'error';
 
+            if(jQuery('.g-recaptcha-container').hasClass('invalid-captcha')) {
+                jQuery('.g-recaptcha-container').removeClass('invalid-captcha');
+            }
+
             jQuery.ajax({
                 url: '/ajax/reCaptcha.php',
                 type: 'post',
