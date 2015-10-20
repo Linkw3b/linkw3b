@@ -165,11 +165,11 @@ noscript {
     background-color: rgba(0,0,0,0.75);
 }
 
-.galery-popin {
+.popin-gallery {
     display: none;
     width: 80%;
     height: 80%;
-    padding: 20px;
+    padding: 45px;
     position: fixed;
     top: 5%;
     left: 10%;
@@ -184,14 +184,31 @@ noscript {
     .popin-container {
         height: 100%;
         width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+
+        &.prev-slide {
+            left: -100%;
+        }
+        &.next-slide {
+            left: 100%;
+        }
+
+        @include transition(left, 0.5s, ease);
     }
 
     .imgContainer {
-        width: 90%;
+        width: 100%;
         height: 80%;
         margin: 0 auto;
-
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 
     h2 {
@@ -220,10 +237,10 @@ noscript {
 }
 
 @media screen and (max-width: 60em) {
-    .galery-popin {
+    .popin-gallery {
         width: 100%;
         height: 100%;
-        padding: 0;
+        padding: 0 45px;
         position: fixed;
         top: 0;
         left: 0;

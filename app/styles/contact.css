@@ -218,11 +218,11 @@ noscript {
 }
 
 /* line 168, common/_common.scss */
-.galery-popin {
+.popin-gallery {
   display: none;
   width: 80%;
   height: 80%;
-  padding: 20px;
+  padding: 45px;
   position: fixed;
   top: 5%;
   left: 10%;
@@ -234,68 +234,90 @@ noscript {
   box-sizing: border-box;
 }
 /* line 184, common/_common.scss */
-.galery-popin .popin-container {
+.popin-gallery .popin-container {
   height: 100%;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-/* line 189, common/_common.scss */
-.galery-popin .imgContainer {
-  width: 90%;
-  height: 80%;
-  margin: 0 auto;
-  overflow-x: auto;
+/* line 191, common/_common.scss */
+.popin-gallery .slide {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  transition: left 0.5s ease;
 }
 /* line 197, common/_common.scss */
-.galery-popin h2 {
+.popin-gallery .slide.prev-slide {
+  left: -100%;
+}
+/* line 200, common/_common.scss */
+.popin-gallery .slide.next-slide {
+  left: 100%;
+}
+/* line 207, common/_common.scss */
+.popin-gallery .imgContainer {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+/* line 214, common/_common.scss */
+.popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
   font-size: 25px;
   font-weight: 700;
   color: #3594cb;
 }
-/* line 206, common/_common.scss */
-.galery-popin p {
+/* line 223, common/_common.scss */
+.popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 211, common/_common.scss */
-.galery-popin img {
+/* line 228, common/_common.scss */
+.popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 217, common/_common.scss */
+  /* line 234, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 223, common/_common.scss */
-  .galery-popin {
+  /* line 240, common/_common.scss */
+  .popin-gallery {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 0 45px;
     position: fixed;
     top: 0;
     left: 0;
   }
-  /* line 231, common/_common.scss */
-  .galery-popin h2 {
+  /* line 248, common/_common.scss */
+  .popin-gallery h2 {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 240, common/_common.scss */
+  /* line 257, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 244, common/_common.scss */
+  /* line 261, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 248, common/_common.scss */
+  /* line 265, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;

@@ -359,6 +359,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/js/portfolio.min.js': [
                         '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.touchSwipe.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/filters.js',
                         '<%= yeoman.app %>/scripts/galerie.js',
