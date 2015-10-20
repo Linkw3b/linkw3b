@@ -22,6 +22,7 @@ jQuery(function() {
                 jQuery('body').removeAttr('style');
                 popinActive = false;
                 currentPicture = "";
+                jQuery('#'+popin).swipe('destroy');
             });
         } else if(jQuery(event.target).is('.js-magnify-icon')) {
             var galleryHtml = getPopinHTML(overlay, popin, popinInfoContainer, descrClass, jQuery(event.target).parents('.js-portfolio-block'));
@@ -30,24 +31,24 @@ jQuery(function() {
             jQuery('body').append(galleryHtml);
             jQuery('#'+overlay+', #'+popin).fadeIn(250);
 
+            jQuery('#'+popin).swipe({
+                swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                    if(popinActive) {
+                        currentPicture = changePicture(currentPicture, blockClass, descrClass, 'right', popinInfoContainer);
+                    }
+                },
+                swipeRight:function(event, direction, distance, duration, fingerCount) {
+                    if(popinActive) {
+                        currentPicture = changePicture(currentPicture, blockClass, descrClass, 'left', popinInfoContainer);
+                    }
+                }
+            });
+
             popinActive = true;
             currentPicture = jQuery(event.target).parents('.js-portfolio-block');
             prepareElements(currentPicture, blockClass, descrClass, popinInfoContainer);
         } else if(jQuery(event.target).attr('data-direction')) {
             currentPicture = changePicture(currentPicture, blockClass, descrClass, jQuery(event.target).attr('data-direction'), popinInfoContainer);
-        }
-    });
-
-    jQuery('body').swipe({
-        swipe:function(event, direction, distance, duration, fingerCount) {
-            if(popinActive) {
-                if(direction == 'left') {
-                    direction = 'right';
-                } else if(direction == 'right') {
-                    direction = 'left';
-                }
-                currentPicture = changePicture(currentPicture, blockClass, descrClass, direction, popinInfoContainer);
-            }
         }
     });
 

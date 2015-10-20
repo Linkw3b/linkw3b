@@ -305,19 +305,23 @@ noscript {
   .popin-gallery h2 {
     margin-top: 20px;
   }
+  /* line 252, common/_common.scss */
+  .popin-gallery .imgContainer {
+    height: 65%;
+  }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 257, common/_common.scss */
+  /* line 261, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 261, common/_common.scss */
+  /* line 265, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 265, common/_common.scss */
+  /* line 269, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
