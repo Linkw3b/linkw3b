@@ -40,12 +40,14 @@ jQuery(function() {
 
     jQuery('body').swipe({
         swipe:function(event, direction, distance, duration, fingerCount) {
-            if(direction == 'left') {
-                direction = 'right';
-            } else if(direction == 'right') {
-                direction = 'left';
+            if(popinActive) {
+                if(direction == 'left') {
+                    direction = 'right';
+                } else if(direction == 'right') {
+                    direction = 'left';
+                }
+                currentPicture = changePicture(currentPicture, blockClass, descrClass, direction, popinInfoContainer);
             }
-            currentPicture = changePicture(currentPicture, blockClass, descrClass, direction, popinInfoContainer);
         }
     });
 
