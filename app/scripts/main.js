@@ -18,10 +18,12 @@ jQuery(function() {
     });
 
     jQuery('#'+nav_icon_id+', .'+nav_links_class).on('click', function(event) {
-        var nav = jQuery(event.currentTarget).parents('#'+header).next();
-        var scroll = jQuery(document).scrollTop();
-        var top = jQuery('body').css('top');
-        toggleNav(nav, scroll, top, header, main_nav_id);
+        if(jQuery(event.target).is('#'+nav_icon_id) || jQuery("#"+header).next().hasClass('js-expanded')) {
+            var nav = jQuery(event.currentTarget).parents('#'+header).next();
+            var scroll = jQuery(document).scrollTop();
+            var top = jQuery('body').css('top');
+            toggleNav(nav, scroll, top, header, main_nav_id);
+        }
     });
 });
 
