@@ -41,8 +41,6 @@
         line-height: 9em;
         text-align: center;
 
-        overflow: hidden;
-
         @extend .column;
 
         img {
@@ -66,6 +64,7 @@
             background-color: rgba(0,0,0,0.75);
 
             cursor: pointer;
+            overflow: hidden;
 
             @include transition(all, 0.3s, ease);
         }
