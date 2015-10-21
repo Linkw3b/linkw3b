@@ -3,26 +3,27 @@ jQuery(function() {
     var header = 'header',
         main_nav_id = 'main-nav',
         nav_icon_id = 'nav-icon',
-        nav_links_class = 'js-nav-link';
+        nav_links_class = 'js-nav-link',
+        nav_expanded_class = 'js-expanded';
 
     /* Listeners */
     jQuery(document).on('scroll', { elem: jQuery('#'+header) }, headerFixed);
 
     jQuery(window).on('resize', function() {
         var nav = jQuery("#"+header).next();
-        if(nav.hasClass('js-expanded')) {
+        if(nav.hasClass(nav_expanded_class)) {
             var scroll = jQuery(document).scrollTop();
             var top = jQuery('body').css('top');
-            toggleNav(nav, scroll, top, header, main_nav_id);
+            toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class);
         }
     });
 
     jQuery('#'+nav_icon_id+', .'+nav_links_class).on('click', function(event) {
-        if(jQuery(event.target).is('#'+nav_icon_id) || jQuery("#"+header).next().hasClass('js-expanded')) {
+        if(jQuery(event.target).is('#'+nav_icon_id) || jQuery("#"+header).next().hasClass(nav_expanded_class)) {
             var nav = jQuery(event.currentTarget).parents('#'+header).next();
             var scroll = jQuery(document).scrollTop();
             var top = jQuery('body').css('top');
-            toggleNav(nav, scroll, top, header, main_nav_id);
+            toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class);
         }
     });
 });
@@ -35,8 +36,8 @@ function headerFixed(event) {
     }
 }
 
-function toggleNav(nav, scroll, top, header, main_nav_id) {
-    if(nav.hasClass('js-expanded')) {
+function toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class) {
+    if(nav.hasClass(nav_expanded_class)) {
         jQuery('#'+main_nav_id).animate({left: '-80%'});
         jQuery('body, #'+header).animate({left: '0'}, function() {
             var scrollBody = -parseInt(top.split('px')[0]);
@@ -48,5 +49,5 @@ function toggleNav(nav, scroll, top, header, main_nav_id) {
         jQuery('body, #'+header).animate({left: '80%'});
         jQuery('#'+main_nav_id).animate({left: '0'});
     }
-    nav.toggleClass('js-expanded');
+    nav.toggleClass(nav_expanded_class);
 }
