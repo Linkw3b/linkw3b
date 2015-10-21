@@ -135,9 +135,9 @@ noscript {
 
 /* line 82, common/_common.scss */
 .stand {
-  padding: 60px 0 40px;
+  padding: 50px 0 30px;
   /*background: url('../images/stand-bg.jpg');*/
-  background: url("../img/bkg.png") #3594cb;
+  background: url("../img/bkg.png") #3594cb top fixed;
   font-size: 400%;
   text-align: center;
   letter-spacing: -2px;
@@ -201,11 +201,52 @@ noscript {
 }
 
 /* line 152, common/_common.scss */
+.button {
+  position: relative;
+  border: none;
+  background-color: #7bc98e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 120%;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 168, common/_common.scss */
+.button:hover {
+  background-color: #ffa631;
+}
+
+/* line 173, common/_common.scss */
+.ripple {
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+/* line 181, common/_common.scss */
+.ripple.animate {
+  animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+/* line 189, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 156, common/_common.scss */
+/* line 193, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -217,7 +258,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 168, common/_common.scss */
+/* line 205, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -233,14 +274,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 184, common/_common.scss */
+/* line 221, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 191, common/_common.scss */
+/* line 228, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -252,22 +293,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 197, common/_common.scss */
+/* line 234, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 200, common/_common.scss */
+/* line 237, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 207, common/_common.scss */
+/* line 244, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 214, common/_common.scss */
+/* line 251, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -275,24 +316,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 223, common/_common.scss */
+/* line 260, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 228, common/_common.scss */
+/* line 265, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 234, common/_common.scss */
+  /* line 271, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 240, common/_common.scss */
+  /* line 277, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -301,27 +342,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 248, common/_common.scss */
+  /* line 285, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 252, common/_common.scss */
+  /* line 289, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 261, common/_common.scss */
+  /* line 298, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 265, common/_common.scss */
+  /* line 302, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 269, common/_common.scss */
+  /* line 306, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -657,15 +698,22 @@ header .logo:hover {
   border-color: #7bc98e;
 }
 /* line 54, common/_header.scss */
-header .link {
+header .nav-link {
   width: 50%;
   display: block;
   float: left;
   padding: 24px 10px 30px;
+  position: relative;
   border-bottom: 3px solid transparent;
   text-decoration: none;
   text-align: center;
   color: #fff;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -678,16 +726,21 @@ header .link {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 71, common/_header.scss */
-header .link:hover {
+/* line 80, common/_header.scss */
+header .nav-link:hover {
   border-color: #ffa631;
   background-color: #3c3c3c;
 }
-/* line 77, common/_header.scss */
+/* line 85, common/_header.scss */
+header .nav-link.current {
+  border-color: #7bc98e;
+  background-color: transparent;
+}
+/* line 91, common/_header.scss */
 header.fixed {
   opacity: 0.95;
 }
-/* line 80, common/_header.scss */
+/* line 94, common/_header.scss */
 header.fixed .logo-container {
   margin-left: -35px;
   top: -10px;
@@ -695,29 +748,29 @@ header.fixed .logo-container {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
 }
-/* line 87, common/_header.scss */
+/* line 101, common/_header.scss */
 header.fixed .logo {
   padding: 10px;
   width: 50px;
   height: 50px;
   border-width: 3px;
 }
-/* line 94, common/_header.scss */
-header.fixed .link {
+/* line 108, common/_header.scss */
+header.fixed .nav-link {
   padding: 10px 10px 14px;
 }
 
 @media screen and (max-width: 48.5em) {
-  /* line 101, common/_header.scss */
+  /* line 115, common/_header.scss */
   header {
     font-size: 100%;
   }
-  /* line 104, common/_header.scss */
+  /* line 118, common/_header.scss */
   header .logo-container {
     margin-left: -35px;
     top: 0px;
   }
-  /* line 109, common/_header.scss */
+  /* line 123, common/_header.scss */
   header .logo {
     padding: 10px;
     width: 50px;
@@ -726,11 +779,11 @@ header.fixed .link {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 120, common/_header.scss */
+  /* line 134, common/_header.scss */
   header {
     height: 56px;
   }
-  /* line 123, common/_header.scss */
+  /* line 137, common/_header.scss */
   header .logo-container {
     margin-left: -35px;
     top: -10px;
@@ -738,7 +791,7 @@ header.fixed .link {
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
   }
-  /* line 130, common/_header.scss */
+  /* line 144, common/_header.scss */
   header nav {
     position: fixed;
     left: -80%;
@@ -747,24 +800,26 @@ header.fixed .link {
     height: 100%;
     background-color: #222;
   }
-  /* line 138, common/_header.scss */
+  /* line 152, common/_header.scss */
   header nav .column, header nav .mcolumn {
     width: 100%;
   }
-  /* line 143, common/_header.scss */
+  /* line 157, common/_header.scss */
   header .logo {
     padding: 10px;
     width: 50px;
     height: 50px;
     border-width: 3px;
   }
-  /* line 151, common/_header.scss */
-  header .link {
+  /* line 165, common/_header.scss */
+  header .nav-link {
     width: 100%;
     padding-left: 10px;
     padding-right: 30px;
+    border-bottom: none;
+    border-left: 5px solid transparent;
   }
-  /* line 157, common/_header.scss */
+  /* line 173, common/_header.scss */
   header.fixed {
     opacity: 1;
   }
@@ -782,19 +837,21 @@ footer nav {
   padding: 60px 20px;
 }
 /* line 15, common/_footer.scss */
-footer .link {
+footer .footer-link {
   padding: 20px 10px;
   float: left;
   display: block;
+  position: relative;
   color: #fff;
   font-weight: 700;
+  overflow: hidden;
 }
-/* line 23, common/_footer.scss */
-footer .link:hover {
+/* line 26, common/_footer.scss */
+footer .footer-link:hover {
   color: #ffa631;
   background-color: #3f3f3f;
 }
-/* line 29, common/_footer.scss */
+/* line 32, common/_footer.scss */
 footer .logo-footer {
   position: absolute;
   top: -55px;
@@ -808,7 +865,7 @@ footer .logo-footer {
   -ms-border-radius: 70px;
   border-radius: 70px;
 }
-/* line 43, common/_footer.scss */
+/* line 46, common/_footer.scss */
 footer .social {
   display: block;
   float: right;
@@ -817,26 +874,26 @@ footer .social {
 }
 
 @media screen and (max-width: 35em) {
-  /* line 52, common/_footer.scss */
+  /* line 55, common/_footer.scss */
   .footer-socials, .footer-links {
     width: 100%;
   }
 
-  /* line 56, common/_footer.scss */
+  /* line 59, common/_footer.scss */
   .footer-links {
     text-align: center;
   }
-  /* line 59, common/_footer.scss */
-  .footer-links .link {
+  /* line 62, common/_footer.scss */
+  .footer-links .footer-link {
     float: initial;
     display: inline-block;
   }
 
-  /* line 65, common/_footer.scss */
+  /* line 68, common/_footer.scss */
   .footer-socials {
     text-align: center;
   }
-  /* line 68, common/_footer.scss */
+  /* line 71, common/_footer.scss */
   .footer-socials .social {
     float: initial;
     display: inline-block;
@@ -2063,74 +2120,59 @@ footer .social {
   width: 70%;
   max-width: 220px;
   margin: 0 auto;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 40px;
   clear: both;
-  border: none;
-  background-color: #7bc98e;
-  color: #fff;
-  font-weight: 700;
-  font-size: 120%;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  -ms-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
 }
-/* line 132, page/_contact.scss */
-.contact-container button[type='submit']:hover {
-  background-color: #ffa631;
-}
-/* line 137, page/_contact.scss */
+/* line 121, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 145, page/_contact.scss */
+/* line 129, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 153, page/_contact.scss */
+/* line 137, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 157, page/_contact.scss */
+/* line 141, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
   font-size: 80%;
 }
 
-/* line 165, page/_contact.scss */
+/* line 149, page/_contact.scss */
 .no-js .contact-form {
   display: none;
 }
-/* line 168, page/_contact.scss */
+/* line 152, page/_contact.scss */
 .no-js .contact-info {
   width: 100%;
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 174, page/_contact.scss */
+  /* line 158, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn {
     width: 100%;
   }
 
-  /* line 177, page/_contact.scss */
+  /* line 161, page/_contact.scss */
   .contact-container .contact-info {
     margin-top: 0;
   }
 
-  /* line 180, page/_contact.scss */
+  /* line 164, page/_contact.scss */
   .contact-container .contact-form {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 186, page/_contact.scss */
+  /* line 170, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -2138,7 +2180,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 194, page/_contact.scss */
+  /* line 178, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }

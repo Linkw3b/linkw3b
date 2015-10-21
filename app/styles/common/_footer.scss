@@ -12,13 +12,16 @@ footer {
         @extend .clearfix;
     }
 
-    .link {
+    .footer-link {
         padding: 20px 10px;
         float: left;
         display: block;
+        position: relative;
 
         color: #fff;
         font-weight: 700;
+
+        overflow: hidden;
 
         &:hover {
             color: $main-orange;
@@ -56,7 +59,7 @@ footer {
     .footer-links {
         text-align: center;
 
-        .link {
+        .footer-link {
             float: initial;
             display: inline-block;
         }

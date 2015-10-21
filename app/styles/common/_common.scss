@@ -80,10 +80,10 @@ noscript {
 }
 
 .stand {
-    padding: 60px 0 40px;
+    padding: 50px 0 30px;
 
     /*background: url('../images/stand-bg.jpg');*/
-    background: url('../img/bkg.png') $main-blue;
+    background: url('../img/bkg.png') $main-blue top fixed;
 
     font-size: 400%;
     text-align: center;
@@ -147,6 +147,43 @@ noscript {
         margin-left: 20px;
         margin-right: 20px;
     }
+}
+
+.button {
+    position: relative;
+
+    border: none;
+
+    background-color: $main-green;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 120%;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    @include transition(background-color, 0.3s, ease);
+
+    &:hover {
+        background-color: $main-orange;
+    }
+}
+
+.ripple {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.ripple.animate {
+    animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
 }
 
 .show-mobile {

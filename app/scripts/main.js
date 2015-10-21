@@ -4,7 +4,8 @@ jQuery(function() {
         main_nav_id = 'main-nav',
         nav_icon_id = 'nav-icon',
         nav_links_class = 'js-nav-link',
-        nav_expanded_class = 'js-expanded';
+        nav_expanded_class = 'js-expanded',
+        ripple_elements = '.button, .portfolio-overlay, .nav-link, .footer-link';
 
     /* Listeners */
     jQuery(document).on('scroll', { elem: jQuery('#'+header) }, headerFixed);
@@ -25,6 +26,10 @@ jQuery(function() {
             var top = jQuery('body').css('top');
             toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class);
         }
+    });
+
+    jQuery(ripple_elements).on('click', function(event) {
+        rippleEffect(this, event);
     });
 });
 
@@ -50,4 +55,31 @@ function toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class) {
         jQuery('#'+main_nav_id).animate({left: '0'});
     }
     nav.toggleClass(nav_expanded_class);
+}
+
+function rippleEffect(elem, event) {
+    var parent,
+        ripple,
+        d,
+        x,
+        y;
+
+    parent = jQuery(elem);
+
+    if(parent.find(".js-ripple").length == 0) {
+        parent.prepend("<span class='js-ripple ripple'></span>");
+    }
+
+    ripple = parent.find(".js-ripple");
+    ripple.removeClass("animate");
+
+    if(!ripple.height() && !ripple.width()) {
+        d = Math.max(parent.outerWidth(), parent.outerHeight());
+        ripple.css({height: d, width: d});
+    }
+
+    x = event.pageX - parent.offset().left - ripple.width()/2;
+    y = event.pageY - parent.offset().top - ripple.height()/2;
+
+    ripple.css({top: y+'px', left: x+'px'}).addClass("animate");
 }

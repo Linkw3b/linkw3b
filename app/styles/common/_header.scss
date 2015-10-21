@@ -51,17 +51,26 @@ header {
         }
     }
 
-    .link {
+    .nav-link {
         width: 50%;
         display: block;
         float: left;
         padding: 24px 10px 30px;
+        position: relative;
 
         border-bottom: 3px solid transparent;
 
         text-decoration: none;
         text-align: center;
         color: #fff;
+
+        overflow: hidden;
+
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
 
         @include box-sizing(border-box);
         @include text-shadow(1px, 1px, 0, rgba(0, 0, 0, 0.4));
@@ -71,6 +80,11 @@ header {
         &:hover {
             border-color: $main-orange;
             background-color: lighten($header-bg, 10%);
+        }
+
+        &.current {
+            border-color: $main-green;
+            background-color: transparent;
         }
     }
 
@@ -91,7 +105,7 @@ header {
 
             border-width: 3px;
         }
-        .link {
+        .nav-link {
             padding: 10px 10px 14px;
         }
     }
@@ -148,10 +162,12 @@ header {
             border-width: 3px;
         }
 
-        .link {
+        .nav-link {
             width: 100%;
             padding-left: 10px;
             padding-right: 30px;
+            border-bottom: none;
+            border-left: 5px solid transparent;
         }
 
         &.fixed {

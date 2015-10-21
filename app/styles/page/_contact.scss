@@ -114,24 +114,8 @@
         width: 70%;
         max-width: 220px;
         margin: 0 auto;
-        padding: 10px 15px;
+        padding: 10px 15px 10px 40px;
         clear: both;
-
-        border: none;
-
-        background-color: $main-green;
-
-        color: #fff;
-        font-weight: 700;
-        font-size: 120%;
-
-        cursor: pointer;
-
-        @include transition(background-color, 0.3s, ease);
-
-        &:hover {
-            background-color: $main-orange;
-        }
     }
 
     label {
