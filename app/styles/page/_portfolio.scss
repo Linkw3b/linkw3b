@@ -41,6 +41,8 @@
         line-height: 9em;
         text-align: center;
 
+        overflow: hidden;
+
         @extend .column;
 
         img {
