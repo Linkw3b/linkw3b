@@ -80,7 +80,7 @@ noscript {
 }
 
 .stand {
-    padding: 50px 0 30px;
+    padding: 50px 0 25px;
 
     /*background: url('../images/stand-bg.jpg');*/
     background: url('../img/bkg.png') $main-blue top fixed;
@@ -94,10 +94,20 @@ noscript {
 
     @include text-shadow(2px, 2px, 2px, rgba(0,0,0,0.5));
 
+    img {
+        @extend .lazy-display;
+    }
+
+    h1 {
+        @extend .lazy-display;
+    }
+
     h2 {
         font-size: 69%;
         color: $main-orange;
         font-weight: 100;
+
+        @extend .lazy-display;
 
         span {
             position: relative;
@@ -125,6 +135,8 @@ noscript {
         display: block;
 
         font-family: 'Press Start 2P';
+
+        @extend .lazy-display;
     }
 }
 
@@ -184,6 +196,19 @@ noscript {
 
 @keyframes ripple {
     100% {opacity: 0; transform: scale(2.5);}
+}
+
+.csstransitions .lazy-display {
+    position: relative;
+    top: 30px;
+
+    opacity: 0;
+
+    -webkit-transition: top 1s, opacity 1s;
+    -moz-transition: top 1s, opacity 1s;
+    -o-transition: top 1s, opacity 1s;
+    -ms-transition: top 1s, opacity 1s;
+    transition: top 1s, opacity 1s;
 }
 
 .show-mobile {

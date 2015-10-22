@@ -13,6 +13,8 @@
         text-align: center;
         margin-bottom: 20px;
 
+        @extend .lazy-display;
+
         img {
             width: 150px;
 
@@ -31,6 +33,10 @@
     .contact-form {
         float: left;
         padding-right: 40px;
+
+        & > * {
+            @extend .lazy-display;
+        }
 
         .g-recaptcha-container {
             margin-bottom: 20px;
@@ -70,6 +76,8 @@
         border: 1px solid #ccc;
 
         background-color: #e5e5e5;
+
+        @extend .lazy-display;
 
         p {
             margin: 0 0 5px;

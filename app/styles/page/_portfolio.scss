@@ -8,9 +8,15 @@
     text-align: center;
 }
 
+.content > p {
+    @extend .lazy-display;
+}
+
 .portfolio-filters {
     margin: 2%;
+
     @extend .clearfix;
+    @extend .lazy-display;
 
     .portfolio-filter {
         width: 25%;
@@ -44,6 +50,7 @@
         overflow: hidden;
 
         @extend .column;
+        @extend .lazy-display;
 
         img {
             max-width: 100%;
@@ -134,7 +141,7 @@
             width: 50%;
             .portfolio-overlay {
                 position: absolute;
-                top: inherit;
+                top: initial;
                 bottom: 0;
                 height: 40px;
 
@@ -145,7 +152,7 @@
             }
 
             &:hover .portfolio-overlay {
-                top: inherit;
+                top: initial;
             }
         }
     }

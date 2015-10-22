@@ -334,22 +334,18 @@ module.exports = function (grunt) {
             app: {
                 files: {
                     '<%= yeoman.app %>/js/main.min.js': [
-                        '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/experiences.min.js': [
-                        '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
-                        '<%= yeoman.app %>/scripts/experiences.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/competences.min.js': [
-                        '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/filters.js',
@@ -357,7 +353,6 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/portfolio.min.js': [
-                        '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
                         '<%= yeoman.app %>/scripts/jquery.touchSwipe.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
@@ -367,7 +362,6 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/contact.min.js': [
-                        '<%= yeoman.app %>/scripts/modernizr.min.js',
                         '<%= yeoman.app %>/scripts/jquery.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/contact.js',
@@ -376,6 +370,9 @@ module.exports = function (grunt) {
                     ],
                     '<%= yeoman.app %>/js/browsehappy.min.js': [
                         '<%= yeoman.app %>/scripts/browsehappy.js'
+                    ],
+                    '<%= yeoman.app %>/js/modernizr.min.js': [
+                        '<%= yeoman.app %>/scripts/modernizr.js'
                     ]
                 }
             }

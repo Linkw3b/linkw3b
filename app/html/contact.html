@@ -9,6 +9,7 @@
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/styles/contact.min.css">
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script type="text/javascript" src="/js/modernizr.min.js"></script>
     </head>
     <body>
         <header id="header">
@@ -33,17 +34,17 @@
 
         <main id="wrapper" class="wrapper">
             <div class="stand" itemscope>
-                <img src="/img/triforce.png" width="80" height="80" alt="">
-                <h1 itemprop="name">Manuel Taraud</h1>
-                <h2><span itemprop="title">Développeur Front-End</span></h2>
-                <span class="page-name">Contact</span>
+                <img src="/img/triforce.png" width="80" height="80" class="js-lazy-display" alt="">
+                <h1 itemprop="name" class="js-lazy-display">Manuel Taraud</h1>
+                <h2 class="js-lazy-display"><span itemprop="title">Développeur Front-End</span></h2>
+                <span class="page-name js-lazy-display">Contact</span>
             </div>
             <div class="content">
                 <div class="contact-container" itemtype="http://microformats.org/profile/hcard" itemscope>
-                    <figure class="avatar">
+                    <figure class="avatar js-lazy-display">
                         <img itemprop="photo" src="/img/avatar.jpg" width="150" height="150" alt="Photo de Manuel Taraud -Développeur Front-End">
                     </figure>
-                    <div class="col-5 column contact-info">
+                    <div class="col-5 column contact-info js-lazy-display">
                         <p>Pour me contacter, merci de remplir le formulaire où me joindre via les moyens suivants :</p>
                         <ul>
                             <li itemprop="tel"><span class="phone-puce"></span>Téléphone : <a href="tel:+33688910169">06 88 91 01 69</a></li>
@@ -54,19 +55,19 @@
                         <p><a class="cv-link" href="img/cv.pdf" download="Manuel_Taraud_CV.pdf" title="CV Manuel Taraud"><span class="pdf-icon"></span> Télécharger le CV</a></p>
                     </div>
                     <form class="col-7 column contact-form" method="post" id="contact-form">
-                        <label class="required">Nom</label>
-                        <input type="text" name="name" placeholder="Nom Prénom">
-                        <label class="required">Email</label>
-                        <input type="email" name="email" placeholder="email@exemple.fr">
-                        <label class="required">Sujet</label>
-                        <input type="text" name="subject" placeholder="Sujet">
-                        <label class="required">Message</label>
-                        <textarea name="message" placeholder="Ecrivez votre message ici..."></textarea>
-                        <div class="g-recaptcha-container">
+                        <label class="required js-lazy-display">Nom</label>
+                        <input class="js-lazy-display" type="text" name="name" placeholder="Nom Prénom">
+                        <label class="required js-lazy-display">Email</label>
+                        <input class="js-lazy-display" type="email" name="email" placeholder="email@exemple.fr">
+                        <label class="required js-lazy-display">Sujet</label>
+                        <input class="js-lazy-display" type="text" name="subject" placeholder="Sujet">
+                        <label class="required js-lazy-display">Message</label>
+                        <textarea class="js-lazy-display" name="message" placeholder="Ecrivez votre message ici..."></textarea>
+                        <div class="g-recaptcha-container js-lazy-display">
                             <div class="g-recaptcha" data-sitekey="6Lfi3AATAAAAAC12IkWBBLnPEK056xj1Q9Yh84Z_"></div>
                             <p class="g-recaptcha-message">Veuillez répondre au Captcha ci-dessus</p>
                         </div>
-                        <button type="submit" id="submit-button" class="submit-button button">Envoyer</button>
+                        <button type="submit" id="submit-button" class="submit-button button js-lazy-display">Envoyer</button>
                     </form>
                 </div>
             </div>

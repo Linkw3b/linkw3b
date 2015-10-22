@@ -135,7 +135,7 @@ noscript {
 
 /* line 82, common/_common.scss */
 .stand {
-  padding: 50px 0 30px;
+  padding: 50px 0 25px;
   /*background: url('../images/stand-bg.jpg');*/
   background: url("../img/bkg.png") #3594cb top fixed;
   font-size: 400%;
@@ -148,13 +148,13 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 97, common/_common.scss */
+/* line 105, common/_common.scss */
 .stand h2 {
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 102, common/_common.scss */
+/* line 112, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -162,7 +162,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 110, common/_common.scss */
+/* line 120, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -176,13 +176,13 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 124, common/_common.scss */
+/* line 134, common/_common.scss */
 .stand .page-name {
   display: block;
   font-family: 'Press Start 2P';
 }
 
-/* line 132, common/_common.scss */
+/* line 144, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -190,17 +190,17 @@ noscript {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 142, common/_common.scss */
+/* line 154, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 146, common/_common.scss */
+/* line 158, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 152, common/_common.scss */
+/* line 164, common/_common.scss */
 .button {
   position: relative;
   border: none;
@@ -216,12 +216,12 @@ noscript {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 168, common/_common.scss */
+/* line 180, common/_common.scss */
 .button:hover {
   background-color: #ffa631;
 }
 
-/* line 173, common/_common.scss */
+/* line 185, common/_common.scss */
 .ripple {
   display: block;
   position: absolute;
@@ -230,7 +230,7 @@ noscript {
   transform: scale(0);
 }
 
-/* line 181, common/_common.scss */
+/* line 193, common/_common.scss */
 .ripple.animate {
   animation: ripple 0.5s linear;
 }
@@ -241,12 +241,24 @@ noscript {
     transform: scale(2.5);
   }
 }
-/* line 189, common/_common.scss */
+/* line 201, common/_common.scss */
+.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .content > * {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  -webkit-transition: top 1s, opacity 1s;
+  -moz-transition: top 1s, opacity 1s;
+  -o-transition: top 1s, opacity 1s;
+  -ms-transition: top 1s, opacity 1s;
+  transition: top 1s, opacity 1s;
+}
+
+/* line 214, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 193, common/_common.scss */
+/* line 218, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -258,7 +270,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 205, common/_common.scss */
+/* line 230, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -274,14 +286,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 221, common/_common.scss */
+/* line 246, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 228, common/_common.scss */
+/* line 253, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -293,22 +305,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 234, common/_common.scss */
+/* line 259, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 237, common/_common.scss */
+/* line 262, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 244, common/_common.scss */
+/* line 269, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 251, common/_common.scss */
+/* line 276, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -316,24 +328,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 260, common/_common.scss */
+/* line 285, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 265, common/_common.scss */
+/* line 290, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 271, common/_common.scss */
+  /* line 296, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 277, common/_common.scss */
+  /* line 302, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -342,27 +354,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 285, common/_common.scss */
+  /* line 310, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 289, common/_common.scss */
+  /* line 314, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 298, common/_common.scss */
+  /* line 323, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 302, common/_common.scss */
+  /* line 327, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 306, common/_common.scss */
+  /* line 331, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -2004,13 +2016,13 @@ footer .social {
   margin-left: 9px;
 }
 
-/* line 7, page/_home.scss */
+/* line 11, page/_home.scss */
 .shortcuts {
   margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 15, page/_home.scss */
+/* line 19, page/_home.scss */
 .shortcuts .practice {
   margin-bottom: 0;
   background-color: #fff;
@@ -2018,12 +2030,12 @@ footer .social {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-/* line 22, page/_home.scss */
+/* line 26, page/_home.scss */
 .shortcuts .practice img {
   max-width: 250px;
   height: 100%;
 }
-/* line 27, page/_home.scss */
+/* line 31, page/_home.scss */
 .shortcuts .practice figcaption {
   background-color: #409e57;
   color: #fff;
@@ -2031,7 +2043,7 @@ footer .social {
   -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 39, page/_home.scss */
+/* line 43, page/_home.scss */
 .shortcuts .svg img {
   max-width: 120px;
   -webkit-filter: grayscale(100%);
@@ -2040,7 +2052,7 @@ footer .social {
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 45, page/_home.scss */
+/* line 49, page/_home.scss */
 .shortcuts .svg:hover img {
   -webkit-filter: grayscale(40%);
   -moz-filter: grayscale(40%);
@@ -2048,11 +2060,11 @@ footer .social {
   -ms-filter: grayscale(40%);
   filter: grayscale(40%);
 }
-/* line 49, page/_home.scss */
+/* line 53, page/_home.scss */
 .shortcuts .svg:hover .title {
   color: #3594cb;
 }
-/* line 53, page/_home.scss */
+/* line 57, page/_home.scss */
 .shortcuts figcaption {
   width: 100%;
   font-weight: 700;
@@ -2062,11 +2074,11 @@ footer .social {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 62, page/_home.scss */
+/* line 66, page/_home.scss */
 .shortcuts figcaption.blue {
   background-color: #3594cb;
 }
-/* line 67, page/_home.scss */
+/* line 71, page/_home.scss */
 .shortcuts .title {
   display: block;
   padding: 20px;
@@ -2076,13 +2088,13 @@ footer .social {
   -moz-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
-/* line 76, page/_home.scss */
+/* line 80, page/_home.scss */
 .shortcuts + p {
   text-align: center;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 82, page/_home.scss */
+  /* line 86, page/_home.scss */
   .stand .page-name {
     font-size: 69%;
     letter-spacing: 2px;
@@ -2090,18 +2102,18 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 90, page/_home.scss */
+  /* line 94, page/_home.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 35em) {
-  /* line 96, page/_home.scss */
+  /* line 100, page/_home.scss */
   .shortcuts .mcolumn {
     margin-bottom: 20px;
   }
 
-  /* line 99, page/_home.scss */
+  /* line 103, page/_home.scss */
   .shortcuts .practice img {
     float: initial;
     max-height: 150px;

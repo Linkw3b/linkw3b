@@ -135,7 +135,7 @@ noscript {
 
 /* line 82, common/_common.scss */
 .stand {
-  padding: 50px 0 30px;
+  padding: 50px 0 25px;
   /*background: url('../images/stand-bg.jpg');*/
   background: url("../img/bkg.png") #3594cb top fixed;
   font-size: 400%;
@@ -148,13 +148,13 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 97, common/_common.scss */
+/* line 105, common/_common.scss */
 .stand h2 {
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 102, common/_common.scss */
+/* line 112, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -162,7 +162,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 110, common/_common.scss */
+/* line 120, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -176,13 +176,13 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 124, common/_common.scss */
+/* line 134, common/_common.scss */
 .stand .page-name {
   display: block;
   font-family: 'Press Start 2P';
 }
 
-/* line 132, common/_common.scss */
+/* line 144, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
@@ -190,17 +190,17 @@ noscript {
   font-size: 120%;
   font-weight: 300;
 }
-/* line 142, common/_common.scss */
+/* line 154, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 146, common/_common.scss */
+/* line 158, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 152, common/_common.scss */
+/* line 164, common/_common.scss */
 .button {
   position: relative;
   border: none;
@@ -216,12 +216,12 @@ noscript {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 168, common/_common.scss */
+/* line 180, common/_common.scss */
 .button:hover {
   background-color: #ffa631;
 }
 
-/* line 173, common/_common.scss */
+/* line 185, common/_common.scss */
 .ripple {
   display: block;
   position: absolute;
@@ -230,7 +230,7 @@ noscript {
   transform: scale(0);
 }
 
-/* line 181, common/_common.scss */
+/* line 193, common/_common.scss */
 .ripple.animate {
   animation: ripple 0.5s linear;
 }
@@ -241,12 +241,24 @@ noscript {
     transform: scale(2.5);
   }
 }
-/* line 189, common/_common.scss */
+/* line 201, common/_common.scss */
+.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .content > p, .csstransitions .skills-filters, .csstransitions .skills-container .skill-block, .skills-container .csstransitions .skill-block {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  -webkit-transition: top 1s, opacity 1s;
+  -moz-transition: top 1s, opacity 1s;
+  -o-transition: top 1s, opacity 1s;
+  -ms-transition: top 1s, opacity 1s;
+  transition: top 1s, opacity 1s;
+}
+
+/* line 214, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 193, common/_common.scss */
+/* line 218, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -258,7 +270,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 205, common/_common.scss */
+/* line 230, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -274,14 +286,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 221, common/_common.scss */
+/* line 246, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 228, common/_common.scss */
+/* line 253, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -293,22 +305,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 234, common/_common.scss */
+/* line 259, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 237, common/_common.scss */
+/* line 262, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 244, common/_common.scss */
+/* line 269, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 251, common/_common.scss */
+/* line 276, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -316,24 +328,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 260, common/_common.scss */
+/* line 285, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 265, common/_common.scss */
+/* line 290, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 271, common/_common.scss */
+  /* line 296, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 277, common/_common.scss */
+  /* line 302, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -342,27 +354,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 285, common/_common.scss */
+  /* line 310, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 289, common/_common.scss */
+  /* line 314, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 298, common/_common.scss */
+  /* line 323, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 302, common/_common.scss */
+  /* line 327, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 306, common/_common.scss */
+  /* line 331, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -2009,17 +2021,17 @@ footer .social {
   text-align: center;
 }
 
-/* line 11, page/_competences.scss */
+/* line 15, page/_competences.scss */
 .skills-filters {
   margin: 2%;
 }
-/* line 15, page/_competences.scss */
+/* line 21, page/_competences.scss */
 .skills-filters .skill-filter {
   width: 25%;
   margin: 0;
   float: left;
 }
-/* line 20, page/_competences.scss */
+/* line 26, page/_competences.scss */
 .skills-filters .skill-filter .filter-title {
   float: left;
   line-height: 1.5em;
@@ -2027,7 +2039,7 @@ footer .social {
   cursor: pointer;
 }
 
-/* line 31, page/_competences.scss */
+/* line 37, page/_competences.scss */
 .skills-container .skill-block {
   width: 20%;
   margin: 0;
@@ -2039,14 +2051,14 @@ footer .social {
   text-align: center;
   overflow: hidden;
 }
-/* line 48, page/_competences.scss */
+/* line 55, page/_competences.scss */
 .skills-container .skill-block img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
-/* line 55, page/_competences.scss */
+/* line 62, page/_competences.scss */
 .skills-container .skill-block .skill-overlay {
   position: absolute;
   top: 100%;
@@ -2060,7 +2072,7 @@ footer .social {
   -ms-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
-/* line 65, page/_competences.scss */
+/* line 72, page/_competences.scss */
 .skills-container .skill-block .coffee {
   display: block;
   position: absolute;
@@ -2069,7 +2081,7 @@ footer .social {
   margin-left: -72px;
   margin-top: -14px;
 }
-/* line 74, page/_competences.scss */
+/* line 81, page/_competences.scss */
 .skills-container .skill-block .in-progress {
   display: block;
   position: absolute;
@@ -2082,28 +2094,28 @@ footer .social {
   font-weight: 700;
   color: #fff;
 }
-/* line 90, page/_competences.scss */
+/* line 97, page/_competences.scss */
 .skills-container .skill-block:hover .skill-overlay {
   top: 0;
 }
 
-/* line 97, page/_competences.scss */
+/* line 104, page/_competences.scss */
 .no-js .skills-filters {
   display: none;
 }
 
 @media screen and (max-width: 70em) and (min-width: 60.1em) {
-  /* line 103, page/_competences.scss */
+  /* line 110, page/_competences.scss */
   .skills-container .skill-block {
     width: 25%;
   }
-  /* line 106, page/_competences.scss */
+  /* line 113, page/_competences.scss */
   .skills-container .skill-block:nth-child(4n) {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 60.1em) {
-  /* line 116, page/_competences.scss */
+  /* line 123, page/_competences.scss */
   .skills-container .skill-block .in-progress {
     -webkit-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
@@ -2114,66 +2126,66 @@ footer .social {
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 126, page/_competences.scss */
+  /* line 133, page/_competences.scss */
   .skills-container .skill-block {
     padding-bottom: 35px;
   }
-  /* line 129, page/_competences.scss */
+  /* line 136, page/_competences.scss */
   .skills-container .skill-block .skill-overlay {
     position: absolute;
-    top: inherit;
+    top: initial;
     bottom: 0;
     height: 35px;
   }
-  /* line 136, page/_competences.scss */
+  /* line 143, page/_competences.scss */
   .skills-container .skill-block:hover .skill-overlay {
-    top: inherit;
+    top: initial;
   }
-  /* line 140, page/_competences.scss */
+  /* line 147, page/_competences.scss */
   .skills-container .skill-block .coffee {
-    top: inherit;
+    top: initial;
     margin-top: 2px;
   }
-  /* line 145, page/_competences.scss */
+  /* line 152, page/_competences.scss */
   .skills-container .skill-block .in-progress {
-    top: inherit;
+    top: initial;
     margin-top: 0;
     line-height: 1.85em;
   }
 }
 @media screen and (max-width: 60em) and (min-width: 48.1em) {
-  /* line 157, page/_competences.scss */
+  /* line 164, page/_competences.scss */
   .skills-container .skill-block {
     width: 33.3333333%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 165, page/_competences.scss */
+  /* line 172, page/_competences.scss */
   .skills-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32.3em) {
-  /* line 174, page/_competences.scss */
+  /* line 181, page/_competences.scss */
   .skills-filters .skill-filter {
     width: 50%;
     margin-bottom: 10px;
   }
 
-  /* line 180, page/_competences.scss */
+  /* line 187, page/_competences.scss */
   .skills-container .skill-block {
     width: 50%;
   }
 }
 @media screen and (max-width: 32.25em) {
-  /* line 188, page/_competences.scss */
+  /* line 195, page/_competences.scss */
   .skills-container .skill-block {
     width: 100%;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 195, page/_competences.scss */
+  /* line 202, page/_competences.scss */
   .stand .page-name {
     font-size: 56%;
     letter-spacing: 2px;
@@ -2181,7 +2193,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 203, page/_competences.scss */
+  /* line 210, page/_competences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
