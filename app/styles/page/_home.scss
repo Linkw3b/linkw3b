@@ -45,6 +45,10 @@
     }
 
     .svg {
+        position: relative;
+
+        @extend .lazy-display;
+
         img {
             max-width: 120px;
             @include filter(grayscale(100%));
