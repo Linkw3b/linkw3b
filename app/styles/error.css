@@ -2068,3 +2068,16 @@ footer .social {
 .content .continue:hover {
   color: #ffa631;
 }
+
+@media screen and (max-width: 65em) {
+  /* line 57, page/_error.scss */
+  .stand .page-name {
+    font-size: 61%;
+  }
+}
+@media screen and (max-width: 43.2em) {
+  /* line 63, page/_error.scss */
+  .stand .page-name {
+    font-size: 58%;
+  }
+}
