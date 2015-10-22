@@ -5,7 +5,7 @@ jQuery(function() {
         nav_icon_id = 'nav-icon',
         nav_links_class = 'js-nav-link',
         nav_expanded_class = 'js-expanded',
-        lazy_display_elements = jQuery('.js-lazy-display'),
+        lazy_display_elements = 'js-lazy-display',
         lazy_displayed_class = 'js-displayed',
         ripple_elements = '.button, .portfolio-overlay, .nav-link, .footer-link';
 
@@ -95,7 +95,7 @@ function rippleEffect(elem, event) {
 
 function updateElementsDisplayed(lazy_display_elements, lazy_displayed_class) {
     var elements = new Array();
-    jQuery.each(lazy_display_elements, function(index, elem) {
+    jQuery.each(jQuery('.'+lazy_display_elements), function(index, elem) {
         if(!jQuery(elem).hasClass(lazy_displayed_class)) {
             if(isElementToDisplay(elem)) {
                 elements.push(elem);
