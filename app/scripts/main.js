@@ -19,6 +19,7 @@ jQuery(function() {
             var top = jQuery('body').css('top');
             toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class);
         }
+        updateElementsDisplayed(lazy_display_elements, lazy_displayed_class)
     });
 
     jQuery('#'+nav_icon_id+', .'+nav_links_class).on('click', function(event) {

@@ -27,7 +27,9 @@ function updateList(elem, filterContainerClass, filterClass) {
         elem = elem.prev();
     }
     jQuery(elem).toggleClass('active');
-    jQuery('.'+filterContainerClass).next().find('.'+elem.attr('data-src')).animate({width: 'toggle'});
+    jQuery('.'+filterContainerClass).next().find('.'+elem.attr('data-src')).animate({width: 'toggle'}, function() {
+        jQuery(document).trigger('scroll');
+    });
 
     updateHash(filterContainerClass, filterClass);
 }
