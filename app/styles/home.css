@@ -253,7 +253,7 @@ noscript {
   }
 }
 /* line 209, common/_common.scss */
-.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .content > * {
+.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .content > p, .csstransitions .shortcuts .practice, .shortcuts .csstransitions .practice {
   top: 30px;
   opacity: 0;
   -webkit-transition: top 1s, opacity 1s;
@@ -2027,7 +2027,7 @@ footer .social {
 }
 
 /* line 7, page/_home.scss */
-.content > * {
+.content > p {
   position: relative;
 }
 
@@ -2040,17 +2040,18 @@ footer .social {
 /* line 21, page/_home.scss */
 .shortcuts .practice {
   margin-bottom: 0;
+  position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-/* line 28, page/_home.scss */
+/* line 31, page/_home.scss */
 .shortcuts .practice img {
   max-width: 250px;
   height: 100%;
 }
-/* line 33, page/_home.scss */
+/* line 36, page/_home.scss */
 .shortcuts .practice figcaption {
   background-color: #409e57;
   color: #fff;
@@ -2058,7 +2059,7 @@ footer .social {
   -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 45, page/_home.scss */
+/* line 48, page/_home.scss */
 .shortcuts .svg img {
   max-width: 120px;
   -webkit-filter: grayscale(100%);
@@ -2067,7 +2068,7 @@ footer .social {
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 51, page/_home.scss */
+/* line 54, page/_home.scss */
 .shortcuts .svg:hover img {
   -webkit-filter: grayscale(40%);
   -moz-filter: grayscale(40%);
@@ -2075,11 +2076,11 @@ footer .social {
   -ms-filter: grayscale(40%);
   filter: grayscale(40%);
 }
-/* line 55, page/_home.scss */
+/* line 58, page/_home.scss */
 .shortcuts .svg:hover .title {
   color: #3594cb;
 }
-/* line 59, page/_home.scss */
+/* line 62, page/_home.scss */
 .shortcuts figcaption {
   width: 100%;
   font-weight: 700;
@@ -2089,11 +2090,11 @@ footer .social {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 68, page/_home.scss */
+/* line 71, page/_home.scss */
 .shortcuts figcaption.blue {
   background-color: #3594cb;
 }
-/* line 73, page/_home.scss */
+/* line 76, page/_home.scss */
 .shortcuts .title {
   display: block;
   padding: 20px;
@@ -2103,13 +2104,13 @@ footer .social {
   -moz-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
-/* line 82, page/_home.scss */
+/* line 85, page/_home.scss */
 .shortcuts + p {
   text-align: center;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 88, page/_home.scss */
+  /* line 91, page/_home.scss */
   .stand .page-name {
     font-size: 69%;
     letter-spacing: 2px;
@@ -2117,18 +2118,18 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 96, page/_home.scss */
+  /* line 99, page/_home.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 35em) {
-  /* line 102, page/_home.scss */
+  /* line 105, page/_home.scss */
   .shortcuts .mcolumn {
     margin-bottom: 20px;
   }
 
-  /* line 105, page/_home.scss */
+  /* line 108, page/_home.scss */
   .shortcuts .practice img {
     float: initial;
     max-height: 150px;

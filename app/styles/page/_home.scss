@@ -4,7 +4,7 @@
     margin-left: 9px;
 }
 
-.content > * {
+.content > p {
     position: relative;
 
     @extend .lazy-display;
@@ -20,10 +20,13 @@
 
     .practice {
         margin-bottom: 0;
+        position: relative;
 
         background-color: #fff;
 
         @include box-shadow(0, 0, 5px, rgba(0,0,0,0.2));
+
+        @extend .lazy-display;
 
         img {
             max-width: 250px;
