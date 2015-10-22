@@ -13,6 +13,12 @@
     padding: 0 0 20px 0;
     list-style: none;
     position: relative;
+
+    & > * {
+        position: relative;
+
+        @extend .lazy-display
+    }
 }
 
 /* The line */
@@ -44,8 +50,6 @@
     text-transform: uppercase;
 
     @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
-
-    @extend .lazy-display;
 }
 
 .tmtimeline > li .tmtime span {
@@ -74,8 +78,6 @@
     font-size: 150%;
 
     @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
-
-    @extend .lazy-display;
 }
 .tmtimeline > li .tmtitle p {
     margin: 15px 0 0;
@@ -102,8 +104,6 @@
     line-height: 1.4;
 
     @include text-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
-
-    @extend .lazy-display;
 }
 .tmtimeline > li .tmlabel p {
     margin: 10px 0;
