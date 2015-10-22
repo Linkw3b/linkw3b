@@ -148,13 +148,22 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 105, common/_common.scss */
+/* line 97, common/_common.scss */
+.stand img {
+  position: relative;
+}
+/* line 103, common/_common.scss */
+.stand h1 {
+  position: relative;
+}
+/* line 109, common/_common.scss */
 .stand h2 {
+  position: relative;
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 112, common/_common.scss */
+/* line 118, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -162,7 +171,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 120, common/_common.scss */
+/* line 126, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -176,31 +185,33 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 134, common/_common.scss */
+/* line 140, common/_common.scss */
 .stand .page-name {
   display: block;
+  position: relative;
   font-family: 'Press Start 2P';
 }
 
-/* line 144, common/_common.scss */
+/* line 151, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
   padding-bottom: 70px;
+  position: relative;
   font-size: 120%;
   font-weight: 300;
 }
-/* line 154, common/_common.scss */
+/* line 162, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 158, common/_common.scss */
+/* line 166, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 164, common/_common.scss */
+/* line 172, common/_common.scss */
 .button {
   position: relative;
   border: none;
@@ -216,12 +227,12 @@ noscript {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 180, common/_common.scss */
+/* line 188, common/_common.scss */
 .button:hover {
   background-color: #ffa631;
 }
 
-/* line 185, common/_common.scss */
+/* line 193, common/_common.scss */
 .ripple {
   display: block;
   position: absolute;
@@ -230,7 +241,7 @@ noscript {
   transform: scale(0);
 }
 
-/* line 193, common/_common.scss */
+/* line 201, common/_common.scss */
 .ripple.animate {
   animation: ripple 0.5s linear;
 }
@@ -241,9 +252,8 @@ noscript {
     transform: scale(2.5);
   }
 }
-/* line 201, common/_common.scss */
-.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name {
-  position: relative;
+/* line 209, common/_common.scss */
+.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .content .column > *, .content .csstransitions .column > *, .csstransitions .content .mcolumn > *, .content .csstransitions .mcolumn > * {
   top: 30px;
   opacity: 0;
   -webkit-transition: top 1s, opacity 1s;
@@ -253,12 +263,12 @@ noscript {
   transition: top 1s, opacity 1s;
 }
 
-/* line 214, common/_common.scss */
+/* line 221, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 218, common/_common.scss */
+/* line 225, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -270,7 +280,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 230, common/_common.scss */
+/* line 237, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -286,14 +296,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 246, common/_common.scss */
+/* line 253, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 253, common/_common.scss */
+/* line 260, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -305,22 +315,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 259, common/_common.scss */
+/* line 266, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 262, common/_common.scss */
+/* line 269, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 269, common/_common.scss */
+/* line 276, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 276, common/_common.scss */
+/* line 283, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -328,24 +338,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 285, common/_common.scss */
+/* line 292, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 290, common/_common.scss */
+/* line 297, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 296, common/_common.scss */
+  /* line 303, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 302, common/_common.scss */
+  /* line 309, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -354,27 +364,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 310, common/_common.scss */
+  /* line 317, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 314, common/_common.scss */
+  /* line 321, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 323, common/_common.scss */
+  /* line 330, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 327, common/_common.scss */
+  /* line 334, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 331, common/_common.scss */
+  /* line 338, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -2011,7 +2021,7 @@ footer .social {
 }
 /* line 1, page/_error.scss */
 .page-name {
-  font-size: 58%;
+  font-size: 64%;
   letter-spacing: 3px;
   margin-left: 9px;
 }
@@ -2020,16 +2030,20 @@ footer .social {
 .content .column, .content .mcolumn {
   padding: 20px;
 }
-/* line 13, page/_error.scss */
+/* line 12, page/_error.scss */
+.content .column > *, .content .mcolumn > * {
+  position: relative;
+}
+/* line 19, page/_error.scss */
 .content .dead-link {
   text-align: center;
 }
-/* line 16, page/_error.scss */
+/* line 22, page/_error.scss */
 .content .dead-link img {
   width: auto;
   height: auto;
 }
-/* line 22, page/_error.scss */
+/* line 28, page/_error.scss */
 .content .error-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -2037,12 +2051,12 @@ footer .social {
   color: #7bc98e;
   font-size: 180%;
 }
-/* line 31, page/_error.scss */
+/* line 37, page/_error.scss */
 .content .error-message {
   margin-bottom: 20px;
   font-size: 120%;
 }
-/* line 36, page/_error.scss */
+/* line 42, page/_error.scss */
 .content .continue {
   position: relative;
   padding-left: 50px;
@@ -2050,7 +2064,7 @@ footer .social {
   line-height: 1.85em;
   color: #4c4c4c;
 }
-/* line 44, page/_error.scss */
+/* line 50, page/_error.scss */
 .content .continue:hover {
   color: #ffa631;
 }

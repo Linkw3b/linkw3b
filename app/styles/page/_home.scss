@@ -5,6 +5,8 @@
 }
 
 .content > * {
+    position: relative;
+
     @extend .lazy-display;
 }
 

@@ -9,11 +9,14 @@
 }
 
 .content > p {
+    position: relative;
+
     @extend .lazy-display;
 }
 
 .portfolio-filters {
     margin: 2%;
+    position: relative;
 
     @extend .clearfix;
     @extend .lazy-display;

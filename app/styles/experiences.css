@@ -148,13 +148,22 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 105, common/_common.scss */
+/* line 97, common/_common.scss */
+.stand img {
+  position: relative;
+}
+/* line 103, common/_common.scss */
+.stand h1 {
+  position: relative;
+}
+/* line 109, common/_common.scss */
 .stand h2 {
+  position: relative;
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 112, common/_common.scss */
+/* line 118, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -162,7 +171,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 120, common/_common.scss */
+/* line 126, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -176,31 +185,33 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 134, common/_common.scss */
+/* line 140, common/_common.scss */
 .stand .page-name {
   display: block;
+  position: relative;
   font-family: 'Press Start 2P';
 }
 
-/* line 144, common/_common.scss */
+/* line 151, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
   padding-bottom: 70px;
+  position: relative;
   font-size: 120%;
   font-weight: 300;
 }
-/* line 154, common/_common.scss */
+/* line 162, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 158, common/_common.scss */
+/* line 166, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 164, common/_common.scss */
+/* line 172, common/_common.scss */
 .button {
   position: relative;
   border: none;
@@ -216,12 +227,12 @@ noscript {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 180, common/_common.scss */
+/* line 188, common/_common.scss */
 .button:hover {
   background-color: #ffa631;
 }
 
-/* line 185, common/_common.scss */
+/* line 193, common/_common.scss */
 .ripple {
   display: block;
   position: absolute;
@@ -230,7 +241,7 @@ noscript {
   transform: scale(0);
 }
 
-/* line 193, common/_common.scss */
+/* line 201, common/_common.scss */
 .ripple.animate {
   animation: ripple 0.5s linear;
 }
@@ -241,9 +252,8 @@ noscript {
     transform: scale(2.5);
   }
 }
-/* line 201, common/_common.scss */
+/* line 209, common/_common.scss */
 .csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .tmtimeline > li .tmtime, .tmtimeline > li .csstransitions .tmtime, .csstransitions .tmtimeline > li .tmtitle, .tmtimeline > li .csstransitions .tmtitle, .csstransitions .tmtimeline > li .tmlabel, .tmtimeline > li .csstransitions .tmlabel {
-  position: relative;
   top: 30px;
   opacity: 0;
   -webkit-transition: top 1s, opacity 1s;
@@ -253,12 +263,12 @@ noscript {
   transition: top 1s, opacity 1s;
 }
 
-/* line 214, common/_common.scss */
+/* line 221, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 218, common/_common.scss */
+/* line 225, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -270,7 +280,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 230, common/_common.scss */
+/* line 237, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -286,14 +296,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 246, common/_common.scss */
+/* line 253, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 253, common/_common.scss */
+/* line 260, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -305,22 +315,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 259, common/_common.scss */
+/* line 266, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 262, common/_common.scss */
+/* line 269, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 269, common/_common.scss */
+/* line 276, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 276, common/_common.scss */
+/* line 283, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -328,24 +338,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 285, common/_common.scss */
+/* line 292, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 290, common/_common.scss */
+/* line 297, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 296, common/_common.scss */
+  /* line 303, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 302, common/_common.scss */
+  /* line 309, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -354,27 +364,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 310, common/_common.scss */
+  /* line 317, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 314, common/_common.scss */
+  /* line 321, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 323, common/_common.scss */
+  /* line 330, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 327, common/_common.scss */
+  /* line 334, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 331, common/_common.scss */
+  /* line 338, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -2061,26 +2071,26 @@ footer .social {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 50, page/_experiences.scss */
+/* line 51, page/_experiences.scss */
 .tmtimeline > li .tmtime span {
   display: block;
   text-align: right;
 }
 
-/* line 55, page/_experiences.scss */
+/* line 56, page/_experiences.scss */
 .tmtimeline > li .tmtime span:first-child {
   font-size: 1.2em;
   color: #4c4c4c;
 }
 
-/* line 60, page/_experiences.scss */
+/* line 61, page/_experiences.scss */
 .tmtimeline > li .tmtime span:last-child {
   font-size: 1em;
   color: #3594cb;
 }
 
 /* Right content */
-/* line 66, page/_experiences.scss */
+/* line 67, page/_experiences.scss */
 .tmtimeline > li .tmtitle {
   position: absolute;
   margin-top: 7%;
@@ -2093,23 +2103,23 @@ footer .social {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 79, page/_experiences.scss */
+/* line 80, page/_experiences.scss */
 .tmtimeline > li .tmtitle p {
   margin: 15px 0 0;
 }
 
-/* line 82, page/_experiences.scss */
+/* line 83, page/_experiences.scss */
 .tmtimeline > li .tmtitle .position {
   font-weight: 700;
   color: #3594cb;
 }
 
-/* line 86, page/_experiences.scss */
+/* line 87, page/_experiences.scss */
 .tmtimeline > li .tmtitle .contract {
   font-size: 80%;
 }
 
-/* line 89, page/_experiences.scss */
+/* line 90, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   margin: 0 0 30px 0;
   padding: 0.5em 2em;
@@ -2126,14 +2136,14 @@ footer .social {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 107, page/_experiences.scss */
+/* line 108, page/_experiences.scss */
 .tmtimeline > li .tmlabel p {
   margin: 10px 0;
   font-size: 80%;
   font-weight: 400;
 }
 
-/* line 113, page/_experiences.scss */
+/* line 114, page/_experiences.scss */
 .tmtimeline > li .tmlabel .tag {
   padding: 2px 5px;
   background-color: #fff;
@@ -2152,7 +2162,7 @@ footer .social {
   border-radius: 3px;
 }
 
-/* line 126, page/_experiences.scss */
+/* line 127, page/_experiences.scss */
 .tmtimeline > li .tmlabel ul {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -2162,17 +2172,17 @@ footer .social {
   list-style: initial;
 }
 
-/* line 136, page/_experiences.scss */
+/* line 137, page/_experiences.scss */
 .tmtimeline > li .tmlabel .tmsection {
   font-weight: 700;
 }
 
-/* line 140, page/_experiences.scss */
+/* line 141, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   background: #57ba6f;
 }
 
-/* line 144, page/_experiences.scss */
+/* line 145, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 {
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -2180,22 +2190,22 @@ footer .social {
   font-weight: 700;
   font-size: 1.2em;
 }
-/* line 151, page/_experiences.scss */
+/* line 152, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 a {
   font-weight: 700;
 }
 
-/* line 156, page/_experiences.scss */
+/* line 157, page/_experiences.scss */
 .tmtimeline > li .tmlabel a {
   color: #fff;
 }
-/* line 159, page/_experiences.scss */
+/* line 160, page/_experiences.scss */
 .tmtimeline > li .tmlabel a:hover {
   color: #ffb14b;
 }
 
 /* The triangle */
-/* line 165, page/_experiences.scss */
+/* line 166, page/_experiences.scss */
 .tmtimeline > li .tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -2209,25 +2219,25 @@ footer .social {
   top: 10px;
 }
 
-/* line 179, page/_experiences.scss */
+/* line 180, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime {
   right: 0;
   left: inherit;
 }
-/* line 183, page/_experiences.scss */
+/* line 184, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime span {
   text-align: left;
 }
-/* line 188, page/_experiences.scss */
+/* line 189, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtitle {
   right: 0;
 }
-/* line 192, page/_experiences.scss */
+/* line 193, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel {
   float: left;
   background: #409e57;
 }
-/* line 196, page/_experiences.scss */
+/* line 197, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel:after {
   left: 100%;
   right: inherit;
@@ -2236,7 +2246,7 @@ footer .social {
 }
 
 /* The icons */
-/* line 207, page/_experiences.scss */
+/* line 208, page/_experiences.scss */
 .tmtimeline > li .tmicon {
   width: 80px;
   height: 40px;
@@ -2261,56 +2271,56 @@ footer .social {
 }
 
 @media screen and (max-width: 80em) {
-  /* line 231, page/_experiences.scss */
+  /* line 232, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 36%;
   }
 }
 @media screen and (max-width: 62em) {
-  /* line 237, page/_experiences.scss */
+  /* line 238, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 31%;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 244, page/_experiences.scss */
+  /* line 245, page/_experiences.scss */
   .tmtimeline:before {
     display: none;
   }
 
-  /* line 248, page/_experiences.scss */
+  /* line 249, page/_experiences.scss */
   .tmtimeline > li .tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 254, page/_experiences.scss */
+  /* line 255, page/_experiences.scss */
   .tmtimeline > li .tmtitle {
     display: none;
   }
 
-  /* line 258, page/_experiences.scss */
+  /* line 259, page/_experiences.scss */
   .tmtimeline > li .show-mobile {
     display: block;
   }
 
-  /* line 262, page/_experiences.scss */
+  /* line 263, page/_experiences.scss */
   .tmtimeline > li .tmlabel p {
     font-size: 100%;
   }
 
-  /* line 266, page/_experiences.scss */
+  /* line 267, page/_experiences.scss */
   .tmtimeline > li .tmlabel ul {
     font-size: 90%;
   }
 
-  /* line 270, page/_experiences.scss */
+  /* line 271, page/_experiences.scss */
   .tmtimeline > li .tmtime span {
     text-align: left;
   }
 
-  /* line 274, page/_experiences.scss */
+  /* line 275, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -2323,7 +2333,7 @@ footer .social {
     float: none;
   }
 
-  /* line 284, page/_experiences.scss */
+  /* line 285, page/_experiences.scss */
   .tmtimeline > li .tmlabel:after {
     right: auto;
     left: 20px;
@@ -2332,20 +2342,20 @@ footer .social {
     top: -20px;
   }
 
-  /* line 292, page/_experiences.scss */
+  /* line 293, page/_experiences.scss */
   .tmtimeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #57ba6f;
   }
 
-  /* line 297, page/_experiences.scss */
+  /* line 298, page/_experiences.scss */
   .tmtimeline > li:nth-child(even) .tmlabel:after {
     right: auto;
     left: 20px;
     border-left-color: transparent;
   }
 
-  /* line 303, page/_experiences.scss */
+  /* line 304, page/_experiences.scss */
   .tmtimeline > li .tmicon {
     position: relative;
     float: right;
@@ -2354,7 +2364,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 312, page/_experiences.scss */
+  /* line 313, page/_experiences.scss */
   .stand .page-name {
     font-size: 62%;
     letter-spacing: 2px;
@@ -2362,7 +2372,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 320, page/_experiences.scss */
+  /* line 321, page/_experiences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }

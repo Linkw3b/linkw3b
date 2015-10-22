@@ -6,6 +6,7 @@
         <meta name="description" content="Portfolio de Manuel Taraud - Développeur Front-End">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="alternate" href="http://www.taraud-m.fr/" hreflang="fr-fr" />
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/styles/error.min.css">
         <script type="text/javascript" src="/js/modernizr.min.js"></script>
@@ -41,13 +42,13 @@
             <div class="content">
                 <div class="error-page">
                     <div class="col-6 column dead-link">
-                        <img src="/img/lock.png" width="288" height="320" alt="Lock">
+                        <img src="/img/lock.png" class="js-lazy-display" width="288" height="320" alt="Lock">
                     </div>
                     <div class="col-6 column">
-                        <p class="error-title">Attention danger !</p>
-                        <p class="error-message">Vous n'avez pas l'autorisation pour accéder à cette page</p>
-                        <p><a href="/" title="Accueil" class="continue">Continue</p>
-                        <p><a href="/contact.html" title="Contact" class="continue key">Demander la clé</p>
+                        <p class="error-title js-lazy-display">Attention danger !</p>
+                        <p class="error-message js-lazy-display">Vous n'avez pas l'autorisation pour accéder à cette page</p>
+                        <p class="js-lazy-display"><a href="/" title="Accueil" class="continue">Continue</p>
+                        <p class="js-lazy-display"><a href="/contact.html" title="Contact" class="continue key">Demander la clé</p>
                     </div>
                 </div>
             </div>

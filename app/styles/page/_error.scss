@@ -1,5 +1,5 @@
 .page-name {
-    font-size: 58%;
+    font-size: 64%;
     letter-spacing: 3px;
     margin-left: 9px;
 }
@@ -8,6 +8,12 @@
 
     .column {
         padding: 20px;
+
+        & > * {
+            position: relative;
+
+            @extend .lazy-display;
+        }
     }
 
     .dead-link {

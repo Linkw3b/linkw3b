@@ -95,14 +95,20 @@ noscript {
     @include text-shadow(2px, 2px, 2px, rgba(0,0,0,0.5));
 
     img {
+        position: relative;
+
         @extend .lazy-display;
     }
 
     h1 {
+        position: relative;
+
         @extend .lazy-display;
     }
 
     h2 {
+        position: relative;
+
         font-size: 69%;
         color: $main-orange;
         font-weight: 100;
@@ -133,6 +139,7 @@ noscript {
 
     .page-name {
         display: block;
+        position: relative;
 
         font-family: 'Press Start 2P';
 
@@ -145,6 +152,7 @@ noscript {
     max-width: $max-width;
     margin: 20px auto 0;
     padding-bottom: 70px;
+    position: relative;
 
     font-size: 120%;
     font-weight: 300;
@@ -199,7 +207,6 @@ noscript {
 }
 
 .csstransitions .lazy-display {
-    position: relative;
     top: 30px;
 
     opacity: 0;

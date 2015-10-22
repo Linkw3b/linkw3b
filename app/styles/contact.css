@@ -148,13 +148,22 @@ noscript {
   -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 105, common/_common.scss */
+/* line 97, common/_common.scss */
+.stand img {
+  position: relative;
+}
+/* line 103, common/_common.scss */
+.stand h1 {
+  position: relative;
+}
+/* line 109, common/_common.scss */
 .stand h2 {
+  position: relative;
   font-size: 69%;
   color: #ffa631;
   font-weight: 100;
 }
-/* line 112, common/_common.scss */
+/* line 118, common/_common.scss */
 .stand h2 span {
   position: relative;
   padding-bottom: 10px;
@@ -162,7 +171,7 @@ noscript {
   display: inline-block;
   font-weight: 400;
 }
-/* line 120, common/_common.scss */
+/* line 126, common/_common.scss */
 .stand h2 span:after {
   content: "";
   width: 100%;
@@ -176,31 +185,33 @@ noscript {
   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 134, common/_common.scss */
+/* line 140, common/_common.scss */
 .stand .page-name {
   display: block;
+  position: relative;
   font-family: 'Press Start 2P';
 }
 
-/* line 144, common/_common.scss */
+/* line 151, common/_common.scss */
 .content {
   max-width: 1200px;
   margin: 20px auto 0;
   padding-bottom: 70px;
+  position: relative;
   font-size: 120%;
   font-weight: 300;
 }
-/* line 154, common/_common.scss */
+/* line 162, common/_common.scss */
 .content img {
   width: 100%;
 }
-/* line 158, common/_common.scss */
+/* line 166, common/_common.scss */
 .content > * {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 164, common/_common.scss */
+/* line 172, common/_common.scss */
 .button {
   position: relative;
   border: none;
@@ -216,12 +227,12 @@ noscript {
   -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 180, common/_common.scss */
+/* line 188, common/_common.scss */
 .button:hover {
   background-color: #ffa631;
 }
 
-/* line 185, common/_common.scss */
+/* line 193, common/_common.scss */
 .ripple {
   display: block;
   position: absolute;
@@ -230,7 +241,7 @@ noscript {
   transform: scale(0);
 }
 
-/* line 193, common/_common.scss */
+/* line 201, common/_common.scss */
 .ripple.animate {
   animation: ripple 0.5s linear;
 }
@@ -241,9 +252,8 @@ noscript {
     transform: scale(2.5);
   }
 }
-/* line 201, common/_common.scss */
+/* line 209, common/_common.scss */
 .csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .contact-container .avatar, .contact-container .csstransitions .avatar, .csstransitions .contact-container .contact-form > *, .contact-container .csstransitions .contact-form > *, .csstransitions .contact-container .contact-info, .contact-container .csstransitions .contact-info {
-  position: relative;
   top: 30px;
   opacity: 0;
   -webkit-transition: top 1s, opacity 1s;
@@ -253,12 +263,12 @@ noscript {
   transition: top 1s, opacity 1s;
 }
 
-/* line 214, common/_common.scss */
+/* line 221, common/_common.scss */
 .show-mobile {
   display: none;
 }
 
-/* line 218, common/_common.scss */
+/* line 225, common/_common.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -270,7 +280,7 @@ noscript {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 230, common/_common.scss */
+/* line 237, common/_common.scss */
 .popin-gallery {
   display: none;
   width: 80%;
@@ -286,14 +296,14 @@ noscript {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 246, common/_common.scss */
+/* line 253, common/_common.scss */
 .popin-gallery .popin-container {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 253, common/_common.scss */
+/* line 260, common/_common.scss */
 .popin-gallery .slide {
   position: absolute;
   left: 0%;
@@ -305,22 +315,22 @@ noscript {
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 259, common/_common.scss */
+/* line 266, common/_common.scss */
 .popin-gallery .slide.prev-slide {
   left: -100%;
 }
-/* line 262, common/_common.scss */
+/* line 269, common/_common.scss */
 .popin-gallery .slide.next-slide {
   left: 100%;
 }
-/* line 269, common/_common.scss */
+/* line 276, common/_common.scss */
 .popin-gallery .imgContainer {
   width: 100%;
   height: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-/* line 276, common/_common.scss */
+/* line 283, common/_common.scss */
 .popin-gallery h2 {
   margin-bottom: 20px;
   padding: 0 50px;
@@ -328,24 +338,24 @@ noscript {
   font-weight: 700;
   color: #3594cb;
 }
-/* line 285, common/_common.scss */
+/* line 292, common/_common.scss */
 .popin-gallery p {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 290, common/_common.scss */
+/* line 297, common/_common.scss */
 .popin-gallery img {
   max-height: none;
 }
 
 @media screen and (max-width: 65em) {
-  /* line 296, common/_common.scss */
+  /* line 303, common/_common.scss */
   .stand {
     font-size: 300%;
   }
 }
 @media screen and (max-width: 60em) {
-  /* line 302, common/_common.scss */
+  /* line 309, common/_common.scss */
   .popin-gallery {
     width: 100%;
     height: 100%;
@@ -354,27 +364,27 @@ noscript {
     top: 0;
     left: 0;
   }
-  /* line 310, common/_common.scss */
+  /* line 317, common/_common.scss */
   .popin-gallery h2 {
     margin-top: 20px;
   }
-  /* line 314, common/_common.scss */
+  /* line 321, common/_common.scss */
   .popin-gallery .imgContainer {
     height: 65%;
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 323, common/_common.scss */
+  /* line 330, common/_common.scss */
   .show-mobile {
     display: block;
   }
 
-  /* line 327, common/_common.scss */
+  /* line 334, common/_common.scss */
   .stand {
     padding: 30px 0 20px;
     font-size: 250%;
   }
-  /* line 331, common/_common.scss */
+  /* line 338, common/_common.scss */
   .stand img {
     width: 50px;
     height: 50px;
@@ -2024,8 +2034,9 @@ footer .social {
 .contact-container .avatar {
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
-/* line 18, page/_contact.scss */
+/* line 19, page/_contact.scss */
 .contact-container .avatar img {
   width: 150px;
   border: 6px solid #3594cb;
@@ -2037,21 +2048,25 @@ footer .social {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-/* line 28, page/_contact.scss */
+/* line 29, page/_contact.scss */
 .contact-container .contact-form,
 .contact-container .contact-info {
   margin-left: 0;
 }
-/* line 33, page/_contact.scss */
+/* line 34, page/_contact.scss */
 .contact-container .contact-form {
   float: left;
   padding-right: 40px;
 }
-/* line 41, page/_contact.scss */
+/* line 38, page/_contact.scss */
+.contact-container .contact-form > * {
+  position: relative;
+}
+/* line 44, page/_contact.scss */
 .contact-container .contact-form .g-recaptcha-container {
   margin-bottom: 20px;
 }
-/* line 44, page/_contact.scss */
+/* line 47, page/_contact.scss */
 .contact-container .contact-form .g-recaptcha-container .g-recaptcha-message {
   margin: 5px 0 0;
   color: #e91717;
@@ -2064,21 +2079,22 @@ footer .social {
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 57, page/_contact.scss */
+/* line 60, page/_contact.scss */
 .contact-container .contact-form .g-recaptcha-container.invalid-captcha .g-recaptcha-message {
   opacity: 1;
 }
-/* line 63, page/_contact.scss */
+/* line 66, page/_contact.scss */
 .contact-container .contact-form .g-recaptcha {
   width: 304px;
   margin: 0 auto;
 }
-/* line 68, page/_contact.scss */
+/* line 71, page/_contact.scss */
 .contact-container .contact-info {
   float: right;
   padding: 20px;
   margin-top: 31px;
   margin-bottom: 40px;
+  position: relative;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2086,30 +2102,30 @@ footer .social {
   border: 1px solid #ccc;
   background-color: #e5e5e5;
 }
-/* line 82, page/_contact.scss */
+/* line 86, page/_contact.scss */
 .contact-container .contact-info p {
   margin: 0 0 5px;
 }
-/* line 86, page/_contact.scss */
+/* line 90, page/_contact.scss */
 .contact-container .contact-info li {
   margin-bottom: 10px;
 }
-/* line 90, page/_contact.scss */
+/* line 94, page/_contact.scss */
 .contact-container .contact-info img {
   width: auto;
 }
-/* line 94, page/_contact.scss */
+/* line 98, page/_contact.scss */
 .contact-container .contact-info .cv-link {
   line-height: 1.7em;
 }
-/* line 99, page/_contact.scss */
+/* line 103, page/_contact.scss */
 .contact-container label, .contact-container input, .contact-container textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 105, page/_contact.scss */
+/* line 109, page/_contact.scss */
 .contact-container input, .contact-container textarea {
   margin-bottom: 20px;
   padding: 10px;
@@ -2120,12 +2136,12 @@ footer .social {
   -ms-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
-/* line 113, page/_contact.scss */
+/* line 117, page/_contact.scss */
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none;
   border-color: #3594cb;
 }
-/* line 119, page/_contact.scss */
+/* line 123, page/_contact.scss */
 .contact-container button[type='submit'] {
   position: relative;
   display: block;
@@ -2135,56 +2151,56 @@ footer .social {
   padding: 10px 15px 10px 40px;
   clear: both;
 }
-/* line 129, page/_contact.scss */
+/* line 133, page/_contact.scss */
 .contact-container label {
   color: #7bc98e;
   font-weight: 700;
   font-size: 120%;
   line-height: 30px;
 }
-/* line 137, page/_contact.scss */
+/* line 141, page/_contact.scss */
 .contact-container label.invalid + input, .contact-container label.invalid + textarea {
   color: #f27474;
   border-color: #f27474;
 }
-/* line 145, page/_contact.scss */
+/* line 149, page/_contact.scss */
 .contact-container textarea {
   height: 150px;
 }
-/* line 149, page/_contact.scss */
+/* line 153, page/_contact.scss */
 .contact-container .required:after {
   content: '*';
   color: #f27474;
   font-size: 80%;
 }
 
-/* line 157, page/_contact.scss */
+/* line 161, page/_contact.scss */
 .no-js .contact-form {
   display: none;
 }
-/* line 160, page/_contact.scss */
+/* line 164, page/_contact.scss */
 .no-js .contact-info {
   width: 100%;
 }
 
 @media screen and (max-width: 47.2em) {
-  /* line 166, page/_contact.scss */
+  /* line 170, page/_contact.scss */
   .contact-container > .column, .contact-container > .mcolumn {
     width: 100%;
   }
 
-  /* line 169, page/_contact.scss */
+  /* line 173, page/_contact.scss */
   .contact-container .contact-info {
     margin-top: 0;
   }
 
-  /* line 172, page/_contact.scss */
+  /* line 176, page/_contact.scss */
   .contact-container .contact-form {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 178, page/_contact.scss */
+  /* line 182, page/_contact.scss */
   .stand .page-name {
     font-size: 79%;
     letter-spacing: 8px;
@@ -2192,7 +2208,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 186, page/_contact.scss */
+  /* line 190, page/_contact.scss */
   .stand .page-name {
     letter-spacing: 6px;
   }

@@ -9,11 +9,14 @@
 }
 
 .content > p {
+    position: relative;
+
     @extend .lazy-display;
 }
 
 .skills-filters {
     margin: 2%;
+    position: relative;
 
     @extend .clearfix;
     @extend .lazy-display;
@@ -39,6 +42,7 @@
         margin: 0;
         padding: 2%;
         height: 150px;
+        position: relative;
 
         border: 4px solid #f3f3f3;
 

@@ -6,6 +6,7 @@
         <meta name="description" content="Portfolio de Manuel Taraud - Développeur Front-End">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="alternate" href="http://www.taraud-m.fr/" hreflang="fr-fr" />
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/styles/error.min.css">
         <script type="text/javascript" src="/js/modernizr.min.js"></script>
@@ -41,13 +42,13 @@
             <div class="content">
                 <div class="error-page">
                     <div class="col-6 column dead-link">
-                        <img src="/img/dead_link.png" width="384" height="240" alt="Dead Link">
+                        <img src="/img/dead_link.png" class="js-lazy-display" width="384" height="240" alt="Dead Link">
                     </div>
                     <div class="col-6 column">
-                        <p class="error-title">Dead Link !</p>
-                        <p class="error-message">La page que vous recherchez n'existe plus...</p>
-                        <p><a href="/" title="Accueil" class="continue">Continue</p>
-                        <p><a href="/contact.html" title="Contact" class="continue">Rapporter le problème</p>
+                        <p class="error-title js-lazy-display">Dead Link !</p>
+                        <p class="error-message js-lazy-display">La page que vous recherchez n'existe plus...</p>
+                        <p class="js-lazy-display"><a href="/" title="Accueil" class="continue">Continue</p>
+                        <p class="js-lazy-display"><a href="/contact.html" title="Contact" class="continue">Rapporter le problème</p>
                     </div>
                 </div>
             </div>
