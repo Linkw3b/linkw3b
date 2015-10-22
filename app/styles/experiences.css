@@ -253,7 +253,7 @@ noscript {
   }
 }
 /* line 209, common/_common.scss */
-.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .tmtimeline > li .tmtime, .tmtimeline > li .csstransitions .tmtime, .csstransitions .tmtimeline > li .tmtitle, .tmtimeline > li .csstransitions .tmtitle, .csstransitions .tmtimeline > li .tmlabel, .tmtimeline > li .csstransitions .tmlabel {
+.csstransitions .lazy-display, .csstransitions .stand img, .stand .csstransitions img, .csstransitions .stand h1, .stand .csstransitions h1, .csstransitions .stand h2, .stand .csstransitions h2, .csstransitions .stand .page-name, .stand .csstransitions .page-name, .csstransitions .tmtimeline > * {
   top: 30px;
   opacity: 0;
   -webkit-transition: top 1s, opacity 1s;
@@ -2038,9 +2038,13 @@ footer .social {
   list-style: none;
   position: relative;
 }
+/* line 17, page/_experiences.scss */
+.tmtimeline > * {
+  position: relative;
+}
 
 /* The line */
-/* line 19, page/_experiences.scss */
+/* line 25, page/_experiences.scss */
 .tmtimeline:before {
   content: '';
   position: absolute;
@@ -2052,13 +2056,13 @@ footer .social {
   margin-left: -5px;
 }
 
-/* line 30, page/_experiences.scss */
+/* line 36, page/_experiences.scss */
 .tmtimeline > li {
   position: relative;
 }
 
 /* The date/time */
-/* line 37, page/_experiences.scss */
+/* line 43, page/_experiences.scss */
 .tmtimeline > li .tmtime {
   display: block;
   width: 45%;
@@ -2071,26 +2075,26 @@ footer .social {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 51, page/_experiences.scss */
+/* line 55, page/_experiences.scss */
 .tmtimeline > li .tmtime span {
   display: block;
   text-align: right;
 }
 
-/* line 56, page/_experiences.scss */
+/* line 60, page/_experiences.scss */
 .tmtimeline > li .tmtime span:first-child {
   font-size: 1.2em;
   color: #4c4c4c;
 }
 
-/* line 61, page/_experiences.scss */
+/* line 65, page/_experiences.scss */
 .tmtimeline > li .tmtime span:last-child {
   font-size: 1em;
   color: #3594cb;
 }
 
 /* Right content */
-/* line 67, page/_experiences.scss */
+/* line 71, page/_experiences.scss */
 .tmtimeline > li .tmtitle {
   position: absolute;
   margin-top: 7%;
@@ -2103,23 +2107,23 @@ footer .social {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 80, page/_experiences.scss */
+/* line 82, page/_experiences.scss */
 .tmtimeline > li .tmtitle p {
   margin: 15px 0 0;
 }
 
-/* line 83, page/_experiences.scss */
+/* line 85, page/_experiences.scss */
 .tmtimeline > li .tmtitle .position {
   font-weight: 700;
   color: #3594cb;
 }
 
-/* line 87, page/_experiences.scss */
+/* line 89, page/_experiences.scss */
 .tmtimeline > li .tmtitle .contract {
   font-size: 80%;
 }
 
-/* line 90, page/_experiences.scss */
+/* line 92, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   margin: 0 0 30px 0;
   padding: 0.5em 2em;
