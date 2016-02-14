@@ -69,6 +69,7 @@ function toggleNav(nav, scroll, top, header, main_nav_id, nav_expanded_class) {
         jQuery('#'+main_nav_id).animate({left: '0'});
     }
     nav.toggleClass(nav_expanded_class);
+    jQuery('#header').toggleClass(nav_expanded_class);
 }
 
 function rippleEffect(elem, event) {
