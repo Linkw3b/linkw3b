@@ -7,7 +7,7 @@ jQuery(function() {
         nav_expanded_class = 'js-expanded',
         progress_points = 'js-points',
         ripple_elements = '.button, .portfolio-overlay, .nav-link, .footer-link';
-        lazy_display = new LazyDisplay('js-lazy-display', 'js-displayed');
+        lazy_display = new LazyDisplay('js-lazy-display', 'js-displayed', true);
 
     /* Listeners */
     jQuery(document).on('scroll', { elem: jQuery('#'+header) }, headerFixed);

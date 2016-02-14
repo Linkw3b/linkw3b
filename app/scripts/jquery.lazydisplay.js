@@ -1,6 +1,5 @@
-var LazyDisplay = function(lazy_display_elements, lazy_displayed_class) {
-    this.lazy_display_elements = lazy_display_elements;
-    this.lazy_displayed_class = lazy_displayed_class;
+var LazyDisplay = function(lazy_display_elements, lazy_displayed_class, hide_elements_showed) {
+    hide_elements_showed = typeof hide_elements_showed !== 'undefined' ? hide_elements_showed : false;
 
     jQuery(window).on('resize, scroll', function() {
         updateElementsDisplayed(lazy_display_elements, lazy_displayed_class)
@@ -29,13 +28,15 @@ var LazyDisplay = function(lazy_display_elements, lazy_displayed_class) {
                 jQuery(elem).addClass(lazy_displayed_class).dequeue();
             });
         });
-        jQuery.each(elements_to_hide, function(index, elem) {
-            var duration = index*100;
-            jQuery(elem).delay(duration).queue(function() {
-                hideElement(jQuery(elem), lazy_displayed_class);
-                jQuery(elem).removeClass(lazy_displayed_class).dequeue();
+        if(hide_elements_showed) {
+            jQuery.each(elements_to_hide, function(index, elem) {
+                var duration = index*100;
+                jQuery(elem).delay(duration).queue(function() {
+                    hideElement(jQuery(elem), lazy_displayed_class);
+                    jQuery(elem).removeClass(lazy_displayed_class).dequeue();
+                });
             });
-        });
+        }
     }
 
     function isElementToDisplay(elem) {
