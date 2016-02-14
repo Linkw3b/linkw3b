@@ -111,6 +111,9 @@
     clear: both;
 }
 
+.tmtimeline > li .tmicon.icon-lunaweb {
+    @include sprites-sprite('lunaweb-logo-mobile');
+}
 .tmtimeline > li .tmicon.icon-te {
     @include sprites-sprite('te-logo-mobile');
 }

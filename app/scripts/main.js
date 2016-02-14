@@ -7,6 +7,7 @@ jQuery(function() {
         nav_expanded_class = 'js-expanded',
         lazy_display_elements = 'js-lazy-display',
         lazy_displayed_class = 'js-displayed',
+        progress_points = 'js-points',
         ripple_elements = '.button, .portfolio-overlay, .nav-link, .footer-link';
 
     /* Listeners */
@@ -40,6 +41,10 @@ jQuery(function() {
     jQuery(document).on('scroll', function(event) {
         updateElementsDisplayed(lazy_display_elements, lazy_displayed_class)
     });
+
+    setInterval( function() {
+        progressPoints(progress_points);
+    }, 500);
 });
 
 function headerFixed(event) {
@@ -195,5 +200,17 @@ function displayElement(elem, displayedClass) {
     elem.css({
         'top': '0',
         'opacity': '1'
+    });
+}
+
+function progressPoints(elements_class) {
+    jQuery.each(jQuery('.' + elements_class), function(index, elem) {
+        var points = jQuery(elem).text();
+
+        if(points.length > 2 ) {
+            jQuery(elem).text('');
+        } else {
+            jQuery(elem).text(points + '.');
+        }
     });
 }
