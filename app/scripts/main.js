@@ -7,7 +7,7 @@ jQuery(function() {
         nav_expanded_class = 'js-expanded',
         progress_points = 'js-points',
         ripple_elements = '.button, .portfolio-overlay, .nav-link, .footer-link';
-        lazy_display = new LazyDisplay('js-lazy-display', 'js-displayed', true);
+        lazy_display = new LazyDisplay('js-lazy-display', 'js-displayed', false);
 
     /* Listeners */
     jQuery(document).on('scroll', { elem: jQuery('#'+header) }, headerFixed);
@@ -34,9 +34,11 @@ jQuery(function() {
         rippleEffect(this, event);
     });
 
-    setInterval( function() {
-        progressPoints(progress_points);
-    }, 500);
+    if(jQuery('.' + progress_points).length > 0) {
+        setInterval( function() {
+            progressPoints(progress_points);
+        }, 500);
+    }
 });
 
 function headerFixed(event) {
