@@ -155,11 +155,8 @@
 
 .submit-button:before {
     content: "";
-    display: block;
-    float: left;
-    position: absolute;
-    top: 16px;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 10px;
     @include sprites-sprite('send-icon');
 }
 
