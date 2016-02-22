@@ -2170,6 +2170,7 @@ footer .social {
   color: #327943;
   line-height: 2em;
   font-size: 90%;
+  white-space: nowrap;
   -webkit-text-shadow: 0 0 0 transparent;
   -moz-text-shadow: 0 0 0 transparent;
   text-shadow: 0 0 0 transparent;
@@ -2182,7 +2183,7 @@ footer .social {
   border-radius: 3px;
 }
 
-/* line 127, page/_experiences.scss */
+/* line 129, page/_experiences.scss */
 .tmtimeline > li .tmlabel ul {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -2192,17 +2193,17 @@ footer .social {
   list-style: initial;
 }
 
-/* line 137, page/_experiences.scss */
+/* line 139, page/_experiences.scss */
 .tmtimeline > li .tmlabel .tmsection {
   font-weight: 700;
 }
 
-/* line 141, page/_experiences.scss */
+/* line 143, page/_experiences.scss */
 .tmtimeline > li .tmlabel {
   background: #57ba6f;
 }
 
-/* line 145, page/_experiences.scss */
+/* line 147, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 {
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -2210,22 +2211,22 @@ footer .social {
   font-weight: 700;
   font-size: 1.2em;
 }
-/* line 152, page/_experiences.scss */
+/* line 154, page/_experiences.scss */
 .tmtimeline > li .tmlabel h2 a {
   font-weight: 700;
 }
 
-/* line 157, page/_experiences.scss */
+/* line 159, page/_experiences.scss */
 .tmtimeline > li .tmlabel a {
   color: #fff;
 }
-/* line 160, page/_experiences.scss */
+/* line 162, page/_experiences.scss */
 .tmtimeline > li .tmlabel a:hover {
   color: #ffb14b;
 }
 
 /* The triangle */
-/* line 166, page/_experiences.scss */
+/* line 168, page/_experiences.scss */
 .tmtimeline > li .tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -2239,25 +2240,25 @@ footer .social {
   top: 10px;
 }
 
-/* line 180, page/_experiences.scss */
+/* line 182, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime {
   right: 0;
   left: inherit;
 }
-/* line 184, page/_experiences.scss */
+/* line 186, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtime span {
   text-align: left;
 }
-/* line 189, page/_experiences.scss */
+/* line 191, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmtitle {
   right: 0;
 }
-/* line 193, page/_experiences.scss */
+/* line 195, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel {
   float: left;
   background: #409e57;
 }
-/* line 197, page/_experiences.scss */
+/* line 199, page/_experiences.scss */
 .tmtimeline > li:nth-child(even) .tmlabel:after {
   left: 100%;
   right: inherit;
@@ -2266,7 +2267,7 @@ footer .social {
 }
 
 /* The icons */
-/* line 208, page/_experiences.scss */
+/* line 210, page/_experiences.scss */
 .tmtimeline > li .tmicon {
   width: 80px;
   height: 40px;
@@ -2291,56 +2292,56 @@ footer .social {
 }
 
 @media screen and (max-width: 80em) {
-  /* line 232, page/_experiences.scss */
+  /* line 234, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 36%;
   }
 }
 @media screen and (max-width: 62em) {
-  /* line 238, page/_experiences.scss */
+  /* line 240, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     width: 31%;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 245, page/_experiences.scss */
+  /* line 247, page/_experiences.scss */
   .tmtimeline:before {
     display: none;
   }
 
-  /* line 249, page/_experiences.scss */
+  /* line 251, page/_experiences.scss */
   .tmtimeline > li .tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 255, page/_experiences.scss */
+  /* line 257, page/_experiences.scss */
   .tmtimeline > li .tmtitle {
     display: none;
   }
 
-  /* line 259, page/_experiences.scss */
+  /* line 261, page/_experiences.scss */
   .tmtimeline > li .show-mobile {
     display: block;
   }
 
-  /* line 263, page/_experiences.scss */
+  /* line 265, page/_experiences.scss */
   .tmtimeline > li .tmlabel p {
     font-size: 100%;
   }
 
-  /* line 267, page/_experiences.scss */
+  /* line 269, page/_experiences.scss */
   .tmtimeline > li .tmlabel ul {
     font-size: 90%;
   }
 
-  /* line 271, page/_experiences.scss */
+  /* line 273, page/_experiences.scss */
   .tmtimeline > li .tmtime span {
     text-align: left;
   }
 
-  /* line 275, page/_experiences.scss */
+  /* line 277, page/_experiences.scss */
   .tmtimeline > li .tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -2353,7 +2354,7 @@ footer .social {
     float: none;
   }
 
-  /* line 285, page/_experiences.scss */
+  /* line 287, page/_experiences.scss */
   .tmtimeline > li .tmlabel:after {
     right: auto;
     left: 20px;
@@ -2362,20 +2363,20 @@ footer .social {
     top: -20px;
   }
 
-  /* line 293, page/_experiences.scss */
+  /* line 295, page/_experiences.scss */
   .tmtimeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #57ba6f;
   }
 
-  /* line 298, page/_experiences.scss */
+  /* line 300, page/_experiences.scss */
   .tmtimeline > li:nth-child(even) .tmlabel:after {
     right: auto;
     left: 20px;
     border-left-color: transparent;
   }
 
-  /* line 304, page/_experiences.scss */
+  /* line 306, page/_experiences.scss */
   .tmtimeline > li .tmicon {
     position: relative;
     float: right;
@@ -2384,7 +2385,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 65em) {
-  /* line 313, page/_experiences.scss */
+  /* line 315, page/_experiences.scss */
   .stand .page-name {
     font-size: 62%;
     letter-spacing: 2px;
@@ -2392,7 +2393,7 @@ footer .social {
   }
 }
 @media screen and (max-width: 43.2em) {
-  /* line 321, page/_experiences.scss */
+  /* line 323, page/_experiences.scss */
   .stand .page-name {
     letter-spacing: 1px;
   }
