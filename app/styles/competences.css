@@ -1863,17 +1863,14 @@ footer .social {
 /* line 156, sprites/_sprites.scss */
 .submit-button:before {
   content: "";
-  display: block;
-  float: left;
-  position: absolute;
-  top: 16px;
-  margin-right: 15px;
+  display: inline-block;
+  margin-right: 10px;
   background-position: -15px -30px;
   height: 14px;
   width: 25px;
 }
 
-/* line 166, sprites/_sprites.scss */
+/* line 163, sprites/_sprites.scss */
 .filter-button {
   background-position: -88px -30px;
   height: 25px;
@@ -1881,14 +1878,14 @@ footer .social {
   float: left;
   cursor: pointer;
 }
-/* line 171, sprites/_sprites.scss */
+/* line 168, sprites/_sprites.scss */
 .filter-button.active {
   background-position: -40px -55px;
   height: 25px;
   width: 50px;
 }
 
-/* line 177, sprites/_sprites.scss */
+/* line 174, sprites/_sprites.scss */
 .cv-link .pdf-icon {
   display: block;
   float: left;
@@ -1896,42 +1893,42 @@ footer .social {
   height: 32px;
   width: 32px;
 }
-/* line 182, sprites/_sprites.scss */
+/* line 179, sprites/_sprites.scss */
 .cv-link:hover .pdf-icon {
   background-position: -112px -255px;
   height: 32px;
   width: 32px;
 }
 
-/* line 187, sprites/_sprites.scss */
+/* line 184, sprites/_sprites.scss */
 .linkedin-icon {
   display: block;
   background-position: -30px -255px;
   height: 30px;
   width: 30px;
 }
-/* line 191, sprites/_sprites.scss */
+/* line 188, sprites/_sprites.scss */
 .linkedin-icon:hover {
   background-position: -90px -55px;
   height: 30px;
   width: 30px;
 }
 
-/* line 196, sprites/_sprites.scss */
+/* line 193, sprites/_sprites.scss */
 .viadeo-icon {
   display: block;
   background-position: -72px 0;
   height: 30px;
   width: 30px;
 }
-/* line 200, sprites/_sprites.scss */
+/* line 197, sprites/_sprites.scss */
 .viadeo-icon:hover {
   background-position: 0 -255px;
   height: 30px;
   width: 30px;
 }
 
-/* line 206, sprites/_sprites.scss */
+/* line 203, sprites/_sprites.scss */
 .error-page .continue:before {
   content: "";
   position: absolute;
@@ -1940,13 +1937,13 @@ footer .social {
   height: 32px;
   width: 32px;
 }
-/* line 214, sprites/_sprites.scss */
+/* line 211, sprites/_sprites.scss */
 .error-page .continue:hover:before {
   background-position: -94px -287px;
   height: 32px;
   width: 32px;
 }
-/* line 219, sprites/_sprites.scss */
+/* line 216, sprites/_sprites.scss */
 .error-page .continue.key:before {
   background-position: 0 -399px;
   height: 34px;
@@ -1954,7 +1951,7 @@ footer .social {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 226, sprites/_sprites.scss */
+  /* line 223, sprites/_sprites.scss */
   .close-icon,
   .coffee-0,
   .coffee-1,
