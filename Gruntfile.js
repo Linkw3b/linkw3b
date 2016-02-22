@@ -335,18 +335,21 @@ module.exports = function (grunt) {
                 files: {
                     '<%= yeoman.app %>/js/main.min.js': [
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.lazydisplay.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/experiences.min.js': [
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.lazydisplay.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',
                         '<%= yeoman.app %>/scripts/ee.js'
                     ],
                     '<%= yeoman.app %>/js/competences.min.js': [
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.lazydisplay.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/filters.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',
@@ -354,6 +357,7 @@ module.exports = function (grunt) {
                     ],
                     '<%= yeoman.app %>/js/portfolio.min.js': [
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.lazydisplay.js',
                         '<%= yeoman.app %>/scripts/jquery.touchSwipe.min.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/filters.js',
@@ -363,6 +367,7 @@ module.exports = function (grunt) {
                     ],
                     '<%= yeoman.app %>/js/contact.min.js': [
                         '<%= yeoman.app %>/scripts/jquery.min.js',
+                        '<%= yeoman.app %>/scripts/jquery.lazydisplay.js',
                         '<%= yeoman.app %>/scripts/main.js',
                         '<%= yeoman.app %>/scripts/contact.js',
                         '<%= yeoman.app %>/scripts/sweet-alert.js',

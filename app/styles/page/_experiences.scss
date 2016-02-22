@@ -120,6 +120,8 @@
     line-height: 2em;
     font-size: 90%;
 
+    white-space: nowrap;
+
     @include text-shadow(0, 0, 0, rgba(0,0,0,0));
     @include box-shadow(1px, 1px, 0, rgba(0,0,0,0.3));
     @include border-radius(3px);

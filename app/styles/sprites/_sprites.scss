@@ -14,6 +14,10 @@
     cursor: pointer;
 }
 
+.js-expanded .nav-icon {
+    @include sprites-sprite('close-nav-icon');
+}
+
 .skills-icon {
     @include sprites-sprite('skills-icon');
     display: inline-block;
@@ -111,6 +115,9 @@
     clear: both;
 }
 
+.tmtimeline > li .tmicon.icon-lunaweb {
+    @include sprites-sprite('lunaweb-logo-mobile');
+}
 .tmtimeline > li .tmicon.icon-te {
     @include sprites-sprite('te-logo-mobile');
 }
