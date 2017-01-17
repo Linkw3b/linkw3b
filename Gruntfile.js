@@ -32,7 +32,6 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/scripts/{,*/}*.js',
                     '!<%= yeoman.app %>/scripts/{,*/}*.min.js'
                 ],
-                tasks: ['jshint'],
                 options: {
                     livereload: true
                 }
@@ -108,7 +107,7 @@ module.exports = function (grunt) {
                 port: 9000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: 'taraud-m.dev.fr'
+                hostname: 'localhost'
             },
             livereload: {
                 options: {
